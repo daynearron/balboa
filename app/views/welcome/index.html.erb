@@ -1,1 +1,9 @@
-Hello
+<h1>Hello</h1>
+
+<% @posts.each do |post| %>
+	<h3> <%= link_to post.title, post %> </h3>
+<% end %>
+
+<% @insurances.each do |insurance| %>
+	<h3> <%= link_to insurance.title, insurance %> </h3>
+<% end %>
