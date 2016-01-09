@@ -24,11 +24,11 @@ class InsurancesController < ApplicationController
 	private
 
 	def find_insurance
-		@insurance = Insurance.find(params[:id])
+		@insurance = Insurance.friendly.find(params[:id])
 	end
 
 	def insurance_params
-		params.require(:insurance).permit(:title, :description, :link)
+		params.require(:insurance).permit(:title, :description, :link, :slug)
 	end
 
 end
