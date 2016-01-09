@@ -10,6 +10,17 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+@import "bourbon/bourbon";                    
+@import "base/base";
+@import "neat/neat";
+
+@import "normalize-rails";
+
+@import "variables";
+@import "app";
+
+@import "patterns/header";
+@import "patterns/hero";
+@import "patterns/footer";
