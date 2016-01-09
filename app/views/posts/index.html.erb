@@ -1,6 +1,10 @@
 <% @posts.each do |post| %>
+	<p> <%= post.created_at.strftime('%A, %B %d') %> </p>
 	<h2 class="hello"><%= post.title %></h2>
-	<div><%= truncate(post.content, :length => 35) %></div>
+	<div>
+		<%= truncate(post.content, :length => 35) %></div>
 	<br>
 	<%= link_to "Read Post", post %>
 <% end %>
+
+<%= will_paginate @posts %>
