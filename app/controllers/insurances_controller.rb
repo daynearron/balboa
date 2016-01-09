@@ -21,6 +21,22 @@ class InsurancesController < ApplicationController
 	def show
 	end
 
+	def edit
+	end
+
+	def update
+		if @insurance.update insurance_params
+			redirect_to @insurance, notice: "Success."
+		else
+			render 'edit'
+		end
+	end
+
+	def destroy
+		@insurance.destroy
+		redirect_to insurances_path
+	end
+
 	private
 
 	def find_insurance
