@@ -1,0 +1,26 @@
+<h1><%= @post.title %></h1>
+<div>
+	<%= markdown @post.content %>
+</div>
+<div>
+<p> Share List: </p>
+
+<!-- Tweeter -->
+<a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @daynearron – &amp;url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+	Twitter
+</a>
+
+<!-- Fassbook -->
+
+<a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+	Facebook
+</a>
+
+<!-- G Ploos -->
+
+<a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+	Google +
+</a>
+</div>
+<%= link_to "Edit Post", edit_post_path(@post) %>
+<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
