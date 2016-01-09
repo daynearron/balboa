@@ -1,0 +1,8 @@
+<h1><%= @insurance.title %></h1>
+<div>
+	<%= markdown @insurance.description %>
+</div>
+<div>
+
+<%= link_to "Edit Insurance", edit_insurance_path(@insurance) %>
+<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>

@@ -1,0 +1,8 @@
+<% @insurances.each do |insurance| %>
+	<p> <%= insurance.created_at.strftime('%A, %B %d') %> </p>
+	<h2 class="hello"><%= insurance.title %></h2>
+	<div>
+		<%= truncate(insurance.content, :length => 35) %></div>
+	<br>
+	<%= link_to "Read insurance", insurance %>
+<% end %>
