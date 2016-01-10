@@ -1,0 +1,10 @@
+.wrapper {
+	@include outer-container;
+}
+
+.skinny_wrapper {
+	@include pad(25px);
+	&--article {
+		@include pad( 2em 6em ); 
+	}
+}

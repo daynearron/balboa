@@ -1,10 +1,13 @@
 .hero {  
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
+  background-color: #360033;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
+  padding-top: 4em;
+  overflow: hidden;
+  position: relative;
 
   .hero-logo img {
     height: 4em;
@@ -28,6 +31,8 @@
 
         @include media($large-screen) {
           font-size: 1.8em;
+          @include span-columns(8);
+          @include shift(2);
         }
       }
 
@@ -43,4 +48,18 @@
       }
     }
   }
+
+  // &:after {
+  //   content: '';
+    
+  //   height: 50px;
+  //   width: calc(100% + 50px);
+    
+  //   background: #fafafa;
+    
+  //   position: absolute;
+  //   bottom: 0;
+    
+  //   @include transform(rotate(-3deg));
+  // }
 }

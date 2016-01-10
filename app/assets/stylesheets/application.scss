@@ -20,7 +20,17 @@
 
 @import "variables";
 @import "app";
+@import "global";
 
 @import "patterns/header";
+@import "patterns/sub_header";
 @import "patterns/hero";
+@import "patterns/side_image";
+@import "patterns/buttons";
+@import "patterns/cards";
+@import "patterns/grid_bare";
 @import "patterns/footer";
+
+@import "typography/type";
+
+@import "components/map";

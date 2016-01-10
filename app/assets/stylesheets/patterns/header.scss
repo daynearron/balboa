@@ -1,10 +1,11 @@
 header.navigation {
 
-  background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  //background-color: $navigation-background;
+  //border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  position: absolute;
 
   .navigation-wrapper {
     @include clearfix;
@@ -16,7 +17,7 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-left: $navigation-padding;
+    //padding-left: $navigation-padding;
     padding-right: 2em;
 
     img {
@@ -55,7 +56,7 @@ header.navigation {
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
-      float: left;
+      float: right;
     }
   }
 
