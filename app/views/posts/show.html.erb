@@ -1,26 +1,36 @@
-<h1><%= @post.title %></h1>
-<div>
-	<%= markdown @post.content %>
+<div class="sub_header">
+	<div class="wrapper">
+		<h2 class="title"> This is a Header </h2>
+	</div>
 </div>
-<div>
-<p> Share List: </p>
+<article class="content_well type-system-serif">
+	<section class="skinny_wrapper">
+		<p class="type"><%= @post.created_at.strftime('%A, %B %d') %></h4>
+		<h1 class="hello"><%= @post.title %></h1>
+		<%= markdown @post.content %>
+	<div>
+	<!-- Tweeter -->
+	<a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @daynearron – &amp;url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+		Twitter
+	</a>
 
-<!-- Tweeter -->
-<a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @daynearron – &amp;url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-	Twitter
-</a>
+	<!-- Fassbook -->
 
-<!-- Fassbook -->
+	<a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+		Facebook
+	</a>
 
-<a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-	Facebook
-</a>
+	<!-- G Ploos -->
 
-<!-- G Ploos -->
+	<a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+		Google +
+	</a>
+	</div>
+	<%= link_to "Edit Post", edit_post_path(@post) %>
+	<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
 
-<a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-	Google +
-</a>
-</div>
-<%= link_to "Edit Post", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+	</section>
+	<aside class ="sidebar">
+		<h2>Sidebar Content</h2>
+	</aside>
+</article>

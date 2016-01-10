@@ -52,45 +52,17 @@
 
 </head>
 
-<body>
+<body class="<%= controller_name %> <%= action_name %>">
 
-<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+	<%= render 'header' %>
 
-	<header>
-
-		<h1><a href="/">Page Title</a></h1>
-
-		<nav>
-
-			<ol>
-				<li><%= link_to "Blog", posts_path %></li>
-				<li><%= link_to "Insurance", insurances_path %></li>
-				<li><a href="">Nav Link 3</a></li>
-			</ol>
-
-		</nav>
-
-	</header>
-
-	<article>
+	<article class="main_wrapper">
 
 		<%= yield %>
 
 	</article>
 
-	<aside>
-
-		<h2>Sidebar Content</h2>
-
-	</aside>
-
-	<footer>
-
-		<p><small>&copy; Copyright Your Name Here 2014. All Rights Reserved.</small></p>
-
-	</footer>
-
-</div>
+	<%= render 'footer' %>
 
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

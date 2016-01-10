@@ -1,8 +1,20 @@
-<h1><%= @insurance.title %></h1>
-<div>
-	<%= markdown @insurance.description %>
+<div class="sub_header">
+	<div class="wrapper">
+		<h2 class="title"> <%= @insurance.title %> </h2>
+	</div>
 </div>
-<div>
+<article class="content_well type-system-serif">
+	<section>
+		<img src="https://c1.staticflickr.com/9/8077/8288730024_36869e7b1d_b.jpg" alt="">
+		<div class="skinny_wrapper--article">
+<!-- 			<h1 class="hello"><%= @insurance.title %></h1> -->
+			<%= markdown @insurance.description %>
+		</div>
+	</section>
+	<aside class ="sidebar">
+		<h2>Sidebar Content</h2>
+	</aside>
+</article>
 
 <%= link_to "Edit Insurance", edit_insurance_path(@insurance) %>
 <%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>

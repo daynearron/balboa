@@ -1,8 +1,21 @@
-<% @insurances.each do |insurance| %>
-	<p> <%= insurance.created_at.strftime('%A, %B %d') %> </p>
-	<h2 class="hello"><%= insurance.title %></h2>
-	<div>
-		<%= truncate(insurance.description, :length => 35) %></div>
-	<br>
-	<%= link_to "Read insurance", insurance %>
-<% end %>
+<div class="sub_header">
+	<div class="wrapper">
+		<h2 class="title"> This is a Header </h2>
+	</div>
+</div>
+<article class="content_well type-system-serif">
+	<section class="skinny_wrapper">
+		<% @insurances.each do |insurance| %>
+			<div>
+				<p class="type"> <%= insurance.created_at.strftime('%A, %B %d') %> </p>
+				<h2 class="hello"><%= insurance.title %></h2>
+				<div>
+					<%= truncate(insurance.description, :length => 35) %></div>
+				<%= link_to "Read More", insurance %>
+			</div>
+		<% end %>
+	</section>
+	<aside class ="sidebar">
+		<h2>Sidebar Content</h2>
+	</aside>
+</article>

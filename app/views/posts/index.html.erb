@@ -1,10 +1,24 @@
-<% @posts.each do |post| %>
-	<p> <%= post.created_at.strftime('%A, %B %d') %> </p>
-	<h2 class="hello"><%= post.title %></h2>
-	<div>
-		<%= truncate(post.content, :length => 35) %></div>
-	<br>
-	<%= link_to "Read Post", post %>
-<% end %>
-
+<div class="sub_header">
+	<div class="wrapper">
+		<h2 class="title"> This is a Header </h2>
+	</div>
+</div>
+<article class="content_well">
+	<section>
+		<% @posts.each do |post| %>
+		<div class="side-image">
+		  <div class="images-wrapper"></div>
+		    <div class="side-image-content">
+		      <h4><%= post.created_at.strftime('%A, %B %d') %></h4>
+		      <h1><%= post.title %></h1>
+		      <p><%= truncate(post.content, :length => 35) %></p>
+		  			<%= link_to "Read Post", post %>
+		  </div>
+		</div>
+		<% end %>
+	</section>
+	<aside class ="sidebar">
+		<h2>Sidebar Content</h2>
+	</aside>
+</article>
 <%= will_paginate @posts %>
