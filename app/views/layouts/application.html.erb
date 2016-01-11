@@ -51,7 +51,11 @@
 	<meta property="og:image" content="" />
 
 </head>
-
+<% if notice %>
+	<p class="notice"><%= notice %></p>
+	<% elsif %>
+	<p class="alert"><%= alert %></p>
+	<% end %>
 <body class="<%= controller_name %> <%= action_name %>">
 
 	<%= render 'header' %>
@@ -62,7 +66,7 @@
 
 	</article>
 
-	<%= render 'footer' %>
+<%= render 'footer' %>
 
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
