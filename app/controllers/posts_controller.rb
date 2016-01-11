@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   	end	
   end
 
-  def show
+  def show 
   end
 
   def edit

@@ -27,3 +27,37 @@ body {
 	@include span-columns(4);
 	@include pad(25px);
 }
+
+.article_header_img {
+	margin-bottom: 25px;
+	@include fill-parent;
+	@include clearfix;
+	img {
+		@include span-columns(12);
+	}
+}
+
+#admin_links {
+	text-align: center;
+	background-color: $admin_links_background;
+	@include fill-parent;
+	@include clearfix;
+	a {
+		color: $admin_links_color;
+		@include transition(all 0.05s $ease-in-circ);
+		@include pad(25px);
+		@include span-columns(6);
+		@include omega(2n);
+		&:hover {
+			background-color: tint($admin_links_background, 10%);
+		}
+	}
+}
+
+#social_footer {
+	text-align: center;
+	@include pad(25px);
+	a {
+		margin: 0 1em;
+	}
+}

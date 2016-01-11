@@ -4,18 +4,23 @@
 	</div>
 </div>
 <article class="content_well type-system-serif">
-	<section>
-		<%= image_tag @insurance.image.url(:large) %>
+	<section class="main">
+		<div class="article_header_img">	
+			<%= image_tag @insurance.image.url(:large) %>
+		</div>
 		<div class="skinny_wrapper--article">
 <!-- 			<h1 class="hello"><%= @insurance.title %></h1> -->
 			<%= markdown @insurance.description %>
+		</div>
+		<div id="admin_links">
+			<% if user_signed_in? %>
+				<%= link_to "Edit", edit_insurance_path(@insurance) %>
+				<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>
+			<% end %>
 		</div>
 	</section>
 	<aside class ="sidebar">
 		<h2>Sidebar Content</h2>
 	</aside>
 </article>
-<% if user_signed_in? %>
-	<%= link_to "Edit Insurance", edit_insurance_path(@insurance) %>
-	<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>
-<% end %>
+

@@ -4,14 +4,17 @@
 	</div>
 </div>
 <article class="content_well type-system-serif">
-	<section>
-		<%= image_tag @post.image.url(:large) %>
+	<section class="main">
+		<div class="article_header_img">	
+			<%= image_tag @post.image.url(:large) %>
+		</div>
 		<div class="skinny_wrapper">	
 			<p class="type"><%= @post.created_at.strftime('%A, %B %d') %></p>
 			<h1 class="hello"><%= @post.title %></h1>
 			<%= markdown @post.content %>
+			<br>
 		</div>
-	<div>
+	<div id="social_footer">
 	<!-- Tweeter -->
 	<a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @daynearron – &amp;url=<%= url_for([@post, {only_url: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
 		Twitter
@@ -29,12 +32,12 @@
 		Google +
 	</a>
 	</div>
-
-	<% if user_signed_in? %>
-		<%= link_to "Edit Post", edit_post_path(@post) %>
-		<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-	<% end %>
-
+	<div id="admin_links">
+		<% if user_signed_in? %>
+			<%= link_to "Edit", edit_post_path(@post) %>
+			<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+		<% end %>
+	</div>
 	</section>
 	<aside class ="sidebar">
 		<h2>Sidebar Content</h2>

@@ -7,7 +7,7 @@
 	</div>
 </div>
 <article class="content_well">
-	<section class="skinny_wrapper">
+	<section class="main">
 	<h2 class="headerline">
 		Just a few services we offer:
 	</h3>
@@ -29,7 +29,7 @@
 		<% @posts.each do |post| %>
 		  <div class="card">
 		  	<div class="card-image">
-      		<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      		<%= image_tag post.image.url(:medium) %>
    			</div>
    			<div class="card-header">
 					<%= post.title %>
