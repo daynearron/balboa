@@ -53,14 +53,13 @@
 </head>
 <% if notice %>
 	<p class="notice"><%= notice %></p>
-	<% elsif %>
+<% elsif alert %>
 	<p class="alert"><%= alert %></p>
-	<% end %>
+<% end %>	
 <body class="<%= controller_name %> <%= action_name %>">
 
 	<%= render 'header' %>
-
-	<article class="main_wrapper">
+	<article>
 
 		<%= yield %>
 

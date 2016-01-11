@@ -15,6 +15,7 @@
 		<h2>Sidebar Content</h2>
 	</aside>
 </article>
-
-<%= link_to "Edit Insurance", edit_insurance_path(@insurance) %>
-<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>
+<% if user_signed_in? %>
+	<%= link_to "Edit Insurance", edit_insurance_path(@insurance) %>
+	<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>
+<% end %>
