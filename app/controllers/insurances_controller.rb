@@ -25,7 +25,7 @@ class InsurancesController < ApplicationController
 	end
 
 	def update
-		if @insurance.update insurance_params
+		if @insurance.update(insurance_params)
 			redirect_to @insurance, notice: "Success."
 		else
 			render 'edit'
@@ -39,12 +39,12 @@ class InsurancesController < ApplicationController
 
 	private
 
-	def find_insurance
-		@insurance = Insurance.friendly.find(params[:id])
+	def insurance_params
+		params.require(:insurance).permit(:title, :description, :link, :image, :slug)
 	end
 
-	def insurance_params
-		params.require(:insurance).permit(:title, :description, :link, :slug)
+	def find_insurance
+		@insurance = Insurance.friendly.find(params[:id])
 	end
 
 end

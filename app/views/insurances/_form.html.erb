@@ -1,4 +1,4 @@
-<%= form_for @insurance do |f| %>
+<%= form_for @insurance, html: { multipart: true } do |f| %>
 	<% if @insurance.errors.any? %>
 		<h2> <%= pluralize(@insurance.errors.count, "error") %> Prevented this insurance from saving: </h2>
 		<ul>
@@ -7,6 +7,11 @@
 			<% end %>
 		</ul>
 	<% end %>
+	
+	<%= f.label :image %><br>
+	<%= f.file_field :image %><br>
+
+	</br>
 
 	<%= f.label :title %><br>
 	<%= f.text_field :title %><br>

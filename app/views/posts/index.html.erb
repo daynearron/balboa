@@ -7,7 +7,9 @@
 	<section>
 		<% @posts.each do |post| %>
 		<div class="side-image">
-		  <div class="images-wrapper"></div>
+		  <div class="images-wrapper">
+				<%= image_tag post.image.url(:medium) %>
+		  </div>
 		    <div class="side-image-content">
 		      <h4><%= post.created_at.strftime('%A, %B %d') %></h4>
 		      <h1><%= post.title %></h1>

@@ -8,6 +8,7 @@
 		<% @insurances.each do |insurance| %>
 			<div>
 				<p class="type"> <%= insurance.created_at.strftime('%A, %B %d') %> </p>
+				<%= image_tag insurance.image.url(:medium) %>
 				<h2 class="hello"><%= insurance.title %></h2>
 				<div>
 					<%= truncate(insurance.description, :length => 35) %></div>
