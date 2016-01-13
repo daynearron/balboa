@@ -32,6 +32,7 @@
         margin-bottom: 0.5em;
 
         @include media($large-screen) {
+          letter-spacing: 1px;
           font-size: 3em;
           @include span-columns(10);
           @include shift(1);

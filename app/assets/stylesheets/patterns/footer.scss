@@ -74,6 +74,7 @@
     @include span-columns(4);
     @include shift(8);
     .contact-card-header {
+      letter-spacing: 1px;
       color: shade($blue, 40%);
       text-align: center;
       line-height: 150px;
