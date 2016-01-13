@@ -4,7 +4,7 @@
   @include justify-content(space-between);
 }
 
-.card {
+.main.card {
 
   @include flex-basis(15em);
   @include flex-grow(1);

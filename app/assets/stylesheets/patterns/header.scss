@@ -2,6 +2,7 @@ header.navigation {
 
   //background-color: $navigation-background;
   //border-bottom: 1px solid darken($navigation-background, 10);
+  font-family: $sans-serif-2;
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -16,6 +17,7 @@ header.navigation {
 
   .logo {
     float: left;
+    padding-top: 15px;
     max-height: $navigation-height;
     //padding-left: $navigation-padding;
     padding-right: 2em;
@@ -84,6 +86,9 @@ header.navigation {
 
   ul li.nav-link {
     background: $navigation-background;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;

@@ -11,13 +11,13 @@ body {
 	@include outer-container;
 
 	section {
+		background: white;
 		@include span-columns(8);
 	}
 
 	section,
 	.sidebar {
 		position: relative;
-		background: white;
 		border-radius: 1px;
 		margin-bottom: 25px;
 	}
@@ -25,11 +25,12 @@ body {
 
 .sidebar {
 	@include span-columns(4);
-	@include pad(25px);
+	// @include pad(25px);
 }
 
 .article_header_img {
 	margin-bottom: 25px;
+	border-bottom: 5px solid $slate-blue;
 	@include fill-parent;
 	@include clearfix;
 	img {
@@ -56,8 +57,57 @@ body {
 
 #social_footer {
 	text-align: center;
+	@extend a.link-sans-serif;
+	background: tint($light-gray, 50%);
 	@include pad(25px);
 	a {
+		@extend a.link;
+		text-transform: uppercase;
 		margin: 0 1em;
+	}
+}
+
+#pagination_links {
+	overflow: hidden;
+	height: 200px;
+	background: darken($slate-blue, 20%);
+	font-size: 2em;
+	font-weight: 100;
+	@extend a.link-sans-serif;
+	@include row(table);
+	@include fill-parent;
+	a.pagination {
+		@extend a.link-sans-serif;
+		position: relative;
+		height: 100%;
+		@include omega(2n);
+		.pagination_title,
+		img {
+			left: 0;
+			top: 0;
+			position: absolute;
+			@include fill-parent;
+		}
+		.pagination_title {
+			z-index: 6;
+			color: white;
+			font-size: 1em;
+			text-align: center;
+	    top: 50%;
+	    margin-top: -1em;
+		}
+		img {
+			z-index: 5;
+			margin-top: -25%;
+			opacity: 0.5;
+		}
+		&--prev {
+			background-color: $blue;
+			@include span-columns(4);
+		}
+		&--next {
+			@include span-columns(8);
+			@include reset-display;
+		}
 	}
 }

@@ -1,48 +1,9 @@
-<div class="hero">
-	<div class="hero-inner">
-		<div class="hero-copy">
-			<h1>Taking the necessary precautions for protection is crucial</h1>
-			<p>Being able to safely protect your home or auto should be a priority in protecting your investment. Let us help you.</p>	
-		</div>
-	</div>
-</div>
+<%= render "hero" %>
 <article class="content_well">
 	<section class="main">
-	<h2 class="headerline">
-		Just a few services we offer:
-	</h3>
-	<div class="grid-items-lines">
-		<% @insurances.each do |insurance| %>
-			<%= link_to insurance, :class=>"grid-item" do %>	
-   			<h1>
-					<%= insurance.title %>
-				</h1>
-	      <p>
-					<%= truncate(insurance.description, :length => 135) %>
-				</p>
-			<% end %>
-		<% end %>
-	</div>
+		<%= render "main_content" %>
 	</section>
-	<aside class ="sidebar">
-		<div class="cards">
-		<% @posts.each do |post| %>
-		  <div class="card">
-		  	<div class="card-image">
-      		<%= image_tag post.image.url(:medium) %>
-   			</div>
-   			<div class="card-header">
-					<%= post.title %>
-				</div>
-				<div class="card-copy">
-		      <p>
-						<%= truncate(post.content, :length => 135) %>
-					</p>
-					<%= link_to "Read More", post %>
-				</div>
-			</div>
-		<% end %>
-	</div>
-	</aside>
+<%= render "sidebar" %>
 </article>
-<div id="map_canvas"></div>
+
+<%= render 'contact_footer' %>

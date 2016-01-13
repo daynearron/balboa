@@ -24,6 +24,7 @@ gem "paperclip", "~> 4.3"
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.5', '>= 3.5.3'
 
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

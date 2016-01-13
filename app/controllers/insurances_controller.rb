@@ -21,6 +21,7 @@ class InsurancesController < ApplicationController
 	end
 
 	def show
+		@insurances = Insurance.all.order("created_at desc")
 	end
 
 	def edit

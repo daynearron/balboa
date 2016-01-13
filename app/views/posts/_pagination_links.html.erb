@@ -1,0 +1,20 @@
+<div id="pagination_links">
+	<% prev_post = Post.where("id < ?", @post.id).last %>
+		<% if prev_post %>
+		  <%= link_to post_path(prev_post), class: "pagination pagination--prev" do %>
+		    <p class="pagination_title">
+			    <%= prev_post.title %>
+			  </p>
+		    <%= image_tag(prev_post.image.url(:large)) %> 
+		  <% end %>
+	<%end %>
+	<% next_post = Post.where("id > ?", @post.id).first %>
+		<% if next_post %>
+		  <%= link_to post_path(next_post), class: "pagination pagination--next" do %>
+		    <p class="pagination_title">
+			    <%= next_post.title %>
+			  </p>
+		    <%= image_tag(next_post.image.url(:large)) %> 
+		  <% end %>
+	<%end %>
+</div>

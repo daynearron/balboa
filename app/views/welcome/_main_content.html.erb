@@ -1,0 +1,15 @@
+	<h2 class="headerline">
+			Just a few services we offer:
+		</h2>
+		<div class="grid-items-lines skinny_wrapper">
+			<% @insurances.each do |insurance| %>
+				<%= link_to insurance, :class=>"grid-item" do %>	
+	   			<h1>
+						<%= insurance.title %>
+					</h1>
+		      <p>
+						<%= truncate(insurance.description, :length => 135) %>
+					</p>
+				<% end %>
+			<% end %>
+		</div>

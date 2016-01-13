@@ -18,6 +18,7 @@
 
 @import "normalize-rails";
 
+@import "color";
 @import "variables";
 @import "app";
 @import "global";
@@ -32,5 +33,7 @@
 @import "patterns/footer";
 
 @import "typography/type";
+
+@import "icons/icons";
 
 @import "components/map";

@@ -8,6 +8,7 @@
   padding-top: 4em;
   overflow: hidden;
   position: relative;
+  font-family: $hero-font;
 
   .hero-logo img {
     height: 4em;
@@ -19,31 +20,46 @@
     @include clearfix;
     margin: auto;
     padding: 3.5em;
-    text-align: center;
+    text-align: left;
 
     .hero-copy {
-      text-align: center;
+      text-align: left;
       
       h1 {
+        font-weight: 100;
         color: $hero-color;
         font-size: 1.6em;
         margin-bottom: 0.5em;
 
         @include media($large-screen) {
-          font-size: 1.8em;
-          @include span-columns(8);
-          @include shift(2);
+          font-size: 3em;
+          @include span-columns(10);
+          @include shift(1);
         }
       }
 
       p {
+        font-family: $hero-font-body;
         color: $hero-color;
         line-height: 1.4em;
         margin: 0 auto 3em auto; 
 
         @include media($large-screen) {
+          font-size: 1.2em;
+          letter-spacing: 1px;
+          max-width: 60%;
+          margin: 0 0 15px 0;
+          @include shift(1);
+        }
+      }
+
+      a {
+        letter-spacing: 1px;
+        @include media($large-screen) {
           font-size: 1.1em;
-          max-width: 40%;
+          max-width: 60%;
+          margin-top: 1em;
+          @include shift(1);
         }
       }
     }

@@ -63,3 +63,21 @@
     text-align: center;
   }
 }
+
+#contact-footer {
+  background-color: shade($blue, 40%);
+  @include fill-parent;
+  @include clearfix;
+  .contact-card {
+    background: $blue;
+    font-size: 2em;
+    @include span-columns(4);
+    @include shift(8);
+    .contact-card-header {
+      color: shade($blue, 40%);
+      text-align: center;
+      line-height: 150px;
+      display: block;
+    }
+  }
+}

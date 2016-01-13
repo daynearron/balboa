@@ -1,11 +1,4 @@
-<div class="hero">
-	<div class="hero-inner">
-		<div class="hero-copy">
-			<h1>We are more than just Insurance Brokers</h1>
-			<p>We are blah blah blah</p>	
-		</div>
-	</div>
-</div>
+<%= render "hero" %>
 <article class="content_well">
 	<section class="main skinny_wrapper">
 	<h2 class="headerline">
@@ -15,24 +8,6 @@
 		Balboa Pacific Insurance Services is headquartered in Irvine, California and serves customers in California, Arizona, Colorado, and Florida. When it comes to some of the biggest investments such as your home, car, boat, jewelry, health, and most of all your life; we know that trust matters. Here at Balboa Pacific we have partnered up with some of the biggest insurance carriers. This gives us access to find the best products and price to meet your insurance needs.
 	</p>
 	</section>
-	<aside class ="sidebar">
-		<div class="cards">
-		<% @posts.each do |post| %>
-		  <div class="card">
-		  	<div class="card-image">
-      		<%= image_tag post.image.url(:medium) %>
-   			</div>
-   			<div class="card-header">
-					<%= post.title %>
-				</div>
-				<div class="card-copy">
-		      <p>
-						<%= truncate(post.content, :length => 135) %>
-					</p>
-					<%= link_to "Read More", post %>
-				</div>
-			</div>
-		<% end %>
-	</div>
+<%= render 'sidebar' %>
 	</aside>
 </article>
