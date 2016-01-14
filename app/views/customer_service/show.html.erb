@@ -1,0 +1,18 @@
+<%= render "hero2" %>
+<article class="content_well type-system-serif">
+	<section class="main">
+		<div class="skinny_wrapper--article">
+ 			<h1 class="hello"><%= @customerService.name %></h1>
+ 			<h1 class="hello"><%= @customerService.phone %></h1>
+ 			<h1 class="hello"><%= @customerService.site %></h1>
+		</div>
+		<div id="admin_links">
+			<% if user_signed_in? %>
+				<%= link_to "Edit", edit_customer_service_path(@customerService) %>
+				<%= link_to "Delete", customer_service_path(@customerService), method: :delete, data: { confirm: "Are you sure?" } %>
+			<% end %>
+		</div>
+	</section>
+</article>
+<%= render 'cta' %>
+<%= render 'contact_footer' %>

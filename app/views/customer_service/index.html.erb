@@ -1,0 +1,12 @@
+<%= render "hero2" %>
+<article class="content_well type-system-serif">
+	<section class="skinny_wrapper main">
+		<% @customerServices.each do |customerService| %>
+			<div>
+				<h2 class="hello"><%= customerService.name %></h2>
+				<h2 class="hello"><%= customerService.phone %></h2>
+				<h2 class="hello"><%= customerService.site %></h2>		
+			</div>
+		<% end %>
+	</section>
+</article>
