@@ -3,7 +3,11 @@
   padding: $btn-padding;
   border-radius: 25px;
   &-hero{
-    color: tint($blue-teal, 40%);
+    color: tint($blue-teal, 90%);
     background-color: $blue-teal;
+  }
+  &-yellow-btn {
+  	color: shade($yellow, 50%);
+  	background-color: $yellow;
   }
 }

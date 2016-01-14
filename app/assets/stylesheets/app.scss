@@ -1,5 +1,6 @@
 body {
-	background: #FAFAFA;
+	background: $lighter-gray;
+	@extend .border-top;
 }
 
 .main_wrapper {
@@ -109,5 +110,32 @@ body {
 			@include span-columns(8);
 			@include reset-display;
 		}
+	}
+}
+
+#cta-section {
+	background-color: $cta-section-background;
+	@extend .centered;
+	@include pad(25px);
+	@include fill-parent;
+	h2 {
+		font-size: 2em;
+	}
+}
+
+ul#insurance-logo-group {
+	@include pad(25px 0);
+	@include clearfix;
+ li {
+		height: 100%;
+		vertical-align: middle;
+		@include span-columns(2);
+		&:first-child {
+			@include shift(1);
+		}
+		img {
+			width: 90%;
+			margin: 0 auto;
+		}	
 	}
 }

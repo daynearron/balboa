@@ -19,7 +19,6 @@ $base-line-height: 1.5em !default;
 $base-spacing: 1.5em !default;
 $base-font-size: 1em !default;
 
-
 $action-color: #477DCA !default;
 
 $base-font-color: $dark-gray !default;
@@ -27,8 +26,8 @@ $base-font-color: $dark-gray !default;
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
 
-$hero-background-top: $slate-blue; 
-$hero-background-bottom: shade($slate-blue, 15%);
+$hero-background-top: white; 
+$hero-background-bottom: shade(white, 15%);
 $hero-color: white;
 $hero-font: $sans-serif-3;
 $hero-font-body: $serif-2;
@@ -53,9 +52,9 @@ $horizontal-bar-mode: $large-screen;
 
 $sub_header_background: $blue-teal;
 
-$footer-background: shade($slate-blue, 60%);
+$footer-background: shade(white, 60%);
 $footer-color: white;
-$footer-link-color: shade(#056770, 6);
+$footer-link-color: shade(white, 6%);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
 $side-image-background-top: #B5EBEB;
@@ -87,8 +86,8 @@ $card-margin: 1em;
 $card-image-hover-opacity: 0.7;
 $card-image-hover-color: #F8F2B4;
 
-$grid-items-background: $base-background-color;
-$grid-item-background: $base-background-color;
+$grid-items-background: white;
+$grid-item-background: white;
 $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
 $grid-item-columns: 4;
 $grid-item-big-columns: 8;
@@ -97,3 +96,7 @@ $grid-item-height: 14em;
 
 $admin_links_background: $blue;
 $admin_links_color: white;
+
+$cta-section-background: tint($light-gray, 30%);
+
+$contact-card-color: white;

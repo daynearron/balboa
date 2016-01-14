@@ -65,17 +65,17 @@
 }
 
 #contact-footer {
-  background-color: shade($blue, 40%);
+  background-color: shade($contact-card-color, 40%);
   @include fill-parent;
   @include clearfix;
   .contact-card {
-    background: $blue;
+    background: $contact-card-color;
     font-size: 2em;
     @include span-columns(4);
     @include shift(8);
     .contact-card-header {
       letter-spacing: 1px;
-      color: shade($blue, 40%);
+      color: shade($contact-card-color, 40%);
       text-align: center;
       line-height: 150px;
       display: block;
