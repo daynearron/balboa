@@ -12,11 +12,12 @@
 	<br>
 
 	<%= f.label :phone %><br>
-	<%= f.text_field :phone %><br>
+	<%= f.telephone_field :phone, id: 'phone', "data-inputmask": "'mask': '999-999-9999'"  %><br>
 
 	</br>
-
+	
 	<%= f.label :site %><br>
+	<p>Do not include www: just sitename.com.</p>
 	<%= f.text_field :site %><br>
 
 	<br>

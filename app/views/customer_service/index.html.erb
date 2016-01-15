@@ -1,12 +1,42 @@
 <%= render "hero2" %>
-<article class="content_well type-system-serif">
-	<section class="skinny_wrapper main">
-		<% @customerServices.each do |customerService| %>
-			<div>
-				<h2 class="hello"><%= customerService.name %></h2>
-				<h2 class="hello"><%= customerService.phone %></h2>
-				<h2 class="hello"><%= customerService.site %></h2>		
-			</div>
-		<% end %>
+<article class="wrapper">
+	<section>
+		<table class="tables content_well">
+		  <thead>
+		    <tr>
+		      <th>Logo</th>
+		      <th>Company Name</th>
+		      <th>Company Phone</th>
+		      <th>Company Website</th>
+					<% if user_signed_in? %>
+						<th>Tools</th>
+					<% end %>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <% @customerServices.each do |customerService| %>
+			    <tr>
+			      <td><%= image_tag customerService.logo.url(:large) %></td>
+			      <td>
+				      <h2><%= customerService.name %></h2>
+				    </td>
+			      <td>
+			      	<%= tel_to(customerService.phone, name = nil, html_options = { :class=>"icon-phone"}) %>
+			      </td>
+			      <td>
+			      	<%= link_to "http://www.#{customerService.site} ", :target=>"_blank", :class=>"button button-yellow-btn" do %>
+								Visit Site
+			      	<%end%>
+			      </td>
+						<% if user_signed_in? %>
+							<td>
+								<%= link_to "Edit", edit_customer_service_path(customerService) %>
+								<%= link_to "Delete", customer_service_path(customerService), method: :delete, data: { confirm: "Are you sure?" } %>
+							</td>
+						<% end %>
+			    </tr>
+				<% end %>
+		  </tbody>
+		</table>
 	</section>
 </article>

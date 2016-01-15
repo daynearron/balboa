@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160114222100) do
+ActiveRecord::Schema.define(version: 20160114224322) do
 
   create_table "abouts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -22,9 +22,13 @@ ActiveRecord::Schema.define(version: 20160114222100) do
     t.string   "name"
     t.string   "phone"
     t.string   "site"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.string   "slug"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
   end
 
   add_index "customer_services", ["slug"], name: "index_customer_services_on_slug", unique: true

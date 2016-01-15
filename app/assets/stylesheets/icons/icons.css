@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?80464656#icons') format('svg');
+    src: url('../font/icons.svg?51710963#icons') format('svg');
   }
 }
 */
@@ -76,3 +76,18 @@
 .icon-comment:before { content: '\e813'; } /* '' */
 .icon-trash:before { content: '\e814'; } /* '' */
 .icon-menu:before { content: '\e815'; } /* '' */
+.icon-phone:before { content: '\e816'; } /* '' */
+.icon-cog:before { content: '\e817'; } /* '' */
+.icon-tools:before { content: '\e818'; } /* '' */
+.icon-share:before { content: '\e819'; } /* '' */
+.icon-info-circled:before { content: '\e81a'; } /* '' */
+.icon-layout:before { content: '\e81b'; } /* '' */
+.icon-star:before { content: '\e81c'; } /* '' */
+.icon-star-empty:before { content: '\e81d'; } /* '' */
+.icon-heart-empty:before { content: '\e81e'; } /* '' */
+.icon-heart:before { content: '\e81f'; } /* '' */
+.icon-bookmark:before { content: '\e820'; } /* '' */
+.icon-up-open:before { content: '\e821'; } /* '' */
+.icon-right-open:before { content: '\e822'; } /* '' */
+.icon-left-open:before { content: '\e823'; } /* '' */
+.icon-down-open:before { content: '\e824'; } /* '' */

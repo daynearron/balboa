@@ -49,9 +49,9 @@
       color: transparentize($grid-item-color, 0.4);
       line-height: 1.5em;
       
-      @include media($medium-screen) {
-        max-width: 70%;
-      }
+      // @include media($medium-screen) {
+      //   max-width: 70%;
+      // }
     }
 
   .grid-item-big {

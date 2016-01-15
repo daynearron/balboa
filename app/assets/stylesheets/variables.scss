@@ -4,6 +4,7 @@
 @import url("//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic");
 @import url("//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic");
 
+$body-bg: $lighter-gray;
 
 $serif: 'Lusitana', serif;
 $serif-2: 'Merriweather', serif;
@@ -100,3 +101,12 @@ $admin_links_color: white;
 $cta-section-background: tint($light-gray, 30%);
 
 $contact-card-color: white;
+
+$table-border-color: $body-bg;
+$table-border: 0px;
+$table-background: lighten($table-border-color, 12%);
+$table-header-background: lighten($table-background, 10%);
+$table-hover-background: darken($table-background, 5%);
+$table-stripe-background: darken($table-background, 2%);
+$table-stripe-background-hover: darken($table-stripe-background, 5%);
+$table-padding: 0.75em 1em;

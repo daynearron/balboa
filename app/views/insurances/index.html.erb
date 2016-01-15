@@ -1,16 +1,18 @@
 <%= render "hero2" %>
 <article class="content_well type-system-serif">
-	<section class="skinny_wrapper main">
-		<% @insurances.each do |insurance| %>
-			<div>
-				<p class="type"> <%= insurance.created_at.strftime('%A, %B %d') %> </p>
-				<%= image_tag insurance.image.url(:medium) %>
-				<h2 class="hello"><%= insurance.title %></h2>
-				<div>
-					<%= truncate(insurance.description, :length => 35) %></div>
-				<%= link_to "Read More", insurance %>
-			</div>
-		<% end %>
+	<section class="main">
+		<ul class="insurance_cards">
+			<% @insurances.each do |insurance| %>
+				<li class="insurance_card">
+					<div class="cropped-image"><%= image_tag insurance.image.url(:medium) %></div>
+					<div class="skinny_wrapper">
+						<h2 class="hello"><%= insurance.title %></h2>
+						<%= truncate(insurance.description, :length => 35) %>
+						<%= link_to "Read More", insurance %>
+					</div>
+				</li>
+			<% end %>
+		</ul>
 	</section>
 	<%= render 'sidebar' %>
 </article>

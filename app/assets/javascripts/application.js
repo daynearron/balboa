@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require vendor/jquery.inputmask.bundle.min
 //= require jquery_ujs
 //= require turbolinks
-
 //= require functions
-
+//= require mask
 //= require_tree .

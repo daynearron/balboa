@@ -41,3 +41,14 @@ a.link {
 .mb25 {
 	margin-bottom: 25px;
 }
+
+.gray-text {
+	color: $light-gray;
+}
+
+.cropped-image {
+	@include fill-parent;
+	img {
+		width: 100%;
+	}
+}

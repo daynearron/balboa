@@ -15,7 +15,7 @@ class CustomerServiceController < ApplicationController
 		@customerService = CustomerService.new cs_params
 
 		if @customerService.save
-			redirect_to @customerService, notice: "Success."
+			redirect_to customer_service_index_path, notice: "Success."
 		else
 			render 'new'
 		end
@@ -30,7 +30,7 @@ class CustomerServiceController < ApplicationController
 
 	def update
 		if @customerService.update(cs_params)
-			redirect_to @customerService, notice: "Success."
+			redirect_to customer_service_index_path, notice: "Success."
 		else
 			render 'edit'
 		end
@@ -38,9 +38,9 @@ class CustomerServiceController < ApplicationController
 
 	def destroy
 		@customerService.destroy
-		redirect_to customerServices_path
+		redirect_to customer_service_index_path
 	end
-
+	
 	private
 
 	def cs_params

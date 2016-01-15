@@ -1,5 +1,5 @@
 body {
-	background: $lighter-gray;
+	background: $body-bg;
 	@extend .border-top;
 }
 
@@ -26,7 +26,25 @@ body {
 
 .sidebar {
 	@include span-columns(4);
-	// @include pad(25px);
+	// 
+	.sidebar_card {
+		background: white;
+		margin-bottom: 10px;
+		@include omega(2n);
+		@include fill-parent;
+		@include clearfix;
+		.sidebar_img {
+			overflow: hidden;
+			@include span-columns(4);
+			img { 
+				height: 100%;
+			}
+		}
+		.sidebar_link {
+			padding: 15px;
+			@include span-columns(8);
+		}
+	}
 }
 
 .article_header_img {
@@ -137,5 +155,12 @@ ul#insurance-logo-group {
 			width: 90%;
 			margin: 0 auto;
 		}	
+	}
+}
+
+.insurance_cards {
+	@include fill-parent;
+	.insurance-card {
+		@include fill-parent;
 	}
 }
