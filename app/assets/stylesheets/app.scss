@@ -12,7 +12,6 @@ body {
 	@include outer-container;
 
 	section {
-		background: white;
 		@include span-columns(8);
 	}
 
@@ -162,5 +161,40 @@ ul#insurance-logo-group {
 	@include fill-parent;
 	.insurance-card {
 		@include fill-parent;
+	}
+}
+
+.blog-post {
+	background-color: #fff;
+	display: block;
+	height: 240px;
+	margin-bottom: 15px;
+	@include clearfix;
+	@include fill-parent;
+	.image-wrapper {
+		@include span-columns(3 of 8);
+		height: 100%;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+	.post-preview {
+		@include padding(1em 0.8em);
+		@include span-columns(5 of 8);
+		@include omega();
+		h2 {
+			font-size: 1.6em;
+		}
+		span,
+		a {
+			@extend .gray-text;
+			line-height: 2;
+		}
+		p {
+			font-size: 0.8em;
+			max-width: 80%;
+		}
 	}
 }

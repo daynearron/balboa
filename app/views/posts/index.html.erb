@@ -1,22 +1,22 @@
 <%= render "hero2" %>
 <article class="content_well">
-	<section class="main">
+	<section>
 		<% @posts.each do |post| %>
-		<div class="side-image">
-		  <div class="images-wrapper">
+		<div class="blog-post">	
+			<div class="image-wrapper">	
 				<%= image_tag post.image.url(:medium) %>
-		  </div>
-		    <div class="side-image-content">
-		      <h4><%= post.created_at.strftime('%A, %B %d') %></h4>
-		      <h1><%= post.title %></h1>
-		      <p><%= truncate(post.content, :length => 35) %></p>
-		  			<%= link_to "Read Post", post %>
-		  </div>
+			</div>
+	    <div class="post-preview">
+	      <span><%= post.created_at.strftime('%A, %B %d') %></span>
+	      <h2><%= post.title %></h2>
+	      <p><%= truncate(post.content, :length => 115) %></p>
+	      <%= link_to "Read Post", post, class:"read-more-link" %>
+	    </div>
 		</div>
 		<% end %>
+		<%= will_paginate @posts %>
 	</section>
 	<aside class ="sidebar">
 		<h2>Sidebar Content</h2>
 	</aside>
 </article>
-<%= will_paginate @posts %>
