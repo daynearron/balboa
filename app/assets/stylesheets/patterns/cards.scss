@@ -1,3 +1,19 @@
+.sidebar-contact-card {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: $base-border-radius;
+  @include fill-parent;
+  @include pad(25px);
+  @extend .roboto;
+  @extend .box-shadow;
+  h2,
+  .address,
+  span {
+    display: block;
+    @extend .roboto;
+  }
+}
+
 .cards {
   @include display(flex);
   @include flex-wrap(wrap);
@@ -28,7 +44,8 @@
       @include transition (all 0.2s ease-in-out);
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
-      width: 100%;
+      min-height: 100%;
+      min-width: 100%;
       opacity: 1;
     }
   }
@@ -36,7 +53,7 @@
   .card-header {
     @include transition (all 0.2s ease-in-out);
     //background-color: $card-header-background;
-    border-bottom: $card-border;
+    //border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
     font-weight: bold;
     line-height: 1.5em;
@@ -50,6 +67,11 @@
 
     p {
       margin: 0 0 ($base-spacing / 2);
+    }
+
+    a {
+      @extend .button;
+      @extend .button-hero;
     }
   }
 

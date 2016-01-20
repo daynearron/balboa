@@ -1,11 +1,12 @@
 .tables {
-
   border-collapse: separate;
   border-left: 0px;
   border-radius: $base-border-radius;
   border-spacing: 0;
   border: none;
   width: 100%;
+  @extend .border-top;
+  @extend .box-shadow;
 
   tbody {
     background-color: $table-background;

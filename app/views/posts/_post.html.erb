@@ -3,7 +3,6 @@
 		</div>
 		<div class="skinny_wrapper--article">	
 			<p class="type"><%= @post.created_at.strftime('%A, %B %d') %></p>
-			<h1 class="hello"><%= @post.title %></h1>
 			<%= markdown @post.content %>
 			<br>
 		</div>

@@ -1,0 +1,43 @@
+#form_title {
+	margin-top: 90px;
+	@include span-columns(8);
+	@include shift(2);
+}
+.form {
+  @extend .box-shadow;
+	border: 1px solid $light-gray;
+	background: white;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	@extend .roboto;
+	@include span-columns(8 of 12);
+	@include shift(2);
+	@include pad(25px);
+	h1 {
+		
+		@extend .roboto;
+		@extend .letter-spacing;
+		@extend .uppercase;
+	}
+	input,
+	textarea {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #E9E9E9;
+    border-radius: .35rem;
+    width: 100%;
+    outline: none;
+    margin: .5rem 0 2rem 0;
+	}
+	input {
+		height: 3rem;
+	}
+	textarea {
+		min-height: 300px;
+	}
+	.button {
+		background-color: $blue;
+		@extend .roboto;
+		@extend .letter-spacing;
+	}
+}

@@ -1,27 +1,14 @@
-<%= form_for :customerService, url: customer_service_index_path do |f| %>
-	</br>
-	
-	<%= f.label :logo %><br>
-	<%= f.file_field :logo %><br>
-
-	<br>
-
-	<%= f.label :name %><br>
-	<%= f.text_field :name %><br>
-
-	<br>
-
-	<%= f.label :phone %><br>
-	<%= f.telephone_field :phone, id: 'phone', "data-inputmask": "'mask': '999-999-9999'"  %><br>
-
-	</br>
-	
-	<%= f.label :site %><br>
-	<p>Do not include www: just sitename.com.</p>
-	<%= f.text_field :site %><br>
-
-	<br>
-
-	<%= f.submit %>
-
-<% end %>
+<div class="form">
+	<%= form_for :customerService, url: customer_service_index_path do |f| %>
+		<%= f.label :logo %>
+		<%= f.file_field :logo %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+		<%= f.label :phone %>
+		<%= f.telephone_field :phone, id: 'phone', "data-inputmask": "'mask': '999-999-9999'"  %>
+		<%= f.label :site %>
+		<p>Do not include www: just sitename.com.</p>
+		<%= f.text_field :site %>
+		<%= f.submit 'Save', class: "button" %>
+	<% end %>
+</div>

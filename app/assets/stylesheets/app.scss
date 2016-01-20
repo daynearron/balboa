@@ -25,23 +25,33 @@ body {
 
 .sidebar {
 	@include span-columns(4);
-	// 
 	.sidebar_card {
 		background: white;
 		margin-bottom: 10px;
-		@include omega(2n);
+		position: relative;
+		height: 120px;
 		@include fill-parent;
 		@include clearfix;
 		.sidebar_img {
+			height: 100%;
+			width: 120px;
+			float: left;
 			overflow: hidden;
-			@include span-columns(4);
 			img { 
 				height: 100%;
+				width: 100%;
 			}
 		}
 		.sidebar_link {
+			color: $dark-gray;
+			font-size: 10px;
 			padding: 15px;
-			@include span-columns(8);
+			padding-top: 25px;
+			float: right;
+			width: calc(100% - 120px);
+			h2 {
+				font-size:1.2em;
+			}
 		}
 	}
 }
@@ -158,17 +168,45 @@ ul#insurance-logo-group {
 }
 
 .insurance_cards {
+	@extend .border-top;
+	border-radius: $base-border-radius;
 	@include fill-parent;
-	.insurance-card {
+	li {
+		background-color: #fff;
+		margin-bottom: 25px;
+		border-radius: $base-border-radius;
+		@extend .box-shadow;
 		@include fill-parent;
+		a {
+			@extend .letter-spacing;
+			@extend .button;
+			@extend .button-hero;
+		}
 	}
 }
 
+.insurance_card--title {
+	font-size: 1.2em;
+	font-weight: 400;
+	@extend .uppercase;
+	@extend .roboto;
+}
+
+.post-view {
+	@extend .border-top;
+	@extend .box-shadow;
+	border-radius: $base-border-radius;
+	background-color: #fff;
+}
+
 .blog-post {
+	@extend .box-shadow;
 	background-color: #fff;
 	display: block;
 	height: 240px;
 	margin-bottom: 15px;
+	overflow: hidden;
+	border-radius: $base-border-radius;
 	@include clearfix;
 	@include fill-parent;
 	.image-wrapper {
@@ -176,25 +214,51 @@ ul#insurance-logo-group {
 		height: 100%;
 		overflow: hidden;
 		img {
-			height: 100%;
-			width: auto;
+	    height: auto;
+	    width: 100%;
 		}
 	}
 	.post-preview {
-		@include padding(1em 0.8em);
+    font-family: roboto;
+		@include padding(2em 0.8em);
 		@include span-columns(5 of 8);
 		@include omega();
 		h2 {
 			font-size: 1.6em;
 		}
 		span,
-		a {
-			@extend .gray-text;
+		.read-more-link {
+			color: shade($action-color, 60%);
 			line-height: 2;
 		}
 		p {
 			font-size: 0.8em;
 			max-width: 80%;
 		}
+	}
+}
+
+#main_blog_pagination .pagination {
+	text-align: center;
+	line-height: 120px;
+	font-weight: 100;
+	margin-bottom: 25px;
+	@extend .uppercase;
+	@extend .letter-spacing;
+	@include row(table);
+	a {
+		color: #fff;
+	}
+	.disabled {
+		color: rgba(255,255,255,0.5);
+	}
+	.previous_page{
+		background-color: shade($blue, 30%);
+		@include span-columns(3 of 8);
+	}
+	.next_page {
+		background-color: tint($blue, 30%);
+		@include span-columns(5 of 8);
+		@include reset-display;
 	}
 }

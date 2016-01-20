@@ -1,6 +1,6 @@
 class InsurancesController < ApplicationController
 	before_action :find_insurance, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:index, :show]
 	
 	def index
 		@insurances = Insurance.all.order("created_at desc")

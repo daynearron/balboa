@@ -1,5 +1,8 @@
+@import url("//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");
+$sans-serif-3: 'Roboto', sans-serif;
+
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: $sans-serif-3;
 $heading-font-family: $base-font-family;
 
 // Font Sizes

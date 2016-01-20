@@ -1,4 +1,16 @@
 	<aside class ="sidebar">
+		<div class="sidebar-contact-card">
+			<h2>Contact Joe Stanovich</h2>
+			<p class="address">
+				Balboa Pacific Insurance Services<br> 
+				450 Newport Center Drive Suite 480<br> 
+				Newport Beach, CA 92660<br> 
+			</p>
+			<a href="tel:+19492973119">	(949) 207-3110 Phone </a>
+			<span>	
+				(949) 608-9102 Fax
+			</span> 
+		</div>
 		<div class="cards">
 		<% @posts.each do |post| %>
 			  <div class="card">
@@ -13,6 +25,22 @@
 							<%= truncate(post.content, :length => 135) %>
 						</p>
 						<%= link_to "Read More", post %>
+					</div>
+				</div>
+			<% end %>
+			<% @insurances.each do |insurance| %>
+			  <div class="card">
+			  	<div class="card-image">
+	      		<%= image_tag insurance.image.url(:medium) %>
+	   			</div>
+	   			<div class="card-header">
+						<%= insurance.title %>
+					</div>
+					<div class="card-copy">
+			      <p>
+							<%= truncate(insurance.description, :length => 135) %>
+						</p>
+						<%= link_to "Read More", insurance %>
 					</div>
 				</div>
 			<% end %>
