@@ -20,7 +20,7 @@ $base-line-height: 1.5em !default;
 $base-spacing: 1.5em !default;
 $base-font-size: 1em !default;
 
-$action-color: #477DCA !default;
+$action-color: #DB5543!default;
 
 $base-font-color: $dark-gray !default;
 
@@ -53,7 +53,7 @@ $horizontal-bar-mode: $large-screen;
 
 $sub_header_background: $blue-teal;
 
-$footer-background: shade(white, 60%);
+$footer-background: shade($brand-color, 20%);
 $footer-color: white;
 $footer-link-color: shade(white, 6%);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);

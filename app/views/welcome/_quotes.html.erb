@@ -1,37 +1,23 @@
+<!-- THIS IS BLOG POSTS NOT QUOTES -->
+<section class="gray-text letter-spacing centered skinny_wrapper">
+  <h2>
+    Find out what we've been up to:
+  </h2>
+</section>
 <div class="cards wrapper">
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+  <% @posts.each do |post| %>
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag post.image.url(:medium) %>
+      </div>
+      <div class="card-header">
+        <%= post.title %>
+      </div>
+      <div class="card-copy">
+        <p><%= truncate(post.content, :length => 75) %></p>
+        <%= link_to "Read More", post, class: "button button-hero" %>
+        <i class="icon-right-open-mini button-icon"></i>
+      </div>
     </div>
-    <div class="card-header">
-      First Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
-    </div>
-    <div class="card-header">
-      Another Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
-    </div>
-    <div class="card-header">
-      The Last Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-  </div>
+  <% end %>
 </div>

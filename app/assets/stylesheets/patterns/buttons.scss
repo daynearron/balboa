@@ -10,9 +10,16 @@
   	color: shade($yellow, 50%);
   	background-color: $yellow;
   }
+  &-white-btn {
+    color: shade($blue, 50%);
+    background-color: white;
+  }
 }
 
 .button-icon {
   margin-left: -2.5em;
   color: #fff;
+  &-gray {
+    color: $dark-gray;
+  }
 }

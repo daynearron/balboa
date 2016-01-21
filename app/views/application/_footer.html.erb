@@ -5,9 +5,11 @@
   <div class="footer-links">
     <ul>
       <li><h3>Content</h3></li>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Products</a></li>
+        <li><%= link_to "Insurance", insurances_path %></li>
+        <li><%= link_to "Need Help?", customer_service_index_path %></li>
+        <li><%= link_to "Blog", posts_path %></li>
+        <li><%= link_to "About", about_index_path %></li>
+        <li><%= link_to "Contact", new_contact_path %></li>
     </ul>
     <ul>
       <li><h3>Follow Us</h3></li>
@@ -16,13 +18,17 @@
       <li><a href="javascript:void(0)">YouTube</a></li>
     </ul>
     <ul>
-      <li><h3>Legal</h3></li>
-      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-      <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      <li><h3>Resources</h3></li>
+      <li>              
+        <%= link_to "http://www.commercehomemortgage.com", :target=>"_blank" do %>
+          Commerce Home Mortgage
+        <%end%>
+      </li>
+      <li>              
+        <%= link_to "http://www.commercehomemortgage.com", :target=>"_blank" do %>
+          CHM Wholesale
+        <%end%>
+      </li>
     </ul>
   </div>
-
-  <hr>
-
-  <p><a>450 Newport Center Dr Ste 480, CA 92660</a> | <a>info@balboapacific.com</a></p>
 </footer>

@@ -16,6 +16,7 @@
     @include display(flex);
     @include justify-content(center);
     @include flex-wrap(wrap);
+    @extend .letter-spacing;
     margin-bottom: $base-spacing;
   }
 
@@ -29,7 +30,7 @@
   li {
     line-height: 1.5em;
     list-style: none;
-    text-align: center;
+    text-align: left;
   }
 
   li a {

@@ -1,0 +1,29 @@
+#welcome-grid-item-0 {
+	background-color: tint($blue, 30%);
+	&:hover {
+		background-color: tint($blue, 60%);
+	}
+}
+
+#welcome-grid-item-1 {
+	@extend .bgswap;
+	h1,
+	p {
+		color: #fff;
+	}
+}
+
+// #welcome-grid-item-2 {
+// 	border-bottom: 5px solid pink;
+// }
+
+// #welcome-grid-item-3 {
+// 	border-top: 5px solid green;
+// }
+
+#welcome-grid-item-big {
+	background-color: #EFBE66;
+	&:hover {
+		background-color: tint(#EFBE66, 30%);
+	}
+}

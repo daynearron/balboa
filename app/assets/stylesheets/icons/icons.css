@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src: url('icons.eot');
-  src: url('icons.eot') format('embedded-opentype'),
-       url('icons.woff') format('woff'),
-       url('icons.ttf') format('truetype'),
-       url('icons.svg') format('svg');
+  src: url('icons.eot?30292255');
+  src: url('icons.eot?30292255#iefix') format('embedded-opentype'),
+       url('icons.woff?30292255') format('woff'),
+       url('icons.ttf?30292255') format('truetype'),
+       url('icons.svg?30292255#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?51710963#icons') format('svg');
+    src: url('../font/icons.svg?30292255#icons') format('svg');
   }
 }
 */
@@ -63,7 +63,7 @@
 .icon-direction:before { content: '\e806'; } /* '' */
 .icon-reply:before { content: '\e807'; } /* '' */
 .icon-down-open-mini:before { content: '\e808'; } /* '' */
-.icon-right-open-mini:before{ content: '\e809'; } /* '' */
+.icon-right-open-mini:before { content: '\e809'; } /* '' */
 .icon-up-open-mini:before { content: '\e80a'; } /* '' */
 .icon-left-open-mini:before { content: '\e80b'; } /* '' */
 .icon-forward:before { content: '\e80c'; } /* '' */
@@ -91,3 +91,19 @@
 .icon-right-open:before { content: '\e822'; } /* '' */
 .icon-left-open:before { content: '\e823'; } /* '' */
 .icon-down-open:before { content: '\e824'; } /* '' */
+.icon-dot:before { content: '\e825'; } /* '' */
+.icon-flash:before { content: '\e826'; } /* '' */
+.icon-popup:before { content: '\e827'; } /* '' */
+.icon-chart-line:before { content: '\e828'; } /* '' */
+.icon-chart-bar:before { content: '\e829'; } /* '' */
+.icon-chart-area:before { content: '\e82a'; } /* '' */
+.icon-chart-pie:before { content: '\e82b'; } /* '' */
+.icon-lamp:before { content: '\e82c'; } /* '' */
+.icon-folder:before { content: '\e82d'; } /* '' */
+.icon-archive:before { content: '\e82e'; } /* '' */
+.icon-box:before { content: '\e82f'; } /* '' */
+.icon-alert:before { content: '\e830'; } /* '' */
+.icon-quote:before { content: '\e831'; } /* '' */
+.icon-search:before { content: '\e832'; } /* '' */
+.icon-plus:before { content: '\e833'; } /* '' */
+.icon-help:before { content: '\e834'; } /* '' */
