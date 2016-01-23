@@ -1,0 +1,2836 @@
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+@import url("//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");
+@import url("//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700");
+@import url("//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");
+@import url("//fonts.googleapis.com/css?family=Lusitana:400,700");
+@import url("//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic");
+@import url("//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic");
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 21, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #11519a;
+  color: #fff;
+}
+/* line 27, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* line 31, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_buttons.scss */
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #1565c0;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0;
+}
+
+/* line 14, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+input,
+select {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+/* line 27, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+/* line 41, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+select[multiple]:hover {
+  border-color: #b1b1b1;
+}
+/* line 45, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+select[multiple]:focus {
+  border-color: #1565c0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+  outline: none;
+}
+/* line 51, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+select[multiple]:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+/* line 55, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+select[multiple]:disabled:hover {
+  border: 1px solid #ddd;
+}
+
+/* line 61, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 65, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+[type="search"] {
+  appearance: none;
+}
+
+/* line 69, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 75, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 80, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 11, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: 600;
+  margin-top: 0.75em;
+}
+/* line 16, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 8, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 24, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+a {
+  cursor: pointer;
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+/* line 30, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: #104c90;
+}
+
+/* line 37, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+
+/* line 45, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 4, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, /Users/pierceatlas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+body {
+  background: #fafafa;
+}
+
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.main_wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 9, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.content_well {
+  position: relative;
+  margin-top: -3em;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.content_well::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 14, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.content_well section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.content_well section:last-child {
+  margin-right: 0;
+}
+/* line 18, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.content_well section,
+.content_well .sidebar {
+  position: relative;
+  border-radius: 1px;
+  margin-bottom: 25px;
+}
+
+/* line 26, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.sidebar:last-child {
+  margin-right: 0;
+}
+/* line 28, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.sidebar .sidebar_card {
+  background: white;
+  margin-bottom: 10px;
+  position: relative;
+  height: 120px;
+  width: 100%;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.sidebar .sidebar_card::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 35, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.sidebar .sidebar_card .sidebar_img {
+  height: 100%;
+  width: 120px;
+  float: left;
+  overflow: hidden;
+}
+/* line 40, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.sidebar .sidebar_card .sidebar_img img {
+  height: 100%;
+  width: 100%;
+}
+/* line 45, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.sidebar .sidebar_card .sidebar_link {
+  color: #333;
+  font-size: 10px;
+  padding: 15px;
+  padding-top: 25px;
+  float: right;
+  width: calc(100% - 120px);
+}
+/* line 52, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.sidebar .sidebar_card .sidebar_link h2 {
+  font-size: 1.2em;
+}
+
+/* line 59, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.article_header_img {
+  margin-bottom: 25px;
+  border-bottom: 5px solid #3e474c;
+  width: 100%;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.article_header_img::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 64, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.article_header_img img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.article_header_img img:last-child {
+  margin-right: 0;
+}
+
+/* line 69, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#admin_links {
+  text-align: center;
+  background-color: #015158;
+  width: 100%;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+#admin_links::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 74, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#admin_links a {
+  color: white;
+  -webkit-transition: all 0.05s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  -moz-transition: all 0.05s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: all 0.05s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  padding: 25px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+#admin_links a:last-child {
+  margin-right: 0;
+}
+/* line 78, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_omega.scss */
+#admin_links a:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 83, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_omega.scss */
+#admin_links a:nth-child(2n+1) {
+  clear: left;
+}
+/* line 80, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#admin_links a:hover {
+  background-color: #1a6269;
+}
+
+/* line 86, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#social_footer {
+  text-align: center;
+  background: #eeeeee;
+  padding: 25px;
+}
+/* line 91, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#social_footer a {
+  text-transform: uppercase;
+  margin: 0 1em;
+}
+
+/* line 98, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links {
+  overflow: hidden;
+  height: 200px;
+  background: #101314;
+  font-size: 2em;
+  font-weight: 100;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 107, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links a.pagination {
+  position: relative;
+  height: 100%;
+}
+/* line 78, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_omega.scss */
+#pagination_links a.pagination:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 83, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_omega.scss */
+#pagination_links a.pagination:nth-child(2n+1) {
+  clear: left;
+}
+/* line 112, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links a.pagination .pagination_title,
+#pagination_links a.pagination img {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 119, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links a.pagination .pagination_title {
+  z-index: 6;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  top: 50%;
+  margin-top: -1em;
+}
+/* line 127, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links a.pagination img {
+  z-index: 5;
+  margin-top: -25%;
+  opacity: 0.5;
+}
+/* line 132, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links a.pagination--prev {
+  background-color: #015158;
+  display: table-cell;
+  width: 33.33333%;
+}
+/* line 136, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#pagination_links a.pagination--next {
+  display: table-cell;
+  width: 66.66667%;
+}
+
+/* line 143, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#cta-section {
+  background-color: #e7e7e7;
+  padding: 25px;
+  width: 100%;
+}
+/* line 148, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#cta-section h2 {
+  font-size: 2em;
+}
+
+/* line 153, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+ul#insurance-logo-group {
+  padding: 25px 0;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+ul#insurance-logo-group::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 156, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+ul#insurance-logo-group li {
+  height: 100%;
+  vertical-align: middle;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+ul#insurance-logo-group li:last-child {
+  margin-right: 0;
+}
+/* line 160, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+ul#insurance-logo-group li:first-child {
+  margin-left: 8.5298%;
+}
+/* line 163, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+ul#insurance-logo-group li img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 170, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.insurance_cards {
+  border-radius: 3px;
+  width: 100%;
+}
+/* line 174, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.insurance_cards li {
+  background-color: #fff;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* line 188, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.insurance_card--title {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* line 195, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.post-view {
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+/* line 202, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post {
+  background-color: #fff;
+  display: block;
+  height: 240px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 3px;
+  width: 100%;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.blog-post::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 212, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post .image-wrapper {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 35.26334%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.blog-post .image-wrapper:last-child {
+  margin-right: 0;
+}
+/* line 216, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post .image-wrapper img {
+  height: auto;
+  width: 100%;
+}
+/* line 221, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post .post-preview {
+  font-family: roboto;
+  padding: 2em 0.8em;
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 61.158%;
+  margin-right: 0;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.blog-post .post-preview:last-child {
+  margin-right: 0;
+}
+/* line 226, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post .post-preview h2 {
+  font-size: 1.6em;
+}
+/* line 229, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post .post-preview span,
+.blog-post .post-preview .read-more-link {
+  color: #08284d;
+  line-height: 2;
+}
+/* line 234, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+.blog-post .post-preview p {
+  font-size: 0.8em;
+  max-width: 80%;
+}
+
+/* line 241, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#main_blog_pagination .pagination {
+  text-align: center;
+  line-height: 120px;
+  font-weight: 100;
+  margin-bottom: 25px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 249, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#main_blog_pagination .pagination a {
+  color: #fff;
+}
+/* line 252, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#main_blog_pagination .pagination .disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 255, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#main_blog_pagination .pagination .previous_page {
+  background-color: #01393e;
+  display: table-cell;
+  width: 37.5%;
+}
+/* line 259, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/app.scss */
+#main_blog_pagination .pagination .next_page {
+  background-color: #4d858a;
+  display: table-cell;
+  width: 62.5%;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 5, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.skinny_wrapper {
+  padding: 25px;
+}
+/* line 7, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.skinny_wrapper--article {
+  padding: 2em 6em;
+}
+
+/* line 12, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.hidden {
+  display: none;
+}
+
+/* line 16, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+a.link, #social_footer a {
+  color: #3e474c;
+}
+/* line 18, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+a.link-sans-serif, #social_footer, #pagination_links, #pagination_links a.pagination {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 25, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.centered, #cta-section {
+  text-align: center;
+}
+
+/* line 29, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.border-top, body, .insurance_cards, .post-view, .tables {
+  border-top: 5px solid #153441;
+}
+
+/* line 33, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.uppercase, .insurance_card--title, #main_blog_pagination .pagination, .form h1 {
+  text-transform: uppercase;
+}
+
+/* line 37, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.letter-spacing, .insurance_cards li a, #main_blog_pagination .pagination, .form h1, .form .button, .form .insurance_cards li a, .insurance_cards li .form a, .form .card .card-copy a, .card .card-copy .form a, .footer .footer-links {
+  letter-spacing: 1px;
+}
+
+/* line 41, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.mb25 {
+  margin-bottom: 25px;
+}
+
+/* line 45, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.gray-text {
+  color: #ddd;
+}
+
+/* line 49, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.cropped-image {
+  width: 100%;
+}
+/* line 51, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.cropped-image img {
+  width: 100%;
+}
+
+/* line 56, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.box-shadow, .insurance_cards li, .post-view, .blog-post, .sidebar-contact-card, .grid-items-lines, .tables, .form {
+  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.03);
+}
+
+/* line 60, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.bgswap, #welcome-grid-item-1 {
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+}
+/* line 65, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.bgswap *, #welcome-grid-item-1 * {
+  z-index: 10;
+  position: relative;
+}
+/* line 69, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.bgswap .img-swap, #welcome-grid-item-1 .img-swap {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 77, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/global.scss */
+.bgswap:after, #welcome-grid-item-1:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/custom.scss */
+#welcome-grid-item-0 {
+  background-color: #4d858a;
+}
+/* line 3, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/custom.scss */
+#welcome-grid-item-0:hover {
+  background-color: #99b9bc;
+}
+
+/* line 10, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/custom.scss */
+#welcome-grid-item-1 h1,
+#welcome-grid-item-1 p {
+  color: #fff;
+}
+
+/* line 24, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/custom.scss */
+#welcome-grid-item-big {
+  background-color: #EFBE66;
+}
+/* line 26, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/custom.scss */
+#welcome-grid-item-big:hover {
+  background-color: #f4d294;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation {
+  font-family: "Roboto", sans-serif;
+  min-height: 60px;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+}
+/* line 11, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .navigation-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 9999;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+header.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+header.navigation .navigation-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 18, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .logo {
+  float: left;
+  padding-top: 5px;
+  max-height: 60px;
+  padding-right: 2em;
+}
+/* line 25, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .logo img {
+  max-height: 60px;
+  padding: 0.8em 0;
+}
+/* line 33, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .navigation-menu-button {
+  color: #162124;
+  display: block;
+  float: right;
+  line-height: 60px;
+  margin: 0;
+  padding-right: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 900px) {
+  /* line 33, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation .navigation-menu-button {
+    display: none;
+  }
+}
+/* line 47, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
+  color: #EDA611;
+}
+/* line 55, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation nav {
+  float: none;
+  min-height: 60px;
+  z-index: 9999999;
+}
+@media screen and (min-width: 900px) {
+  /* line 55, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation nav {
+    float: right;
+  }
+}
+/* line 65, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul.navigation-menu {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 74, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul.navigation-menu.show {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  /* line 65, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.navigation-menu {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+/* line 87, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul li.nav-link {
+  font-size: 0.8em;
+  background: rgba(5, 101, 110, 0.9);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 60px;
+  overflow: hidden;
+  padding-right: 0.8em;
+  text-align: right;
+  width: 100%;
+  z-index: 9999;
+}
+@media screen and (min-width: 900px) {
+  /* line 87, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul li.nav-link {
+    background: transparent;
+    display: inline;
+    line-height: 60px;
+    text-decoration: none;
+    width: auto;
+  }
+}
+/* line 109, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul li.nav-link a {
+  color: #162124;
+  display: inline-block;
+  text-decoration: none;
+}
+@media screen and (min-width: 900px) {
+  /* line 109, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul li.nav-link a {
+    padding-right: 1em;
+  }
+}
+/* line 118, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+  color: #EDA611;
+}
+/* line 125, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .active-nav-item a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 3px;
+}
+/* line 132, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more.nav-link {
+  padding-right: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 132, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 1em;
+  }
+}
+/* line 139, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more.nav-link > ul > li:first-child a {
+  padding-top: 1em;
+}
+/* line 143, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more.nav-link a {
+  margin-right: 1em;
+}
+/* line 147, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more.nav-link > a {
+  padding-right: 0.6em;
+}
+/* line 151, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more.nav-link > a:after {
+  position: absolute;
+  top: auto;
+  right: -0.4em;
+  bottom: auto;
+  left: auto;
+  content: '\25BE';
+  color: #162124;
+}
+/* line 158, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more {
+  overflow: visible;
+  padding-right: 0;
+}
+/* line 162, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more a {
+  padding-right: 0.8em;
+}
+/* line 166, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more > a {
+  padding-right: 1.6em;
+  position: relative;
+}
+@media screen and (min-width: 900px) {
+  /* line 166, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation li.more > a {
+    margin-right: 1em;
+  }
+}
+/* line 174, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more > a:after {
+  content: '›';
+  font-size: 1.2em;
+  position: absolute;
+  right: 0.5em;
+}
+/* line 182, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  /* line 158, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation li.more {
+    padding-right: 0.8em;
+    position: relative;
+  }
+}
+/* line 193, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul.submenu {
+  display: none;
+  padding-left: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 193, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.submenu {
+    left: -1em;
+    position: absolute;
+    top: 1.5em;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 203, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.submenu .submenu {
+    left: 11.8em;
+    top: 0;
+  }
+}
+/* line 210, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul.submenu li {
+  display: block;
+  padding-right: 0;
+}
+@media screen and (min-width: 900px) {
+  /* line 210, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.submenu li {
+    line-height: 46.15385px;
+  }
+  /* line 217, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.submenu li:first-child > a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  /* line 222, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.submenu li:last-child > a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-bottom: 0.7em;
+  }
+}
+/* line 229, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation ul.submenu li a {
+  background-color: rgba(4, 88, 95, 0.9);
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 229, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation ul.submenu li a {
+    background-color: rgba(5, 101, 110, 0.9);
+    padding-left: 1em;
+    text-align: left;
+    width: 12em;
+  }
+}
+/* line 247, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .navigation-tools {
+  background: #505050;
+  clear: both;
+  display: block;
+  height: 60px;
+}
+@media screen and (min-width: 900px) {
+  /* line 247, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation .navigation-tools {
+    background: transparent;
+    clear: none;
+    float: right;
+  }
+}
+/* line 262, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .search-bar {
+  float: left;
+  padding: 0.85em 0.85em 0.7em 0.6em;
+  width: 60%;
+}
+/* line 271, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .search-bar form {
+  position: relative;
+}
+/* line 274, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .search-bar form input[type=search] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(20, 110, 119, 0.905);
+  border-radius: 6px;
+  border: 1px solid rgba(5, 95, 103, 0.905);
+  color: #162124;
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0;
+  padding: 0.5em 0.8em;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 274, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation .search-bar form input[type=search] {
+    width: 100%;
+  }
+}
+/* line 291, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .search-bar form button[type=submit] {
+  background: rgba(20, 110, 119, 0.905);
+  border: none;
+  bottom: 0.3em;
+  left: auto;
+  outline: none;
+  padding: 0 9px;
+  position: absolute;
+  right: 0.3em;
+  top: 0.3em;
+}
+/* line 302, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+header.navigation .search-bar form button[type=submit] img {
+  height: 12px;
+  opacity: 0.7;
+  padding: 1px;
+}
+@media screen and (min-width: 900px) {
+  /* line 262, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation .search-bar {
+    display: inline-block;
+    position: relative;
+    width: 16em;
+  }
+  /* line 315, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/header.scss */
+  header.navigation .search-bar input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+  }
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/sub_header.scss */
+.sub_header {
+  top: 0;
+  background: #36535A;
+  width: 100%;
+  display: block;
+  padding-bottom: 3em;
+  padding-top: 4em;
+}
+/* line 8, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/sub_header.scss */
+.sub_header .title {
+  padding: 2em 0;
+  font-size: 4em;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero {
+  background: -webkit-linear-gradient(-280deg, #d9d9d9, white), no-repeat white scroll;
+  background: linear-gradient(10deg, #d9d9d9, white), no-repeat white scroll;
+  background-color: #360033;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+  padding-top: 4em;
+  overflow: hidden;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+/* line 14, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero .hero-logo img {
+  height: 4em;
+  margin-bottom: 1em;
+}
+/* line 19, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero .hero-inner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  padding: 3.5em;
+  text-align: left;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.hero .hero-inner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.hero .hero-inner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 26, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero .hero-inner .hero-copy {
+  text-align: left;
+}
+/* line 29, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero .hero-inner .hero-copy h1 {
+  font-weight: 100;
+  color: white;
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 900px) {
+  /* line 29, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+  .hero .hero-inner .hero-copy h1 {
+    letter-spacing: 1px;
+    font-size: 3em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
+  }
+  /* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+  .hero .hero-inner .hero-copy h1:last-child {
+    margin-right: 0;
+  }
+}
+/* line 43, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero .hero-inner .hero-copy p {
+  font-family: "Merriweather", serif;
+  color: white;
+  line-height: 1.4em;
+  margin: 0 auto 3em auto;
+}
+@media screen and (min-width: 900px) {
+  /* line 43, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+  .hero .hero-inner .hero-copy p {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    max-width: 60%;
+    margin: 0 0 15px 0;
+    margin-left: 8.5298%;
+  }
+}
+/* line 58, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+.hero .hero-inner .hero-copy a {
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 900px) {
+  /* line 58, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/hero.scss */
+  .hero .hero-inner .hero-copy a {
+    font-size: 1.1em;
+    max-width: 60%;
+    margin-top: 1em;
+    margin-left: 8.5298%;
+  }
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+.side-image {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid green;
+}
+@media screen and (min-width: 900px) {
+  /* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+  .side-image {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+}
+/* line 11, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+.side-image .images-wrapper {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(#B5EBEB, #5DAC5D), no-repeat #B5EBEB scroll;
+  background-color: #B5EBEB;
+  background-size: cover;
+  border-bottom: 1px solid rgba(19, 35, 19, 0.44);
+  display: block;
+  min-height: 12em;
+  padding: 3em;
+}
+@media screen and (min-width: 900px) {
+  /* line 11, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+  .side-image .images-wrapper {
+    display: table-cell;
+    width: 33.33333%;
+    background-position: bottom;
+    background-size: cover;
+    border-right: 1px solid rgba(19, 35, 19, 0.44);
+  }
+}
+/* line 28, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+.side-image .side-image-content {
+  display: table-cell;
+  width: 100%;
+  padding: 1em 1em 4em 1em;
+}
+@media screen and (min-width: 900px) {
+  /* line 28, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+  .side-image .side-image-content {
+    display: table-cell;
+    width: 66.66667%;
+    padding: 4em 4em 8em 4em;
+  }
+}
+/* line 37, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+.side-image .side-image-content h1 {
+  margin-bottom: 0.9em;
+}
+/* line 41, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+.side-image .side-image-content h4 {
+  background: #015158;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  margin-bottom: 1.3em;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+/* line 51, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/side_image.scss */
+.side-image .side-image-content p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 3em;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/buttons.scss */
+.button, .insurance_cards li a, .card .card-copy a {
+  line-height: 3.5;
+  padding: 0.5em 2.5em 0.5em 1.5em;
+  border-radius: 25px;
+}
+/* line 5, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/buttons.scss */
+.button-hero, .insurance_cards li a, .card .card-copy a {
+  color: #ebeeef;
+  background-color: #36535A;
+}
+/* line 9, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/buttons.scss */
+.button-yellow-btn {
+  color: #775309;
+  background-color: #EDA611;
+}
+/* line 13, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/buttons.scss */
+.button-white-btn {
+  color: #01292c;
+  background-color: white;
+}
+
+/* line 19, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/buttons.scss */
+.button-icon {
+  margin-left: -2.5em;
+  color: #fff;
+}
+/* line 22, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/buttons.scss */
+.button-icon-gray {
+  color: #333;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.sidebar-contact-card {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  width: 100%;
+  padding: 25px;
+}
+/* line 9, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.sidebar-contact-card h2,
+.sidebar-contact-card .address,
+.sidebar-contact-card span {
+  display: block;
+}
+
+/* line 17, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+/* line 23, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card {
+  -webkit-flex-basis: 15em;
+  -moz-flex-basis: 15em;
+  flex-basis: 15em;
+  -ms-flex-preferred-size: 15em;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+}
+/* line 37, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card .card-image {
+  overflow: hidden;
+  height: 150px;
+  max-height: 150px;
+  background-color: #F8F2B4;
+}
+/* line 43, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card .card-image img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 1;
+}
+/* line 53, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card .card-header {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+}
+/* line 63, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card .card-copy {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+/* line 68, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+/* line 78, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card:focus, .card:hover {
+  cursor: pointer;
+}
+/* line 82, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+/* line 87, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card:active {
+  background-color: #e0e0e0;
+}
+/* line 90, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/cards.scss */
+.card:active .card-header {
+  background-color: #e0e0e0;
+}
+
+/* line 5, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+.grid-items-lines {
+  border-radius: 3px;
+  background: white;
+  position: relative;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+.grid-items-lines::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 13, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+.grid-items-lines .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  float: left;
+  height: 14em;
+  overflow: hidden;
+  outline: none;
+  padding: 2em;
+  text-decoration: none;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 13, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+  .grid-items-lines .grid-item {
+    width: 33.33333%;
+  }
+}
+/* line 30, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+.grid-items-lines .grid-item:focus, .grid-items-lines .grid-item:hover {
+  background: rgba(51, 51, 51, 0.05);
+}
+/* line 36, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+.grid-items-lines .grid-item img {
+  display: block;
+  height: 2.5em;
+  margin-bottom: 1.2em;
+  opacity: 0.2;
+}
+/* line 43, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+.grid-items-lines .grid-item h1 {
+  color: #333;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+  font-weight: 400;
+}
+/* line 50, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+.grid-items-lines .grid-item p {
+  color: rgba(51, 51, 51, 0.6);
+  line-height: 1.5em;
+}
+@media screen and (min-width: 900px) {
+  /* line 59, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+  .grid-items-lines .grid-item-big {
+    width: 66.66667%;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 63, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/grid_bare.scss */
+  .grid-items-lines .grid-item-big p {
+    max-width: 60%;
+  }
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables {
+  border-collapse: separate;
+  border-left: 0px;
+  border-radius: 3px;
+  border-spacing: 0;
+  border: none;
+  width: 100%;
+}
+/* line 11, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody {
+  background-color: white;
+}
+/* line 14, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody tr:hover > td, .tables tbody tr:hover > th {
+  background-color: #f2f2f2;
+}
+/* line 17, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+/* line 19, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody tr:nth-child(even):hover > td {
+  background-color: #ededed;
+}
+/* line 26, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables thead:first-of-type tr:first-child > th:first-child {
+  border-top-left-radius: 3px;
+}
+/* line 30, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables thead:first-of-type tr:first-child > th:last-child {
+  border-top-right-radius: 3px;
+}
+/* line 36, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody:last-child tr:last-child > td:first-child {
+  border-bottom-left-radius: 3px;
+}
+/* line 40, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody:last-child tr:last-child > td:last-child {
+  border-bottom-right-radius: 3px;
+}
+/* line 45, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables thead {
+  display: none;
+}
+/* line 47, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables thead th {
+  background-color: white;
+  border-bottom: 0px;
+  border-left: 1px solid #fafafa;
+  padding: 0.75em 1em;
+  text-align: left;
+}
+/* line 54, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables thead th:first-child {
+  border-left: none;
+}
+/* line 60, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody {
+  background-color: white;
+}
+/* line 63, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody td {
+  border-bottom: 0px;
+  padding: 0.75em 1em;
+  text-align: center;
+  display: table-cell;
+}
+/* line 71, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody td:first-child {
+  border-left: none;
+}
+/* line 75, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody td img,
+.tables tbody td h2 {
+  vertical-align: middle;
+  margin: 0;
+}
+/* line 80, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+.tables tbody td button {
+  display: inline-block;
+  font-size: 0.7em;
+  line-height: 1.5;
+  margin-bottom: 0.3em;
+  margin-right: 0.5em;
+  outline: none;
+  padding: 0.3em 1em;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  /* line 80, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/table_list.scss */
+  .tables tbody td button {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/forms.scss */
+#form_title {
+  margin-top: 90px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+#form_title:last-child {
+  margin-right: 0;
+}
+
+/* line 6, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/forms.scss */
+.form {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  padding: 25px;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+.form:last-child {
+  margin-right: 0;
+}
+/* line 22, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/forms.scss */
+.form input,
+.form textarea {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #E9E9E9;
+  border-radius: .35rem;
+  width: 100%;
+  outline: none;
+  margin: .5rem 0 2rem 0;
+}
+/* line 32, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/forms.scss */
+.form input {
+  height: 3rem;
+}
+/* line 35, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/forms.scss */
+.form textarea {
+  min-height: 300px;
+}
+/* line 38, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/forms.scss */
+.form .button, .form .insurance_cards li a, .insurance_cards li .form a, .form .card .card-copy a, .card .card-copy .form a {
+  background-color: #015158;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer {
+  background: #112a34;
+  padding: 3em 1.618em;
+  width: 100%;
+}
+/* line 6, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer .footer-logo {
+  margin-bottom: 2em;
+  text-align: center;
+}
+/* line 10, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer .footer-logo img {
+  height: 3em;
+}
+/* line 15, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer .footer-links {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+/* line 23, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer ul {
+  -webkit-flex-basis: 13em;
+  -moz-flex-basis: 13em;
+  flex-basis: 13em;
+  -ms-flex-preferred-size: 13em;
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  flex-shrink: 0;
+  -ms-flex-negative: 0;
+  margin-bottom: 3em;
+  padding: 0;
+}
+/* line 30, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer li {
+  line-height: 1.5em;
+  list-style: none;
+  text-align: left;
+}
+/* line 36, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer li a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+/* line 40, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer li a:focus, .footer li a:hover {
+  color: #EDA611;
+}
+/* line 46, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer li h3 {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 0.4em;
+}
+/* line 52, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 auto 1.5em;
+  width: 12em;
+}
+/* line 58, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+.footer p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin: auto;
+  max-width: 35em;
+  text-align: center;
+}
+
+/* line 68, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+#contact-footer {
+  background-color: #999999;
+  width: 100%;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+#contact-footer::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 72, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+#contact-footer .contact-card {
+  background: white;
+  font-size: 2em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 68.23843%;
+}
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/neat/grid/_span-columns.scss */
+#contact-footer .contact-card:last-child {
+  margin-right: 0;
+}
+/* line 77, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/patterns/footer.scss */
+#contact-footer .contact-card .contact-card-header {
+  letter-spacing: 1px;
+  color: #999999;
+  text-align: center;
+  line-height: 150px;
+  display: block;
+}
+
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+@media screen and (min-width: 600px) {
+  /* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+  .title {
+    font-size: 2.6em;
+  }
+}
+
+/* line 15, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 19, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+p {
+  font-family: "Merriweather", serif;
+}
+
+/* line 23, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+.roboto, .insurance_card--title, .sidebar-contact-card, .sidebar-contact-card h2,
+.sidebar-contact-card .address,
+.sidebar-contact-card span, .form, .form h1, .form .button, .form .insurance_cards li a, .insurance_cards li .form a, .form .card .card-copy a, .card .card-copy .form a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 26, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section {
+  font-family: "Merriweather", serif;
+  text-align: left;
+}
+/* line 20, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/bourbon/addons/_clearfix.scss */
+article.type-system-serif section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 32, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section h1, article.type-system-serif section h2, article.type-system-serif section h3, article.type-system-serif section p {
+  margin: 0;
+}
+/* line 36, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+/* line 44, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section p {
+  font-family: "Merriweather", serif;
+  color: #333;
+  line-height: 1.5;
+}
+/* line 50, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section a {
+  color: #1565c0;
+  text-decoration: none;
+}
+/* line 55, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section .type {
+  border-bottom: 1px solid;
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  padding: 0.3em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 67, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 600px) {
+  /* line 67, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+  article.type-system-serif section h1 {
+    font-size: 2.6em;
+  }
+}
+/* line 78, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section h2 {
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-bottom: 0.9em;
+}
+@media screen and (min-width: 600px) {
+  /* line 78, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+  article.type-system-serif section h2 {
+    font-size: 1.2em;
+  }
+}
+/* line 91, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section code {
+  background: #F7F7F7;
+  border-radius: 4.5px;
+  border: 1px solid #E0E0E0;
+  font-family: monaco;
+  font-size: 0.75em;
+  font-style: normal;
+  padding: 0.1em 0.4em;
+  white-space: nowrap;
+}
+/* line 102, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section h3 {
+  font-family: "Lusitana", serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+/* line 110, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section p.date {
+  color: rgba(51, 51, 51, 0.4);
+  font-family: "Merriweather", serif;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 0.3em;
+}
+/* line 118, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section p {
+  font-family: "Merriweather", serif;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin-bottom: 1.5em;
+}
+/* line 124, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section p span {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+/* line 130, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section a.read-more {
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-left: 0.2em;
+  position: relative;
+  text-transform: uppercase;
+}
+/* line 139, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section a.read-more span {
+  font-family: "Lusitana", serif;
+  font-size: 1.5em;
+  font-style: normal;
+  position: absolute;
+  right: -12px;
+  top: -1px;
+}
+/* line 149, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section hr {
+  width: 3em;
+}
+/* line 153, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/typography/type.scss */
+article.type-system-serif section p.author {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url(/assets/icons-76185b4b4cdbf8b36651c4c9abbe9ef6892cd12340fbb6da976f93a78866f363.eot?30292255);
+  src: url(/assets/icons-76185b4b4cdbf8b36651c4c9abbe9ef6892cd12340fbb6da976f93a78866f363.eot?30292255#iefix) format("embedded-opentype"), url(/assets/icons-e7d1572ec87490baf29a274b34489c7e0244c888802abddf784ae93778d98338.woff?30292255) format("woff"), url(/assets/icons-2cc0c6943f46bc9244ceede4405cfae834eb1e9e97d3ce988676e8e35a0cd44d.ttf?30292255) format("truetype"), url(/assets/icons-0bcd63d2d57ddf3701de029a7411b08c83bf689c3dcb9f32894865dacd242ed9.svg?30292255#icons) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?30292255#icons') format('svg');
+  }
+}
+*/
+/* line 22, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+[class^='icon-']:before, [class*='icon-']:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 57, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-twitter-circled:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 58, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-facebook-circled:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 59, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-gplus-circled:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 60, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-paper-plane:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 61, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-attention:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 62, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-mail:before {
+  content: '\e805';
+}
+
+/* '' */
+/* line 63, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-direction:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 64, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-reply:before {
+  content: '\e807';
+}
+
+/* '' */
+/* line 65, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-down-open-mini:before {
+  content: '\e808';
+}
+
+/* '' */
+/* line 66, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-right-open-mini:before {
+  content: '\e809';
+}
+
+/* '' */
+/* line 67, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-up-open-mini:before {
+  content: '\e80a';
+}
+
+/* '' */
+/* line 68, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-left-open-mini:before {
+  content: '\e80b';
+}
+
+/* '' */
+/* line 69, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-forward:before {
+  content: '\e80c';
+}
+
+/* '' */
+/* line 70, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-export:before {
+  content: '\e80d';
+}
+
+/* '' */
+/* line 71, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-feather:before {
+  content: '\e80e';
+}
+
+/* '' */
+/* line 72, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-check:before {
+  content: '\e80f';
+}
+
+/* '' */
+/* line 73, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-cancel:before {
+  content: '\e810';
+}
+
+/* '' */
+/* line 74, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-link:before {
+  content: '\e811';
+}
+
+/* '' */
+/* line 75, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-attach:before {
+  content: '\e812';
+}
+
+/* '' */
+/* line 76, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-comment:before {
+  content: '\e813';
+}
+
+/* '' */
+/* line 77, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-trash:before {
+  content: '\e814';
+}
+
+/* '' */
+/* line 78, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-menu:before {
+  content: '\e815';
+}
+
+/* '' */
+/* line 79, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-phone:before {
+  content: '\e816';
+}
+
+/* '' */
+/* line 80, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-cog:before {
+  content: '\e817';
+}
+
+/* '' */
+/* line 81, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-tools:before {
+  content: '\e818';
+}
+
+/* '' */
+/* line 82, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-share:before {
+  content: '\e819';
+}
+
+/* '' */
+/* line 83, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-info-circled:before {
+  content: '\e81a';
+}
+
+/* '' */
+/* line 84, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-layout:before {
+  content: '\e81b';
+}
+
+/* '' */
+/* line 85, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-star:before {
+  content: '\e81c';
+}
+
+/* '' */
+/* line 86, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-star-empty:before {
+  content: '\e81d';
+}
+
+/* '' */
+/* line 87, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-heart-empty:before {
+  content: '\e81e';
+}
+
+/* '' */
+/* line 88, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-heart:before {
+  content: '\e81f';
+}
+
+/* '' */
+/* line 89, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-bookmark:before {
+  content: '\e820';
+}
+
+/* '' */
+/* line 90, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-up-open:before {
+  content: '\e821';
+}
+
+/* '' */
+/* line 91, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-right-open:before {
+  content: '\e822';
+}
+
+/* '' */
+/* line 92, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-left-open:before {
+  content: '\e823';
+}
+
+/* '' */
+/* line 93, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-down-open:before {
+  content: '\e824';
+}
+
+/* '' */
+/* line 94, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-dot:before {
+  content: '\e825';
+}
+
+/* '' */
+/* line 95, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-flash:before {
+  content: '\e826';
+}
+
+/* '' */
+/* line 96, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-popup:before {
+  content: '\e827';
+}
+
+/* '' */
+/* line 97, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-chart-line:before {
+  content: '\e828';
+}
+
+/* '' */
+/* line 98, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-chart-bar:before {
+  content: '\e829';
+}
+
+/* '' */
+/* line 99, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-chart-area:before {
+  content: '\e82a';
+}
+
+/* '' */
+/* line 100, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-chart-pie:before {
+  content: '\e82b';
+}
+
+/* '' */
+/* line 101, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-lamp:before {
+  content: '\e82c';
+}
+
+/* '' */
+/* line 102, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-folder:before {
+  content: '\e82d';
+}
+
+/* '' */
+/* line 103, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-archive:before {
+  content: '\e82e';
+}
+
+/* '' */
+/* line 104, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-box:before {
+  content: '\e82f';
+}
+
+/* '' */
+/* line 105, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-alert:before {
+  content: '\e830';
+}
+
+/* '' */
+/* line 106, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-quote:before {
+  content: '\e831';
+}
+
+/* '' */
+/* line 107, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-search:before {
+  content: '\e832';
+}
+
+/* '' */
+/* line 108, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-plus:before {
+  content: '\e833';
+}
+
+/* '' */
+/* line 109, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/icons/icons.css */
+.icon-help:before {
+  content: '\e834';
+}
+
+/* '' */
+/* line 1, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/components/map.scss */
+#map_canvas {
+  height: 400px;
+  width: 100%;
+}
+
+/* line 6, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/components/map.scss */
+#map_canvas img {
+  max-width: none;
+}
+
+/* line 10, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/components/map.scss */
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+/* line 14, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/components/map.scss */
+#map_canvas .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 21, /Users/pierceatlas/Desktop/Balboa/blog/app/assets/stylesheets/components/map.scss */
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
