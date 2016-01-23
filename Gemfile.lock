@@ -203,7 +203,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (~> 2.2, >= 2.2.11)
+  aws-sdk (~> 2.0)
   bitters
   bourbon
   byebug

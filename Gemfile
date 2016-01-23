@@ -23,7 +23,7 @@ gem 'will_paginate', '~> 3.1'
 gem 'paperclip', '~> 4.3'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.5', '>= 3.5.3'
-gem 'aws-sdk', '~> 2.2', '>= 2.2.11'
+gem 'aws-sdk', '~> 2.0'
 
 
 group :development, :test do
