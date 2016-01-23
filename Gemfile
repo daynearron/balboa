@@ -21,9 +21,9 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.1'
 gem 'paperclip', '~> 4.3'
-gem 'aws-sdk'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.5', '>= 3.5.3'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.11'
 
 
 group :development, :test do
