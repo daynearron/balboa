@@ -136,6 +136,9 @@ body {
 		&--next {
 			@include span-columns(8);
 			@include reset-display;
+			img {
+				margin-top: -25%;
+			}
 		}
 	}
 }
