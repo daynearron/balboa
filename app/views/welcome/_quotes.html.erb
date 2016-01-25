@@ -1,23 +1,60 @@
-<!-- THIS IS BLOG POSTS NOT QUOTES -->
-<section class="gray-text letter-spacing centered skinny_wrapper">
-  <h2>
-    Find out what we've been up to:
-  </h2>
-</section>
-<div class="cards wrapper">
+<section class="skinny_wrapper welcome_cards_wrapper">  
+  <section class="gray-text letter-spacing centered mb25">
+    <h2>
+      Find out ways to save:
+    </h2>
+  </section>
+  <div class="wrapper">
   <% @posts.each do |post| %>
-    <div class="card">
-      <div class="card-image">
-        <%= image_tag post.image.url(:medium) %>
-      </div>
-      <div class="card-header">
-        <%= post.title %>
-      </div>
-      <div class="card-copy">
-        <p><%= truncate(post.content, :length => 75) %></p>
-        <%= link_to "Read More", post, class: "button button-hero" %>
-        <i class="icon-right-open-mini button-icon"></i>
+  <div class="hover-tile-outer">
+    <div class="hover-tile-container">
+      <%= image_tag post.image.url(:large), :class=>"img-swap" %>
+      <div class="hover-tile hover-tile-visible"></div>
+      <div class="hover-tile hover-tile-hidden">
+        <%= link_to post do %><h4><%= post.title %></h4><%end%>
       </div>
     </div>
+  </div>
   <% end %>
-</div>
+  </div>
+</section>
+<section class="bullet_wrapper">
+  <section class="gray-text letter-spacing centered skinny_wrapper">
+    <h2>
+      Here's what our clients say:
+    </h2>
+  </section>
+  <ul class="bullets">
+    <li class="bullet">
+      <div class="bullet-icon bullet-icon-1">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png" alt="">
+      </div>
+      <div class="bullet-content">
+        <h2>Quote within hours.</h2>
+        <p>Now I'll be able to save over $500 per year on Auto alone!</p>
+        <span>Susan R.</span>
+      </div>
+    </li>  
+    <li class="bullet">
+      <div class="bullet-icon bullet-icon-2">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+      </div>
+      <div class="bullet-content">
+        <h2>Super responsive/fast!</h2>
+        <p>I'm saving $1200/yr on auto and homeowners insurance.</p>
+        <span>Kristie B.</span>
+    </li>
+    <li class="bullet">
+      <div class="bullet-icon bullet-icon-3">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+      </div>
+      <div class="bullet-content">
+        <h2>Quality Service.</h2>
+        <p>Joe is always there when I need questions answered.</p>
+          <span>James B.</span>
+      </div>
+    </li> 
+  </ul>
+</section>
+
+

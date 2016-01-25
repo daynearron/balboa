@@ -1,27 +1,6 @@
-<section class="content_well border-top mb25">
-	<div class="grid-items-lines skinny_wrapper">
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
-	    <h1>I got a quote within hours.</h1>
-	    <p>Now I'll be able to save over $500 per year on Auto alone!</p>
-	    <span>Susan R.</span>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
-	    <h1>Super responsive/fast!</h1>
-	    <p>I'm saving $1200/yr on auto and homeowners insurance.</p>
-	    <span>Kristie B.</span>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
-	    <h1>Quality Service.</h1>
-	    <p>Joe is always there when I need questions answered.</p>
-	    <span>James B.</span>
-	  </a>
-    <div class="right-cover"></div>
-	  <div class="bottom-cover"></div>
-	</div>
-</section>
+<div class="content_well">
+<%= render 'grid_objects' %>
+</div>
 <section class="wrapper skinny_wrapper">
 	<h2 class="gray-text letter-spacing centered"><span>We are setup with some of the top Health Insurance Carriers</span></h2>
 	<ul id="insurance-logo-group">
@@ -32,6 +11,5 @@
 		<li><a href=""><%= image_tag "insurance_logos/logo_05.png" %></a></li>
 	</ul>
 </section>
-<%= render 'grid_objects' %>
 <%= render 'quotes' %>
 <%= render 'cta' %>

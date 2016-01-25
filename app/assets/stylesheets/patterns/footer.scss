@@ -13,18 +13,26 @@
   } 
 
   .footer-links {
-    @include display(flex);
-    @include justify-content(center);
-    @include flex-wrap(wrap);
+    @include outer-container;
     @extend .letter-spacing;
-    margin-bottom: $base-spacing;
+    .footer-logo,
+    ul {
+      @include omega(5n);
+      @include span-columns(1.5);
+    }
+
   }
 
   ul {
-    @include flex-basis(13em);
-    @include flex-shrink(0);
     margin-bottom: $base-spacing * 2;
     padding: 0;
+    &:last-child{
+      @include span-columns(3.5);
+      @include shift(1);
+    }
+    &:nth-child(4){
+      @include span-columns(2.5);
+    }
   }
 
   li {
@@ -36,6 +44,7 @@
   li a {
     color: $footer-link-color;
     text-decoration: none;
+    font-weight: 100;
 
     &:focus,
     &:hover {
@@ -46,7 +55,7 @@
   li h3 {
     color: $footer-color;
     font-size: 1em;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.6em;
   }  
 
   hr {
@@ -61,7 +70,10 @@
     line-height: 1.5em;
     margin: auto;
     max-width: 35em;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: 100;
+    font-family: $sans-serif-3;
   }
 }
 
@@ -73,13 +85,24 @@
     background: $contact-card-color;
     font-size: 2em;
     @include span-columns(4);
-    @include shift(8);
+    @include shift(1);
     .contact-card-header {
       letter-spacing: 1px;
       color: shade($contact-card-color, 40%);
       text-align: center;
       line-height: 150px;
       display: block;
+    }
+  }
+  .quote {
+    @include span-columns(6);
+    @include shift(1);
+    @include pad(2.8em 0);
+    color:  tint($contact-card-color, 60%);
+    p {
+      font-family: $sans-serif-3;
+      @extend .letter-spacing;
+      @include span-columns(4 of 6);
     }
   }
 }

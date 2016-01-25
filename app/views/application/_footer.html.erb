@@ -1,8 +1,8 @@
 <footer class="footer" role="contentinfo">
-  <div class="footer-logo">
-    <%= image_tag "logo_m.png", :alt => "Logo" %>
-  </div>
   <div class="footer-links">
+    <div class="footer-logo">
+      <%= image_tag "logo_m.png", :alt => "Logo" %>
+    </div>
     <ul>
       <li><h3>Content</h3></li>
         <li><%= link_to "Insurance", insurances_path %></li>
@@ -29,6 +29,16 @@
           CHM Wholesale
         <%end%>
       </li>
+    </ul>
+    <ul>
+      <li><h3>Contact Joe Stanovich</h3></li>
+      <li>
+        <p>
+          Balboa Pacific Insurance Services<br> 
+          450 Newport Center Drive Suite 480<br> 
+          Newport Beach, CA 92660<br> 
+      </p></li>
+      <li><a href="tel:+19492973119"> <i class="icon-phone"></i>(949) 207-3110</a></li>
     </ul>
   </div>
 </footer>

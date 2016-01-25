@@ -12,6 +12,11 @@ $sans-serif: 'Merriweather Sans', sans-serif;
 $sans-serif-2: 'Roboto Condensed', sans-serif;
 $sans-serif-3: 'Roboto', sans-serif;
 
+$base-spacing: 1.5em !default;
+$alert-color: #fff6bf !default;
+$error-color: #fbe3e4 !default;
+$notice-color: #e5edf8 !default;
+$success-color: #e6efc2 !default;
 
 $base-border-radius: 3px !default;
 $base-border-color: gainsboro !default;
@@ -27,17 +32,28 @@ $base-font-color: $dark-gray !default;
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
 
-$hero-background-top: white; 
-$hero-background-bottom: shade(white, 15%);
+$image-gradient-color-top: red; 
+$transparency-top: 0.9;
+$image-gradient-color-bottom: green; 
+$transparency-bottom: 0.6;
+$vertical-angle: 0deg;
+$image-gradient-color-left: teal; 
+$transparency-left: 0.8;
+$image-gradient-color-right: yellow; 
+$transparency-right: 0.8;
+$horizontal-angle: 90deg;
+
+$hero-background-top: shade(#36535A, 55%); 
+$hero-background-bottom: shade(#36535A, 15%);
 $hero-color: white;
 $hero-font: $sans-serif-3;
 $hero-font-body: $serif-2;
 $gradient-angle: 10deg;
-$hero-image: 'http://mackenziechild.me/wp-content/themes/mackenziechild_2016/images/topo_bg.png';
+// $hero-image: 'http://mackenziechild.me/wp-content/themes/mackenziechild_2016/images/topo_bg.png';
 
 $navigation-padding: 1em;
 $navigation-background: rgba(5,101,110,0.90);
-$navigation-color: shade($blue-teal, 60%);
+$navigation-color: #fff;
 $navigation-color-hover: #EDA611;
 $navigation-height: 60px;
 $navigation-nav-button-background: $action-color;
@@ -53,10 +69,10 @@ $horizontal-bar-mode: $large-screen;
 
 $sub_header_background: $blue-teal;
 
-$footer-background: shade($brand-color, 20%);
+$footer-background: shade($brand-color, 40%);
 $footer-color: white;
 $footer-link-color: shade(white, 6%);
-$footer-disclaimer-color: transparentize($footer-color, 0.6);
+$footer-disclaimer-color: white;
 
 $side-image-background-top: #B5EBEB;
 $side-image-background-bottom: #5DAC5D;
@@ -81,11 +97,11 @@ $btn-padding: 0.5em 2.5em 0.5em 1.5em;
 
 $card-border-color: $base-border-color;
 $card-border: 1px solid $card-border-color;
-$card-background: tint($card-border-color, 10%);
+$card-background: shade($brand-color, 10%);
 $card-header-background: $card-background;
 $card-margin: 1em;
-$card-image-hover-opacity: 0.7;
-$card-image-hover-color: #F8F2B4;
+$card-image-hover-opacity: 0.5;
+$card-image-hover-color: shade($card-background, 20%);
 
 $grid-items-background: white;
 $grid-item-background: white;
@@ -98,9 +114,9 @@ $grid-item-height: 14em;
 $admin_links_background: $blue;
 $admin_links_color: white;
 
-$cta-section-background: tint($light-gray, 30%);
+$cta-section-background: $brand-color-light;
 
-$contact-card-color: white;
+$contact-card-color: $brand-color-lighter;
 
 $table-border-color: $body-bg;
 $table-border: 0px;
@@ -110,3 +126,7 @@ $table-hover-background: darken($table-background, 5%);
 $table-stripe-background: darken($table-background, 2%);
 $table-stripe-background-hover: darken($table-stripe-background, 5%);
 $table-padding: 0.75em 1em;
+
+$hover-tile-height: 10em;
+
+$icon-bullet-size: 3.5em;

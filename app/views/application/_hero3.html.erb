@@ -1,5 +1,7 @@
-<div class="sub_header">
-	<div class="wrapper">
-		<h2 class="title"><%= @post.title %></h2>
-	</div>
+<div class="image-gradient-dynamic">
+  <%= image_tag @post.image.url(:xlarge) %>
+  <div class="overlay"></div>
+  <div class="copy">
+    <h2><%= @post.title %></h2>
+  </div>
 </div>

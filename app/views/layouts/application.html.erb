@@ -52,9 +52,9 @@
 	<%=yield :local_javascript %>
 </head>
 <% if notice %>
-	<p class="notice"><%= notice %></p>
+	<p class="notice flash-notice"><%= notice %></p>
 <% elsif alert %>
-	<p class="alert"><%= alert %></p>
+	<p class="alert flash-alert"><%= alert %></p>
 <% end %>	
 <body class="<%= controller_name %> <%= action_name %>">
 

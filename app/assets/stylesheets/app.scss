@@ -144,12 +144,17 @@ body {
 }
 
 #cta-section {
-	background-color: $cta-section-background;
+	background: $cta-section-background;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
 	@extend .centered;
 	@include pad(25px);
 	@include fill-parent;
 	h2 {
 		font-size: 2em;
+		font-weight: 100;
 	}
 }
 

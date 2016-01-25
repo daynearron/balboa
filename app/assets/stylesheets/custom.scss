@@ -1,12 +1,13 @@
 #welcome-grid-item-0 {
-	background-color: tint($blue, 30%);
+	background-color: $brand-color-lighter;
 	&:hover {
-		background-color: tint($blue, 60%);
+		background-color: tint($brand-color-lighter, 60%);
 	}
 }
 
 #welcome-grid-item-1 {
 	@extend .bgswap;
+	bakcground: #000;
 	h1,
 	p {
 		color: #fff;

@@ -5,7 +5,7 @@
 .grid-items-lines {
   //padding: 25px;
   border-radius: $base-border-radius;
-  background: $grid-item-background;
+  overflow: hidden;
   @include clearfix;
   position: relative;
   @extend .box-shadow;
@@ -14,6 +14,7 @@
     @include transition (all 0.2s ease-in-out);
     // border-bottom: $grid-item-border;
     // border-right: $grid-item-border;
+    background: $grid-item-background;
     cursor: pointer;
     float: left;
     height: $grid-item-height;
@@ -29,7 +30,7 @@
 
     &:focus,
     &:hover {
-      background: transparentize($grid-item-color, 0.95);
+      background: shade($grid-item-background, 10%);
     }
   }
 
