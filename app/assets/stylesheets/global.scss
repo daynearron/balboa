@@ -27,7 +27,7 @@ a.link {
 }
 
 .border-top {
-	border-top: 5px solid $yellow;
+	border-top: 5px solid shade($brand-color, 30%);
 }
 
 .uppercase {

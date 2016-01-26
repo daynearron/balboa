@@ -23,9 +23,13 @@
 // }
 
 #welcome-grid-item-big {
-	background-color: #EFBE66;
+	background-color: shade($brand-color, 30%);
 	&:hover {
-		background-color: tint(#EFBE66, 30%);
+		background-color: shade($brand-color, 60%);
+	}
+	h1,
+	p {
+		color: #fff;
 	}
 }
 

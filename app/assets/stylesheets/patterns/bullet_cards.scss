@@ -24,15 +24,15 @@
   }
 
   .bullet-icon-1 {
-    background: $action-color;
+    background: $brand-color;
   }
 
   .bullet-icon-2 {
-    background: adjust-hue($action-color, -50%);
+    background: $brand-color;
   }
 
   .bullet-icon-3 {
-    background: adjust-hue($action-color, -140%);
+    background: $brand-color;
   }
 
   .bullet-content {

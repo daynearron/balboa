@@ -81,7 +81,12 @@
   background-color: shade($contact-card-color, 60%);
   @include fill-parent;
   @include clearfix;
+  position: relative;
   .contact-card {
+    right: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
     background-image: url('bg/hands-and-phone.png');
     @extend .bg-size;
     font-size: 2em;
@@ -93,15 +98,17 @@
       text-align: center;
       line-height: 150px;
       display: block;
+      height: 100%;
     }
   }
   .quote {
     @include span-columns(6);
     @include shift(1);
-    @include pad(2.5em 0 0 0);
+    @include pad(1em 0);
     color:  tint($contact-card-color, 60%);
     p {
       font-family: $sans-serif-3;
+      margin: 1em 0;
       @extend .letter-spacing;
       font-size: 1.5em;
       @include span-columns(6 of 6);
