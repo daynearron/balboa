@@ -114,7 +114,6 @@ body {
 		img {
 			left: 0;
 			top: 0;
-			position: absolute;
 			@include fill-parent;
 		}
 		.pagination_title {
@@ -126,11 +125,13 @@ body {
 	    margin-top: -1em;
       padding: 0 25px;
       font-family: $sans-serif-3;
+      position: relative;
 		}
 		img {
 			z-index: 5;
 			// margin-top: -25%;
 			opacity: 0.5;
+			position: absolute;
 		}
 		&--prev {
 			background-color: $blue;
