@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def show 
-    @insurances = Insurance.all.order('random()')
+    @insurances = Insurance.all.order('random()').paginate(page: params[:page], per_page: 6)
   end
 
   def edit
