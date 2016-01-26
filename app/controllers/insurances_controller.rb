@@ -4,7 +4,8 @@ class InsurancesController < ApplicationController
 	
 	def index
 		@insurances = Insurance.all.order("created_at desc")
-		@posts = Post.all.order('random()')
+		@posts = Post.all.order('random()').paginate(page: params[:page], per_page: 6)
+  end
 	end
 
 	def new
@@ -23,7 +24,8 @@ class InsurancesController < ApplicationController
 
 	def show
 		@insurances = Insurance.all.order('random()')
-		@posts = Post.all.order('random()')
+		@posts = Post.all.order('random()').paginate(page: params[:page], per_page: 6)
+  end
 	end
 
 	def edit
