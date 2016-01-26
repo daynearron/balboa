@@ -7,7 +7,7 @@
 					<div class="cropped-image"><%= image_tag insurance.image.url(:medium) %></div>
 					<div class="skinny_wrapper">
 						<h2 class="insurance_card--title"><%= insurance.title %></h2>
-						<%= truncate(insurance.description, :length => 135) %>
+						<%= insurance.link %>
 					<div>
 						<%= link_to "Read More", insurance %>
 						<i class="icon-right-open-mini button-icon"></i>
