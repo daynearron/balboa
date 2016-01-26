@@ -1,5 +1,9 @@
+.hover-wrapper {
+  padding: 2em 0;
+}
 .welcome_cards_wrapper {
   @include clearfix;
+  background: tint($brand-color, 30%);
 }
 
 .hover-tile-outer {
@@ -7,7 +11,7 @@
   background-position: top;
   background-size: cover;
   background-color: beige;
-  border: 1px solid $base-border-color;
+  //border: 1px solid $base-border-color;
   cursor: pointer;
   height: $hover-tile-height;
   margin-bottom: $base-line-height;

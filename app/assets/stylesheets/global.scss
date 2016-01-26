@@ -27,7 +27,7 @@ a.link {
 }
 
 .border-top {
-	border-top: 5px solid $brand-color;
+	border-top: 5px solid $yellow;
 }
 
 .uppercase {
@@ -54,7 +54,7 @@ a.link {
 }
 
 .box-shadow {
-  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.06);
 }
 
 .bgswap {
@@ -103,4 +103,14 @@ a.link {
 			color: #36535A;
 		}
 	}
+}
+
+.bg-size {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.reverse:before {
+	@include transform(rotate(180deg));
 }

@@ -24,6 +24,7 @@ body {
 }
 
 .sidebar {
+	margin-top: 5em !important;
 	@include span-columns(4);
 	.sidebar_card {
 		background: white;
@@ -119,10 +120,12 @@ body {
 		.pagination_title {
 			z-index: 6;
 			color: white;
-			font-size: 1em;
+			font-size: 0.5em;
 			text-align: center;
 	    top: 50%;
 	    margin-top: -1em;
+      padding: 0 25px;
+      font-family: $sans-serif-3;
 		}
 		img {
 			z-index: 5;
@@ -144,10 +147,8 @@ body {
 }
 
 #cta-section {
-	background: $cta-section-background;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+	background: url('bg/typing-hands.png');
+	@extend .bg-size;
 	color: #fff;
 	@extend .centered;
 	@include pad(25px);
@@ -176,7 +177,7 @@ ul#insurance-logo-group {
 }
 
 .insurance_cards {
-	@extend .border-top;
+	//@extend .border-top;
 	border-radius: $base-border-radius;
 	@include fill-parent;
 	li {
@@ -190,6 +191,13 @@ ul#insurance-logo-group {
 			@extend .button;
 			@extend .button-hero;
 		}
+		.cropped-image {
+			max-height: 250px;
+			overflow: hidden;
+			img {
+		    transform: translateY(-25%);
+			}
+		}
 	}
 }
 
@@ -201,7 +209,7 @@ ul#insurance-logo-group {
 }
 
 .post-view {
-	@extend .border-top;
+	//@extend .border-top;
 	@extend .box-shadow;
 	border-radius: $base-border-radius;
 	background-color: #fff;
@@ -268,5 +276,22 @@ ul#insurance-logo-group {
 		background-color: tint($blue, 30%);
 		@include span-columns(5 of 8);
 		@include reset-display;
+	}
+}
+
+.map_wrapper {
+	background-color: $brand-color-dark;
+	background-image: url('bg/map-still.png');
+	position: relative;
+	@include clearfix;
+	@extend .bg-size;
+	.map {
+		@include clearfix;
+		.map_content{
+			color: #fff;
+			letter-spacing: 1px;
+			@include pad(3em 1em);
+			@include span-columns(6);
+		}
 	}
 }

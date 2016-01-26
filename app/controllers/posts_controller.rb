@@ -20,6 +20,7 @@ class PostsController < ApplicationController
   end
 
   def show 
+    @insurances = Insurance.all.order('random()')
   end
 
   def edit

@@ -1,14 +1,14 @@
 .bullet_wrapper {
   background: white;
+  padding: 4em;
 }
 
 
 .bullets {
 
   @include outer-container;
-  margin-bottom: $base-line-height;
   overflow: auto;
-  padding: 0;
+  padding: 2em;
 
   .bullet {
     @include span-columns(4);
@@ -17,11 +17,10 @@
   .bullet-icon {
     background: $action-color;
     border-radius: 50%;
-    float: left;
     height: $icon-bullet-size;
     padding: $icon-bullet-size / 4;
     width: $icon-bullet-size;
-    margin-top: 15px;
+    margin: 0 auto;
   }
 
   .bullet-icon-1 {
@@ -37,7 +36,8 @@
   }
 
   .bullet-content {
-    margin-left: $icon-bullet-size * 1.4;
+    //margin-left: $icon-bullet-size * 1.4;
+    text-align: center;
     margin-bottom: 2em;
   }
 

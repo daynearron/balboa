@@ -1,60 +1,26 @@
 	<aside class ="sidebar">
-<!-- 		<div class="sidebar-contact-card">
-			<h2>Contact Joe Stanovich</h2>
-			<p class="address">
-				Balboa Pacific Insurance Services<br> 
-				450 Newport Center Drive Suite 480<br> 
-				Newport Beach, CA 92660<br> 
-			</p>
-			<a href="tel:+19492973119">	(949) 207-3110 Phone </a>
-			<span>	
-				(949) 608-9102 Fax
-			</span> 
-		</div> -->
-		<div class="gray-text letter-spacing skinny_wrapper">
-		  <h2>
-		    What We've Been Up To:
-		  </h2>
-		</div>
-		<div class="cards">
 		<% @posts.each do |post| %>
-			  <div class="card">
-			  	<div class="card-image">
-	      		<%= image_tag post.image.url(:medium) %>
-	   			</div>
-	   			<div class="card-header">
-						<%= post.title %>
-					</div>
-					<div class="card-copy">
-			      <p>
-							<%= truncate(post.content, :length => 135) %>
-						</p>
-						<%= link_to "Read More", post, class: "button button-hero" %>
-						<i class="icon-right-open-mini button-icon"></i>
-					</div>
+			<div class="sidebar_card">
+				<div class="sidebar_img">
+					<%= image_tag post.image.url(:thumb) %>
 				</div>
-			<% end %>
-			<div class="gray-text letter-spacing skinny_wrapper">
-			  <h2>
-			    Let Us Help
-			  </h2>
+				<%= link_to post, :class=>"sidebar_link" do %>	
+					<h2 class="hello"><%= post.title %></h2>
+					<%= truncate(post.content, :length => 35) %>
+				<%end%>
+				</div>
 			</div>
-			<% @insurances.each do |insurance| %>
-			  <div class="card">
-			  	<div class="card-image">
-	      		<%= image_tag insurance.image.url(:medium) %>
-	   			</div>
-	   			<div class="card-header">
-						<%= insurance.title %>
-					</div>
-					<div class="card-copy">
-			      <p>
-							<%= truncate(insurance.description, :length => 135) %>
-						</p>
-						<%= link_to "Read More", insurance, class: "button button-hero" %>
-						<i class="icon-right-open-mini button-icon"></i>
-					</div>
+		<% end %>
+		<% @insurances.each do |insurance| %>
+			<div class="sidebar_card">
+				<div class="sidebar_img">
+					<%= image_tag insurance.image.url(:thumb) %>
 				</div>
-			<% end %>
-		</div>
+				<%= link_to insurance, :class=>"sidebar_link" do %>	
+					<h2 class="hello"><%= insurance.title %></h2>
+					<%= truncate(insurance.description, :length => 35) %>
+				<%end%>
+				</div>
+			</div>
+		<% end %>
 	</aside>

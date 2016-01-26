@@ -1,8 +1,8 @@
 .footer {
-  background: $footer-background;
+  background-image: $footer-background;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
-
+  @extend .bg-size;
   .footer-logo {
     margin-bottom: 2em;
     text-align: center;
@@ -78,17 +78,18 @@
 }
 
 #contact-footer {
-  background-color: shade($contact-card-color, 40%);
+  background-color: shade($contact-card-color, 60%);
   @include fill-parent;
   @include clearfix;
   .contact-card {
-    background: $contact-card-color;
+    background-image: url('bg/hands-and-phone.png');
+    @extend .bg-size;
     font-size: 2em;
     @include span-columns(4);
     @include shift(1);
     .contact-card-header {
       letter-spacing: 1px;
-      color: shade($contact-card-color, 40%);
+      color: white;
       text-align: center;
       line-height: 150px;
       display: block;
@@ -97,12 +98,13 @@
   .quote {
     @include span-columns(6);
     @include shift(1);
-    @include pad(2.8em 0);
+    @include pad(2.5em 0 0 0);
     color:  tint($contact-card-color, 60%);
     p {
       font-family: $sans-serif-3;
       @extend .letter-spacing;
-      @include span-columns(4 of 6);
+      font-size: 1.5em;
+      @include span-columns(6 of 6);
     }
   }
 }

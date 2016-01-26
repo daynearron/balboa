@@ -1,3 +1,14 @@
-<aside class ="sidebar">
-	<h2>Sidebar Content</h2>
-</aside>
+	<aside class ="sidebar">
+		<% @insurances.each do |insurance| %>
+			<div class="sidebar_card">
+				<div class="sidebar_img">
+					<%= image_tag insurance.image.url(:thumb) %>
+				</div>
+				<%= link_to insurance, :class=>"sidebar_link" do %>	
+					<h2 class="hello"><%= insurance.title %></h2>
+					<%= (insurance.link) %>
+				<%end%>
+				</div>
+			</div>
+		<% end %>
+	</aside>

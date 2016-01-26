@@ -1,6 +1,6 @@
 .hero {  
   //url($hero-image), 
-  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: #360033;
   background-position: top;
   background-repeat: no-repeat;

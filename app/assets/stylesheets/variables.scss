@@ -32,14 +32,14 @@ $base-font-color: $dark-gray !default;
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
 
-$image-gradient-color-top: red; 
+$image-gradient-color-top: #2e474d; 
 $transparency-top: 0.9;
-$image-gradient-color-bottom: green; 
+$image-gradient-color-bottom: #2e474d;
 $transparency-bottom: 0.6;
 $vertical-angle: 0deg;
-$image-gradient-color-left: teal; 
+$image-gradient-color-left: #182529; 
 $transparency-left: 0.8;
-$image-gradient-color-right: yellow; 
+$image-gradient-color-right: #182529; 
 $transparency-right: 0.8;
 $horizontal-angle: 90deg;
 
@@ -49,7 +49,7 @@ $hero-color: white;
 $hero-font: $sans-serif-3;
 $hero-font-body: $serif-2;
 $gradient-angle: 10deg;
-// $hero-image: 'http://mackenziechild.me/wp-content/themes/mackenziechild_2016/images/topo_bg.png';
+$hero-image: 'bg/woman_with_baby.png';
 
 $navigation-padding: 1em;
 $navigation-background: rgba(5,101,110,0.90);
@@ -69,7 +69,7 @@ $horizontal-bar-mode: $large-screen;
 
 $sub_header_background: $blue-teal;
 
-$footer-background: shade($brand-color, 40%);
+$footer-background: url('bg/ocean-waves.png');
 $footer-color: white;
 $footer-link-color: shade(white, 6%);
 $footer-disclaimer-color: white;

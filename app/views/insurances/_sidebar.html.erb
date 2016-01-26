@@ -6,7 +6,12 @@
 				</div>
 				<%= link_to post, :class=>"sidebar_link" do %>	
 					<h2 class="hello"><%= post.title %></h2>
-					<%= truncate(post.content, :length => 35) %>
+					<p>
+					<%= truncate(post.content, :length => 65) %>
+					</p>
+					<p>Read More 
+					<i class="icon-right-open"></i>
+					</p>
 				<%end%>
 				</div>
 			</div>

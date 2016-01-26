@@ -4,7 +4,7 @@ class InsurancesController < ApplicationController
 	
 	def index
 		@insurances = Insurance.all.order("created_at desc")
-		@posts = Post.all.order("created_at desc")
+		@posts = Post.all.order('random()')
 	end
 
 	def new
@@ -22,8 +22,8 @@ class InsurancesController < ApplicationController
 	end
 
 	def show
-		@insurances = Insurance.all.order("created_at desc")
-		@posts = Post.all.order("created_at desc")
+		@insurances = Insurance.all.order('random()')
+		@posts = Post.all.order('random()')
 	end
 
 	def edit
