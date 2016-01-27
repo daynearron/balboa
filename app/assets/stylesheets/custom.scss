@@ -1,5 +1,6 @@
 #welcome-grid-item-0 {
 	background-color: $brand-color-lighter;
+	@extend .white-text;
 	&:hover {
 		background-color: tint($brand-color-lighter, 60%);
 	}
@@ -7,11 +8,8 @@
 
 #welcome-grid-item-1 {
 	@extend .bgswap;
-	bakcground: #000;
-	h1,
-	p {
-		color: #fff;
-	}
+	background:-color #000;
+	@extend .white-text;
 }
 
 // #welcome-grid-item-2 {
@@ -23,13 +21,10 @@
 // }
 
 #welcome-grid-item-big {
+	@extend .white-text;
 	background-color: shade($brand-color, 30%);
 	&:hover {
 		background-color: shade($brand-color, 60%);
-	}
-	h1,
-	p {
-		color: #fff;
 	}
 }
 

@@ -114,3 +114,10 @@ a.link {
 .reverse:before {
 	@include transform(rotate(180deg));
 }
+
+.white-text {
+	h1,
+	p {
+		color: #fff;
+	}
+}
