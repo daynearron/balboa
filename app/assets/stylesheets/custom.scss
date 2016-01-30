@@ -1,5 +1,7 @@
 #welcome-grid-item-0 {
 	background-color: $brand-color-lighter;
+	// background-image: url('bg/blob.svg');
+	@extend .bg-size;
 	@extend .white-text;
 	&:hover {
 		background-color: tint($brand-color-lighter, 60%);
@@ -12,22 +14,17 @@
 	@extend .white-text;
 }
 
-// #welcome-grid-item-2 {
-// 	border-bottom: 5px solid pink;
-// }
-
-// #welcome-grid-item-3 {
-// 	border-top: 5px solid green;
-// }
-
 #welcome-grid-item-big {
 	@extend .white-text;
 	background-color: shade($brand-color, 30%);
+	// background-image: url('bg/waves_rc.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	&:hover {
 		background-color: shade($brand-color, 60%);
 	}
 }
-
 
 .contacts {
 	background: $brand-color-lighter;

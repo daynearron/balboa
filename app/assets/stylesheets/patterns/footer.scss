@@ -82,6 +82,9 @@
   @include fill-parent;
   @include clearfix;
   position: relative;
+  background-image: url("bg/bubbles.svg");
+  background-position: left;
+  background-size: 100%;
   .contact-card {
     right: 0;
     top: 0;

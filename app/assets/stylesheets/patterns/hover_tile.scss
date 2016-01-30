@@ -3,7 +3,11 @@
 }
 .welcome_cards_wrapper {
   @include clearfix;
-  background: tint($brand-color, 30%);
+  background-color: shade($brand-color, 30%);
+  // background-image: url('bg/line.svg');
+  background-position: center center;
+  background-size: cover;
+  @extend .teal-shadow;
 }
 
 .hover-tile-outer {

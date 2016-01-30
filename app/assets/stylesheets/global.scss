@@ -78,6 +78,10 @@ a.link {
 	}
 }
 
+.border-radius {
+	border-radius: $base-border-radius;
+}
+
 .quotes {
 	border-radius: $base-border-radius;
 	overflow: hidden;
@@ -120,4 +124,10 @@ a.link {
 	p {
 		color: #fff;
 	}
+}
+
+.teal-shadow {
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(62,68,69,0.78);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(62,68,69,0.78);
+	box-shadow: inset 0px 0px 10px 0px rgba(62,68,69,0.78);
 }
