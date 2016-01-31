@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/garrett0168/paperclip_database.git
+  revision: 5b31fbfda1017edc93ddc13a7dd1bf7bd5f6ba0c
+  specs:
+    paperclip_database (2.3.1)
+      paperclip (>= 2.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -220,6 +227,7 @@ DEPENDENCIES
   neat
   normalize-rails
   paperclip (~> 4.3)
+  paperclip_database!
   pg
   puma
   pygments.rb (~> 0.6.0)

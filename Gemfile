@@ -27,6 +27,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'formtastic'
 gem 'foreman'
 gem 'puma'
+gem "paperclip_database", git: "git://github.com/garrett0168/paperclip_database.git"
 
 group :development, :test do
   gem 'byebug'

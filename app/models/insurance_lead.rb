@@ -3,10 +3,10 @@ class InsuranceLead < ActiveRecord::Base
 
   validates :first_name, :last_name, :phone, :email, :home_address, :city, :state, :zip_code, :country, presence: true
 
-  has_attached_file :current_auto_insurance_policy
+  has_attached_file :current_auto_insurance_policy, storage: :database
   do_not_validate_attachment_file_type :current_auto_insurance_policy
 
-  has_attached_file :current_home_insurance_policy
+  has_attached_file :current_home_insurance_policy, storage: :database
   do_not_validate_attachment_file_type :current_home_insurance_policy
 
   after_create :notify_email
