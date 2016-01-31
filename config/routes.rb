@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   resources :about, only: [:index]
   resources :customer_service
+
+  resources :quotes, only: [:index, :create]
   get 'welcome/index'
   root 'welcome#index'
 
