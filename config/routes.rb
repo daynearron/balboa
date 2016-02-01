@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   resources :customer_service
 
   resources :quotes, only: [:index, :create]
+  namespace :insurance_leads do
+    resources :current_auto_insurance_policies, only: [:show]
+    resources :current_home_insurance_policies, only: [:show]
+  end
   get 'welcome/index'
   root 'welcome#index'
 
