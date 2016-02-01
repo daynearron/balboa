@@ -23,6 +23,7 @@
     padding: 2em;
     text-decoration: none;
     width: 100%;
+    @extend .bgswap;
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
@@ -36,7 +37,7 @@
 
   .grid-item img {
       display: block;
-      height: 2.5em;
+      // height: 2.5em;
       margin-bottom: 1.2em;
       opacity: 0.2;
     }
@@ -46,6 +47,7 @@
       font-size: 1.3em;
       margin-bottom: 0.4em;
       font-weight: 400;
+      margin-top: 2em;
     }
 
   .grid-item p {
