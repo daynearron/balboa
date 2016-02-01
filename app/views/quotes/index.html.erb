@@ -1,0 +1,83 @@
+<%= semantic_form_for(@insurance_lead_form, url: quotes_path) do |f| %>
+  <%= f.semantic_errors *f.object.errors.keys %>
+  <%= f.inputs :step_1 do %>
+    <div class ="form_wrapper">
+      <%= f.input :first_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}%>
+      <%= f.input :last_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %> 
+      <%= f.input :phone, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :email, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :home_address, as: :string, :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %>
+      <%= f.input :home_address2, as: :string, :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %>
+      <%= f.input :city, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :state, as: :select, collection: State::ALL_STATES, prompt: "State", include_blank: false, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :zip_code, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :country, as: :string, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+    </div>
+  <% end %>
+  <%= f.inputs :step_2 do %>
+    <div class="form_wrapper">
+      <%= f.input :drivers_information, input_html: { rows: 6 }, :input_html => { :class => "form-control w100p-md"} %>
+      <div class="fileUpload">
+        <%= f.input :current_auto_insurance_policy %>
+      <div>
+    </div>
+  <% end %>
+  <%= f.inputs :step_3 do %>
+    <div class="form_wrapper">
+      <%= f.input :homeowners_quote_type, as: :select, collection: InsuranceLead::HOMEOWNERS_QUOTE_TYPES, include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Request Home/Condo/Renters Quote?" %>
+    </div>
+    <div class="form_wrapper">
+      <%= f.input :own_dogs, as: :select, prompt: "Do You Own a Dog?", include_blank: false, :input_html => { :class => "form-control input-lg w50p w100p-md"}%>
+      <%= f.input :dog_1_breed, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :dog_2_breed, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+      <%= f.input :dog_3_breed, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
+    </div>
+    <div class="form_wrapper">
+      <%= f.input :home_security_system, as: :select, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Does Your Home Have a Security System?" %>
+     </div> 
+     <div class="form_wrapper">
+      <%= f.input :major_home_updates, as: :select, include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Any Major Updates to Your Home?" %>
+    </div>
+    <div class="fileUpload"> 
+      <%= f.input :current_home_insurance_policy, :input_html => { :class => "w100p-md"} %>
+    </div>
+  <% end %>
+  <%= f.inputs :step_4 do %>
+    <div class="form_wrapper">
+      <%= f.input :college_grad, as: :select, class: "contact-us-form-regarding", prompt: "College Graduate?", include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %>
+      <%= f.input :college_name, class: "contact-us-form-regarding", :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %>
+      <%= f.input :college_degree, class: "contact-us-form-regarding", :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %>
+    </div>
+
+    <div class="form_wrapper">
+      <%= f.input :work_positions, input_html: { rows: 6, :class => "form-control w100p-md"} %>
+    </div>
+    <div class="form_wrapper">
+      <div class ="fs20 text-primary bold mt10">Interested in the following insurance:</div>
+      <%= f.input :interested_in_earthquake %>
+      <%= f.input :interested_in_flood %>
+      <%= f.input :interested_in_umbrella %>
+      <%= f.input :interested_in_life_insurance %>
+    </div>
+    <%= f.input :additional_details, input_html: { rows: 6 }, :input_html => { :class => "form-control w100p-md"} %>
+    
+  <% end %>
+
+  <div ="form_wrapper  mt30">
+    <h4 class="fs20 text-primary bold">Complete! Know Anyone Else That Could Benefit?</h4>
+    <p class="body-text-1">Please let us know if there's anyone else that you know that might benefit from this great service!</p>
+  </div>
+  <%= f.input :has_referral, as: :select, include_blank: "Do You Have a Referral?", input_html: { "ng-model" => "hasReferral", "ng-init" => "hasReferral = #{@insurance_lead_form.try(:has_referral) || false}", :class => "form-control input-lg w300 w100p-md", boolean: true } %>
+
+  <div ng-show="hasReferral">
+    <%= f.input :referral_first_name %>
+    <%= f.input :referral_last_name %>
+    <%= f.input :referral_email %>
+    <%= f.input :referral_phone %>
+  </div>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :class => 'btn btn-warning', label: "Submit", button_html: { disable_with: 'Wait...', :class => 'btn btn-warning btn-lg btn-block p10-30 w100p-md' } %>
+  <% end %>
+
+<% end %>

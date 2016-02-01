@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <p><%= @insurance_lead.first_name %> <%= @insurance_lead.last_name %> has submitted a Balboa Insurance form. The details are:</p>
+    <ul>
+      <li><strong>Name: </strong> <%= @insurance_lead.first_name %> <%= @insurance_lead.last_name %></li>
+      <li><strong>Email: </strong> <%= @insurance_lead.email %></li>
+      <li><strong>Phone: </strong> <%= @insurance_lead.phone %></li>
+      <li><strong>Home Address: </strong> <%= @insurance_lead.home_address %></li>
+      <li><strong>Home Address 2: </strong> <%= @insurance_lead.home_address2 %></li>
+      <li><strong>City: </strong> <%= @insurance_lead.city %></li>
+      <li><strong>State: </strong> <%= @insurance_lead.state %></li>
+      <li><strong>Zip: </strong> <%= @insurance_lead.zip_code %></li>
+      <li><strong>Country: </strong> <%= @insurance_lead.country %></li>
+
+      <li><strong>All Driver's Names, Birthdays, and Driver's License Numbers: </strong> <%= simple_format(@insurance_lead.drivers_information) %></li>
+
+      <li><strong>Homeowners Quote?: </strong> <%= @insurance_lead.homeowners_quote_type %></li>
+      <li><strong>Own Dogs?: </strong> <%= @insurance_lead.own_dogs ? 'Yes' : 'No' %></li>
+      <li><strong>Dog 1 Breed: </strong> <%= @insurance_lead.dog_1_breed %></li>
+      <li><strong>Dog 2 Breed: </strong> <%= @insurance_lead.dog_2_breed %></li>
+      <li><strong>Dog 3 Breed: </strong> <%= @insurance_lead.dog_3_breed %></li>
+      <li><strong>Home Security System?: </strong> <%= @insurance_lead.home_security_system ? 'Yes' : 'No' %></li>
+      <li><strong>Major Home Updates?: </strong> <%= @insurance_lead.major_home_updates ? 'Yes' : 'No' %></li>
+
+      <li><strong>College Grad?: </strong> <%= @insurance_lead.college_grad ? 'Yes' : 'No' %></li>
+      <li><strong>College Name: </strong> <%= @insurance_lead.college_name %></li>
+      <li><strong>College Degree: </strong> <%= @insurance_lead.college_degree %></li>
+      <li><strong>Work Positions of Each Applicant: </strong> <%= simple_format(@insurance_lead.work_positions) %></li>
+
+      <li><strong>Interested in Earthquake Insurance?: </strong> <%= @insurance_lead.interested_in_earthquake ? 'Yes' : 'No' %></li>
+      <li><strong>Interested in Flood Insurance?: </strong> <%= @insurance_lead.interested_in_flood ? 'Yes' : 'No' %></li>
+      <li><strong>Interested in Umbrella Insurance?: </strong> <%= @insurance_lead.interested_in_umbrella ? 'Yes' : 'No' %></li>
+      <li><strong>Interested in Life Insurance?: </strong> <%= @insurance_lead.interested_in_life_insurance ? 'Yes' : 'No' %></li>
+
+      <li><strong>Additional Details: </strong> <%= simple_format(@insurance_lead.additional_details) %></li>
+
+      <li><strong>Has Referral?: </strong> <%= @insurance_lead.has_referral %></li>
+      <% if @insurance_lead.has_referral %>
+        <li><strong>Referral Name: </strong> <%= @insurance_lead.referral_first_name %> <%= @insurance_lead.referral_last_name %></li>
+        <li><strong>Referral Email: </strong> <%= @insurance_lead.referral_email %></li>
+        <li><strong>Referral Phone: </strong> <%= @insurance_lead.referral_phone %></li>
+      <% end %>
+
+    </ul>
+  </body>
+</html>

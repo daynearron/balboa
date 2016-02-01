@@ -1,0 +1,59 @@
+en:
+  formtastic:
+    titles:
+      step1: "Step 1: CONTACT INFO"
+      step2: "Step 2: AUTO"
+    labels:
+      insurance_lead_form:
+        drivers_information: "Enter All Driver's Names, Birthdays, and Driver's License Numbers:"
+        current_auto_insurance_policy: "Attach Current Auto Insurance Policy"
+
+        homeowners_quote_type: "Request Home/Condo/Renters Quote?"
+        own_dogs: "Do you own any dogs?"
+        dog_1_breed: "Dog 1 (Breed)"
+        dog_2_breed: "Dog 2 (Breed)"
+        dog_3_breed: "Dog 3 (Breed)"
+
+        home_security_system: "Does Your Home Have a Security System?"
+        major_home_updates: "Have There Been Any Major Updates to Your Home?"
+
+        current_home_insurance_policy: "Attach Current Insurance Policy"
+
+        college_grad: "College Graduate?"
+        college_name: "College Name"
+        college_degree: "Degree Obtained?"
+        work_positions: "Work Positions of Each Applicant"
+
+        interested_in_earthquake: "Earthquake"
+        interested_in_flood: "Flood"
+        interested_in_umbrella: "Umbrella"
+        interested_in_life_insurance: "Life Insurance"
+
+        has_referral: "Select a Choice"
+        referral_first_name: "First Name"
+        referral_last_name: "Last Name"
+        referral_email: "Email"
+        referral_phone: "Phone Number"
+
+    placeholders:       
+      insurance_lead_form:
+        first_name: "First Name"
+        last_name: "Last Name"
+        phone: "Phone Number"
+        email: "Email"
+        home_address: "Address Line 1"
+        home_address2: "Address Line 2"
+        city: "City"
+        state: "State"
+        zip_code: "Zip"
+        country: "USA"
+        drivers_information: "Enter All Drivers Names, Birthdays, and Drivers License Numbers."
+        current_auto_insurance_policy: "Attach Current Auto Insurance Policy"
+        dog_1_breed: "Dog Breed 1"
+        dog_2_breed: "Dog Breed 2"
+        dog_3_breed: "Dog Breed 3"
+        college_grad: "College Graduate?"
+        college_name: "College Name"
+        college_degree: "Degree Obtained"
+        work_positions: "Work Position of Each Applicant"
+        additional_details: "Additional Details"

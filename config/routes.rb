@@ -5,6 +5,12 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   resources :about, only: [:index]
   resources :customer_service
+
+  resources :quotes, only: [:index, :create]
+  namespace :insurance_leads do
+    resources :current_auto_insurance_policies, only: [:show]
+    resources :current_home_insurance_policies, only: [:show]
+  end
   get 'welcome/index'
   root 'welcome#index'
 
