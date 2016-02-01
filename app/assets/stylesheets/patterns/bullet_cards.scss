@@ -5,12 +5,8 @@
   @extend .bg-size;
   .header-box {
     display: inline-block;
-    //border: 2px solid shade(#5D6C6F, 10%);
     padding: 15px 25px;
-    color: #fff;
-    background: shade($brand-color, 20%);
-    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.06);
-    @extend .border-radius;
+    color: $brand-color;
   }
 }
 
@@ -19,55 +15,48 @@
   @include outer-container;
   overflow: auto;
   padding: 3em 2em;
-  //border: 1px solid tint(#5D6C6F, 5%);
   margin-top: -4em;
 
   .bullet {
     background: #fff;
     @extend .border-radius;
     @extend .box-shadow;
-    //@include pad(25px);
     overflow: hidden;
     padding-top: 25px;
     @include span-columns(4);
   }
 
   .bullet-icon {
-    background: $action-color;
     border-radius: 50%;
     height: $icon-bullet-size;
-    padding: $icon-bullet-size / 4;
+    // padding: 15px;
     width: $icon-bullet-size;
     margin: 0 auto;
   }
   .bullet-icon-1,
   .bullet-icon-2,
   .bullet-icon-3 {
-    // background-image: url('bg/map-swirls.svg');
     @extend .bg-size;
   }
-  .bullet-icon-1 {
-    background-color: $brand-color;
-  }
+  // .bullet-icon-1 {
+  //   background-color: $brand-color;
+  // }
 
-  .bullet-icon-2 {
-    background-color: $brand-color;
-  }
+  // .bullet-icon-2 {
+  //   background-color: $brand-color;
+  // }
 
-  .bullet-icon-3 {
-    background-color: $brand-color;
-  }
+  // .bullet-icon-3 {
+  //   background-color: $brand-color;
+  // }
 
   .bullet-content {
-    //margin-left: $icon-bullet-size * 1.4;
     text-align: center;
-    //margin-bottom: 2em;
   }
 
   h2 {
-    //border-bottom: 1px solid transparentize($base-font-color, 0.8);
     display: inline-block;
-    font-size: $icon-bullet-size / 2.5;
+    font-size: 20px;
     margin: 0 0 ($icon-bullet-size / 6) 0;
     padding-top: $icon-bullet-size / 7;
     margin-bottom: 1em;
@@ -95,5 +84,7 @@
 
   img {
     max-width: 100%;
+    margin-top: 50%;
+    transform: translateY(-30px);
   }
 }

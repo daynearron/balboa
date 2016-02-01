@@ -3,11 +3,13 @@
 	<% @posts.each do |post| %>
 	<div class="blog-post">	
 		<div class="image-wrapper">	
+			<%= link_to post do %>
 			<%= image_tag post.image.url(:medium) %>
+			<%end%>
 		</div>
     <div class="post-preview">
       <span><%= post.created_at.strftime('%A, %B %d') %></span>
-      <h2><%= post.title %></h2>
+      <h2><%= link_to post do %><%= post.title %><%end%></h2>
       <p><%= truncate(post.content, :length => 115) %></p>
       <%= link_to "Read Post", post, class:"button button-hero" %>
       <i class="icon-right-open-mini button-icon"></i>
