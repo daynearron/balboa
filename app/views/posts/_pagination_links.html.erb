@@ -4,6 +4,7 @@
 		  <%= link_to post_path(prev_post), class: "pagination pagination--prev" do %>
 		    <p class="pagination_title">
 			    <%= prev_post.title %>
+					<span>Previous</span>
 			  </p>
 		    <%= image_tag(prev_post.image.url(:large)) %> 
 		  <% end %>
@@ -13,6 +14,7 @@
 		  <%= link_to post_path(next_post), class: "pagination pagination--next" do %>
 		    <p class="pagination_title">
 			    <%= next_post.title %>
+			    <span>Next</span>
 			  </p>
 		    <%= image_tag(next_post.image.url(:large)) %> 
 		  <% end %>

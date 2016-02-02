@@ -20,7 +20,7 @@
     @include outer-container;
     @include clearfix;
     margin: auto;
-    padding: 3.5em;
+    padding: 1.2em 3.5em 3.5em 3.5em;
     text-align: left;
 
     .hero-copy {
@@ -30,7 +30,7 @@
         // font-weight: 100;
         color: $hero-color;
         font-size: 1.6em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.8em;
 
         @include media($large-screen) {
           letter-spacing: 1px;
@@ -45,7 +45,7 @@
         color: $hero-color;
         line-height: 1.4em;
         margin: 0 auto 3em auto; 
-
+        
         @include media($large-screen) {
           font-size: 1.2em;
           letter-spacing: 1px;

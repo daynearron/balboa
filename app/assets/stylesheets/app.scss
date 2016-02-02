@@ -109,6 +109,8 @@ body {
 		@extend a.link-sans-serif;
 		position: relative;
 		height: 100%;
+    vertical-align: middle;
+    text-align: center;
 		@include omega(2n);
 		.pagination_title,
 		img {
@@ -121,11 +123,17 @@ body {
 			color: white;
 			font-size: 0.5em;
 			text-align: center;
-	    top: 50%;
-	    margin-top: -1em;
+	    display: inline-block;
       padding: 0 25px;
       font-family: $sans-serif-3;
       position: relative;
+      span {
+      	display: block;
+      	position: relative;
+  	    transform: translateY(2em);
+				@extend .line;
+				@extend .line--centered;
+      }
 		}
 		img {
 			z-index: 5;

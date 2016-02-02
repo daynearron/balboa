@@ -5,7 +5,7 @@
 .skinny_wrapper {
 	@include pad(25px);
 	&--article {
-		@include pad( 2em 6em ); 
+		@include pad( 1em 3em ); 
 	}
 }
 
@@ -44,6 +44,10 @@ a.link {
 
 .gray-text {
 	color: $light-gray;
+}
+
+.blue-text {
+	color: $brand-color-light
 }
 
 .cropped-image {
@@ -130,4 +134,17 @@ a.link {
 	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(62,68,69,0.78);
 	-moz-box-shadow: inset 0px 0px 10px 0px rgba(62,68,69,0.78);
 	box-shadow: inset 0px 0px 10px 0px rgba(62,68,69,0.78);
+}
+
+.line:before {
+	content: '';
+	width: 60px;
+	height: 2px;
+	display: block;
+  position: relative;
+  background: white;
+  transform: translateY(-15px);
+}
+.line--centered:before {
+	margin: 0 auto;
 }
