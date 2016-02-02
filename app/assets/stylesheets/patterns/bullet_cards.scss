@@ -22,14 +22,13 @@
     @extend .border-radius;
     @extend .box-shadow;
     overflow: hidden;
-    padding-top: 25px;
+    padding: 25px 0;
+    min-height: 330px;
     @include span-columns(4);
   }
 
   .bullet-icon {
     border-radius: 50%;
-    height: $icon-bullet-size;
-    // padding: 15px;
     width: $icon-bullet-size;
     margin: 0 auto;
   }
@@ -59,7 +58,9 @@
     font-size: 20px;
     margin: 0 0 ($icon-bullet-size / 6) 0;
     padding-top: $icon-bullet-size / 7;
+    padding-bottom: 5px;
     margin-bottom: 1em;
+    //border-bottom: 2px solid $brand-color-lighter;
   }
 
   li {
@@ -68,23 +69,22 @@
 
   p,
   span {
-    color: white;
-    line-height: $base-line-height;
-    text-align: left;
-    background-color: $brand-color;
-    margin: 0;
+    // color: white;
+    // line-height: $base-line-height;
+    // text-align: left;
+    // background-color: $brand-color;
+    // margin: 0;
+    padding: 0 25px 25px 25px;
   }
-  p {
-    padding: 25px 0 0px 25px;
-  }
-  span {
-    display: block;
-    padding: 25px 0 25px 25px;
-  }
+  // p {
+  //   padding: 25px 0 0px 25px;
+  // }
+  // span {
+  //   display: block;
+  //   padding: 25px 0 25px 25px;
+  // }
 
   img {
     max-width: 100%;
-    margin-top: 50%;
-    transform: translateY(-30px);
   }
 }

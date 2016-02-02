@@ -187,11 +187,6 @@ ul#insurance-logo-group {
 		border-radius: $base-border-radius;
 		@extend .box-shadow;
 		@include fill-parent;
-		a {
-			@extend .letter-spacing;
-			@extend .button;
-			@extend .button-hero;
-		}
 		.cropped-image {
 			max-height: 250px;
 			overflow: hidden;
