@@ -193,7 +193,6 @@ GEM
     tilt (2.0.2)
     turbolinks (2.5.3)
       coffee-rails
-    typekit-rails (0.0.4)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
@@ -240,7 +239,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spring
   turbolinks
-  typekit-rails
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
   will_paginate (~> 3.1)

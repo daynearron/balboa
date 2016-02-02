@@ -1,15 +1,11 @@
-@import url("//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700");
-@import url("//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");
-@import url("//fonts.googleapis.com/css?family=Lusitana:400,700");
-@import url("//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic");
-@import url("//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic");
+// @import url("//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700");
+// @import url("//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");
+// @import url("//fonts.googleapis.com/css?family=Lusitana:400,700");
+// @import url("//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic");
+// @import url("//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic");
 
 $body-bg: $lighter-gray;
 
-$serif: 'Lusitana', serif;
-$serif-2: 'Merriweather', serif;
-$sans-serif: 'Merriweather Sans', sans-serif;
-$sans-serif-2: 'Roboto Condensed', sans-serif;
 $sans-serif-3: "effra",sans-serif;
 
 $base-spacing: 1.5em !default;
@@ -47,7 +43,7 @@ $hero-background-top: shade(#36535A, 55%);
 $hero-background-bottom: shade(#36535A, 15%);
 $hero-color: white;
 $hero-font: $sans-serif-3;
-$hero-font-body: $serif-2;
+$hero-font-body: $sans-serif-3;
 $gradient-angle: 10deg;
 $hero-image: 'bg/woman_with_baby.png';
 

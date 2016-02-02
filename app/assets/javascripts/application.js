@@ -19,5 +19,4 @@
 //= require mask
 //= require angular/balboa
 //= require_tree ./angular/directives
-//= require typekit
 //= require_tree .

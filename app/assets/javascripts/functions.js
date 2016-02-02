@@ -13,3 +13,20 @@ $(document).ready(function() {
 
   Inputmask().mask(document.querySelectorAll("input"));
 });
+
+(function() {
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';    
+  script.src = '//use.typekit.net/lsh0ymz.js';
+  var callback = function() {
+    try {
+      Typekit.load();     
+    } catch(e) { 
+      // report error     
+    }
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+})();

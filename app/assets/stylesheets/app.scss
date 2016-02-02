@@ -202,6 +202,9 @@ ul#insurance-logo-group {
 	font-weight: 400;
 	@extend .uppercase;
 	@extend .roboto;
+	a {
+		color: $brand-color-dark;
+	}
 }
 
 .post-view {
