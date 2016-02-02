@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 2.2.2
 
 * System dependencies
 
@@ -24,5 +24,21 @@ Things you may want to cover:
 * ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  Insurance
+  	- Index: Show all Types of Insurance.
+  	- Show: Details.
+  	- Edit (Admin Only) Edit Post.
+  	- New (Admin Only) Add NEw Insurance Type.
+  Customer Service
+  	- Index: Show all Insurance Brands, Phone Numbers, Websites.
+  	-	New (Admin Only) Create New Contact.
+  Blog:
+  	- Index: Show All Posts.
+  	- Show: Detailed View.
+  	- Edit: (Admin Only) Edit Current Post.
+  	- New: (Admin Only) Add New Blog Post.
+
+
+
+
+

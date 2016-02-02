@@ -1,7 +1,7 @@
 <div class="grid-items-lines wrapper mb25">
   <% @insurances.each_with_index do |insurance, index| %>
     <%= link_to insurance, :class=>"grid-item", :id =>"welcome-grid-item-#{index}" do %>  
-      <% if index < 2 %>
+      <% if index == 1 %>
         <%= image_tag insurance.image.url(:large), :class=>"img-swap" %>
         <h1><%= insurance.title %></h1>
         <p><%= insurance.link %></p>

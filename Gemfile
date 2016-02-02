@@ -28,7 +28,7 @@ gem 'formtastic'
 gem 'foreman'
 gem 'puma'
 gem "paperclip_database", git: "git://github.com/garrett0168/paperclip_database.git"
-
+gem 'typekit-rails'
 
 group :development, :test do
   gem 'byebug'
