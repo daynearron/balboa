@@ -13,6 +13,7 @@
 //= require jquery
 //= require vendor/jquery.inputmask.bundle.min
 //= require vendor/angular
+//= require angular/lead-capture
 //= require jquery_ujs
 //= require turbolinks
 //= require functions

@@ -4,9 +4,10 @@
 .welcome_cards_wrapper {
   @include clearfix;
   background-color: shade($brand-color, 30%);
-  // background-image: url('bg/line.svg');
+  background-image: url('bg/subtle-waves.jpg');
   background-position: center center;
   background-size: cover;
+  @extend .teal-shadow;
   @extend .teal-shadow;
 }
 
