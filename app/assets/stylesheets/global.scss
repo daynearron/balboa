@@ -5,7 +5,7 @@
 .skinny_wrapper {
 	@include pad(25px);
 	&--article {
-		@include pad( 1em 3em ); 
+		@include pad( 3em ); 
 	}
 }
 
