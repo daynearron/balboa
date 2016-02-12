@@ -71,7 +71,10 @@
       &:first-child {
         border-left: none;
       }
-      
+      img {
+        width: 75%;
+      }
+
       img,
       h2 {
         vertical-align: middle;
