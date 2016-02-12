@@ -1,7 +1,7 @@
-<div class="form">
+<div class="form" ng-controller="LeadCaptureController">
   <%= semantic_form_for(@insurance_lead_form, url: quotes_path) do |f| %>
     <%= f.semantic_errors *f.object.errors.keys %>
-    <div class="form-section", ng-show = "step == 1">
+    <div class="form-section" ng-show="currentStep == 'step1'">
     <%= f.inputs :step_1 do %>
       <div class ="form_wrapper">
         <%= f.input :first_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}%>
@@ -16,8 +16,9 @@
         <%= f.input :country, as: :string, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
       </div>
     <% end %>
+    <a class="bt-cta bt-cta--red bt-cta--secondary" href="javascript:void(0)" ng-click="currentStep = 'step2'">Next</a>
     </div>
-    <div class="form-section", ng-show = "step == 2">
+    <div class="form-section" ng-show="currentStep == 'step2'">
     <%= f.inputs :step_2 do %>
       <div class="form_wrapper">
         <%= f.input :drivers_information, input_html: { rows: 6 }, :input_html => { :class => "form-control w100p-md"} %>
@@ -26,8 +27,9 @@
         <div>
       </div>
     <% end %>
+    <a class="bt-cta bt-cta--red bt-cta--secondary" href="javascript:void(0)" ng-click="currentStep = 'step2'">Next</a>
     </div>
-    <div class="form-section", ng-show = "step == 3">
+    <div class="form-section" ng-show="currentStep == 'step3'">
     <%= f.inputs :step_3 do %>
       <div class="form_wrapper">
         <%= f.input :homeowners_quote_type, as: :select, collection: InsuranceLead::HOMEOWNERS_QUOTE_TYPES, include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Request Home/Condo/Renters Quote?" %>
@@ -48,8 +50,9 @@
         <%= f.input :current_home_insurance_policy, :input_html => { :class => "w100p-md"} %>
       </div>
     <% end %>
+    <a class="bt-cta bt-cta--red bt-cta--secondary" href="javascript:void(0)" ng-click="currentStep = 'step2'">Next</a>
     </div>
-    <div class="form-section", ng-show = "step == 4">
+    <div class="form-section" ng-show="currentStep == 'step4'">
     <%= f.inputs :step_4 do %>
       <div class="form_wrapper">
         <%= f.input :college_grad, as: :select, class: "contact-us-form-regarding", prompt: "College Graduate?", include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"} %>
@@ -69,13 +72,9 @@
       </div>
       <%= f.input :additional_details, input_html: { rows: 6 }, :input_html => { :class => "form-control w100p-md"} %>      
     <% end %>
+    <a class="bt-cta bt-cta--red bt-cta--secondary" href="javascript:void(0)" ng-click="currentStep = 'step2'">Next</a>
     </div>
-    <div class="form-navigation">
-      <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
-      <button type="button" class="next btn btn-info pull-right">Next &gt;</button>
-      <input type="submit" class="btn btn-default pull-right">
-      <span class="clearfix"></span>
-    </div>
+     <div class="form-section" ng-show="currentStep == 'step5'">
     <div ="form_wrapper  mt30">
       <h4 class="fs20 text-primary bold">Complete! Know Anyone Else That Could Benefit?</h4>
       <p class="body-text-1">Please let us know if there's anyone else that you know that might benefit from this great service!</p>
@@ -94,4 +93,5 @@
     <% end %>
 
   <% end %>
+  </div>
 </div>
