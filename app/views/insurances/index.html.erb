@@ -4,7 +4,7 @@
 		<ul class="insurance_cards">
 			<% @insurances.each do |insurance| %>
 				<li class="insurance_card">
-					<div class="cropped-image"><%= link_to insurance do%><%= image_tag insurance.image.url(:medium) %><%end%></div>
+					<div class="cropped-image"><%= link_to insurance do%><%= image_tag insurance.image.url(:large) %><%end%></div>
 					<div class="skinny_wrapper">
 						<h2 class="insurance_card--title"><%= link_to insurance do%><%= insurance.title %><%end%></h2>
 						<p>
