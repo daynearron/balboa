@@ -50,6 +50,10 @@ a.link {
 	color: $brand-color-light
 }
 
+.yellow-text {
+	color: $yellow;
+}
+
 .cropped-image {
 	@include fill-parent;
 	img {
