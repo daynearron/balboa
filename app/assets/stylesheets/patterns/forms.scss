@@ -9,10 +9,11 @@
 	background: white;
 	border-radius: 5px;
 	margin-bottom: 25px;
+	overflow: hidden;
 	@extend .roboto;
 	@include span-columns(8 of 12);
 	@include shift(2);
-	@include pad(25px);
+	//@include pad(25px);
 	h1 {
 		
 		@extend .roboto;
@@ -32,12 +33,59 @@
 	input {
 		height: 3rem;
 	}
+	input[type='checkbox']{
+		display: inline;
+		height: auto;
+		width: auto;
+		margin-right: 15px;
+	}
+	.show-label label {
+		display: inline !important;
+	}
 	textarea {
 		min-height: 300px;
 	}
 	.button {
-		background-color: $blue;
+		background-color: $brand-color;
 		@extend .roboto;
 		@extend .letter-spacing;
 	}
+	li {
+		list-style-type: none;
+	}
+
+}
+
+select {
+	margin-bottom: 25px;
+	border: 1px solid #111;
+	background: transparent;
+	width: 100%;
+  color: #b1b1b1;
+	font-size: 16px;
+	border: 1px solid #E9E9E9;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 10px 18px;
+} 
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+@media screen and (min-width:0\0) { 
+    select {
+        background:none;
+        padding: 5px;
+    }
+}
+
+.inline-errors {
+	display: none;
+}
+
+.error input{
+	border: 1px solid red;
+}
+.show-label li{
+	display: block;
+	line-height: 25px;
+	padding-left: 25px;
 }

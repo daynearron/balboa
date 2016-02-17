@@ -306,3 +306,36 @@ ul#insurance-logo-group {
 		}
 	}
 }
+
+#btn-container {
+	float: left;
+	@include fill-parent;
+	@include pad(15px);
+}
+
+.current-step {
+	color: $yellow;
+	opacity: 1;
+	background: #fff !important;
+}
+
+.steps {
+	@include fill-parent;
+	@include clearfix;
+	.step {
+		background-color: tint($brand-color, 90%);
+		opacity: 0.8;
+		width: calc(100% / 5);
+		float: left;
+		text-align: center;
+		line-height: 60px;
+	}
+}
+
+
+#new_insurance_lead {
+	@include pad(1em);
+	label {
+		display: none;
+	}
+}

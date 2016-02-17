@@ -13,11 +13,10 @@
 //= require jquery
 //= require vendor/jquery.inputmask.bundle.min
 //= require vendor/angular
-//= require angular/lead_capture_controller
 //= require jquery_ujs
 //= require turbolinks
-//= require functions
 //= require mask
+//= require functions
 //= require angular/balboa
 //= require_tree ./angular/directives
 //= require_tree .

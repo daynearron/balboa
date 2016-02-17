@@ -1,6 +1,19 @@
 <article class="type-system-serif">
   <section class="wrapper">
     <h1 id="form_title">Get a Quote</h1>
-    <%= render 'form' %>
+    <div class="form">
+    	<div class="steps">
+    		<div class="step current-step">Step 1</div>
+    		<div class="step">Step 2</div>
+    		<div class="step">Step 3</div>
+    		<div class="step">Step 4</div>
+    		<div class="step">Step 5</div>
+    	</div>
+	    <%= render 'form' %>
+	    <div id="btn-container">
+		    <button id="prev-form" class="button-hero" disabled="disabled">Prev</button>
+		    <button id="next-form" class="button-hero">Next</button>
+	    </div>
+    </div>
   </section>
 </article>
