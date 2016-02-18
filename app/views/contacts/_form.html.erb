@@ -8,12 +8,9 @@
 				<% end %>
 			</ul>
 		<% end %>
-		<%= f.label :name %>
-		<%= f.text_field :name, required: true %>
-		<%= f.label :email %>
-		<%= f.email_field :email, required: true %>
-		<%= f.label :message %>
-		<%= f.text_area :message, required: true %>
+		<%= f.text_field :name, required: true, :placeholder => "Name" %>
+		<%= f.email_field :email, required: true, :placeholder => "Email" %>
+		<%= f.text_area :message, required: true, :placeholder => "Message" %>
 		<div class="hidden">
 			<%= f.label :nickname %>
 			<%= f.text_field :nickname, hint: 'leave this field blank' %>
@@ -21,4 +18,23 @@
 		<%= f.submit 'Send Message', class: 'button' %>
 
 	<% end %>
+
+		<div id="social_footer">
+	<!-- Tweeter -->
+	<a class="icon-twitter-circled">
+		Twitter
+	</a>
+
+	<!-- Fassbook -->
+
+	<a class="icon-facebook-circled">
+		Facebook
+	</a>
+
+	<!-- G Ploos -->
+
+	<a class="icon-gplus-circled">
+		Google +
+	</a>
+	</div>
 </div>

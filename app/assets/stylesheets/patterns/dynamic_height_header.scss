@@ -9,10 +9,11 @@
   padding-top: 7em;
 
   img {
-   height: auto;
+   min-height: 100%;
    left: 0; 
    position: absolute;
-   top: -225px;
+   // top: -225px;
+   top: 0;
    width: 100%;
    opacity: 0.5;
   }

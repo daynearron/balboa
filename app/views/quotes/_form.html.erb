@@ -1,23 +1,23 @@
 
   <%= semantic_form_for(@insurance_lead_form, url: quotes_path) do |f| %>
 <!--     <%= f.semantic_errors *f.object.errors.keys %> -->
-    <div class="form-section first current" id="div1">
+    <div class="form-section step first current">
     <%= f.inputs :step_1 do %>
       <div class ="form_wrapper">
         <%= f.input :first_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :placeholder =>"First Name*"%>
         <%= f.input :last_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :placeholder =>"Last Name*" %> 
-        <%= f.input :phone, :input_html => { :class => "form-control input-lg w50p w100p-md", :"data-inputmask"=> "'mask': '999-999-9999'"}, :placeholder =>"Phone Number*" %>
+        <%= f.input :phone, :input_html => { :class => "short-input form-control input-lg w50p w100p-md", :"data-inputmask"=> "'mask': '999-999-9999'"}, :placeholder =>"Phone Number*" %>
         <%= f.input :email, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder =>"Email Address*" %>
         <%= f.input :home_address, as: :string, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :placeholder =>"Home Address*" %>
         <%= f.input :home_address2, as: :string, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :placeholder =>"Home Address 2" %>
         <%= f.input :city, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder =>"City*" %>
-        <%= f.input :state, as: :select, collection: State::ALL_STATES, prompt: "State*", include_blank: false, :input_html => { :class => "form-control input-lg w50p w100p-md"} %>
-        <%= f.input :zip_code, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder =>"Zip*" %>
-        <%= f.input :country, as: :string, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder => "Country*" %>
+        <%= f.input :state, as: :select, collection: State::ALL_STATES, prompt: "State*", include_blank: false, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"} %>
+        <%= f.input :zip_code, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"}, :placeholder =>"Zip*" %>
+        <%= f.input :country, as: :string, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"}, :placeholder => "Country*" %>
       </div>
     <% end %>
     </div>
-    <div class="form-section" id="div2">
+    <div class="form-section step">
     <%= f.inputs :step_2 do %>
       <div class="form_wrapper">
         <%= f.input :drivers_information, :input_html => { :rows=> 6, :class => "form-control w100p-md"}, :placeholder =>"Enter Drivers Information" %>
@@ -29,16 +29,16 @@
     <% end %>
    
     </div>
-    <div class="form-section" id="div3">
+    <div class="form-section step">
     <%= f.inputs :step_3 do %>
       <div class="form_wrapper">
         <%= f.input :homeowners_quote_type, as: :select, collection: InsuranceLead::HOMEOWNERS_QUOTE_TYPES, include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Request Home/Condo/Renters Quote?" %>
       </div>
       <div class="form_wrapper">
         <%= f.input :own_dogs, as: :select, prompt: "Do You Own a Dog?", include_blank: false, :input_html => { :class => "form-control input-lg w50p w100p-md"}%>
-        <%= f.input :dog_1_breed, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 1" %>
-        <%= f.input :dog_2_breed, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 2" %>
-        <%= f.input :dog_3_breed, :input_html => { :class => "form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 3" %>
+        <%= f.input :dog_1_breed, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 1" %>
+        <%= f.input :dog_2_breed, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 2" %>
+        <%= f.input :dog_3_breed, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 3" %>
       </div>
       <div class="form_wrapper">
         <%= f.input :home_security_system, as: :select, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Does Your Home Have a Security System?" %>
@@ -53,12 +53,12 @@
     <% end %>
    
     </div>
-    <div class="form-section" id="div4">
+    <div class="form-section step">
     <%= f.inputs :step_4 do %>
       <div class="form_wrapper">
         <%= f.input :college_grad, as: :select, include_blank: false, class: "contact-us-form-regarding", :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :include_blank => 'College Grad?' %>
-        <%= f.input :college_name, class: "contact-us-form-regarding", :input_html => { :class => "form-control input-lg w100p30 w100p-md", :placeholder =>"College Name"} %>
-        <%= f.input :college_degree, class: "contact-us-form-regarding", :input_html => { :class => "form-control input-lg w100p30 w100p-md", :placeholder =>"College Name"} %>
+        <%= f.input :college_name, class: "contact-us-form-regarding", :input_html => { :class => "short-input form-control input-lg w100p30 w100p-md", :placeholder =>"College Name"} %>
+        <%= f.input :college_degree, class: "contact-us-form-regarding", :input_html => { :class => "short-input form-control input-lg w100p30 w100p-md", :placeholder =>"College Degree"} %>
       </div>
 
       <div class="form_wrapper">
@@ -66,16 +66,16 @@
       </div>
       <div class="form_wrapper show-label">
         <h2 class ="fs20 text-primary bold mt10">Interested in the following insurance:</h2>
-        <%= f.input :interested_in_earthquake %>
-        <%= f.input :interested_in_flood %>
-        <%= f.input :interested_in_umbrella %>
-        <%= f.input :interested_in_life_insurance %>
+        <%= f.input :interested_in_earthquake, :input_html => { :class => "short-input"} %>
+        <%= f.input :interested_in_flood, :input_html => { :class => "short-input"} %>
+        <%= f.input :interested_in_umbrella, :input_html => { :class => "short-input"} %>
+        <%= f.input :interested_in_life_insurance, :input_html => { :class => "short-input"} %>
       </div>
       <%= f.input :additional_details, input_html: { rows: 6 }, :input_html => { :class => "form-control w100p-md"}, :placeholder =>"Additional Details" %>      
     <% end %>
    
     </div>
-     <div class="form-section last" id="div5">
+     <div class="form-section step last">
     <div ="form_wrapper  mt30">
       <h2 class="fs20 text-primary bold">Complete! Know Anyone Else That Could Benefit?</h2>
       <p class="body-text-1">Please let us know if there's anyone else that you know that might benefit from this great service!</p>
@@ -83,14 +83,14 @@
     <div ="form_wrapper  mt30">
     <h2>Do you have a referal?</h2>
     <%= f.input :has_referral, as: :select, include_blank: false, input_html: { "ng-model" => "hasReferral", "ng-init" => "hasReferral = #{@insurance_lead_form.try(:has_referral) || false}", :class => "form-control input-lg w300 w100p-md", boolean: true } %>
-    </div>
+    
     <div ng-show="hasReferral">
       <%= f.input :referral_first_name, :placeholder => "First Name" %>
       <%= f.input :referral_last_name, :placeholder => "Last Name" %>
       <%= f.input :referral_email, :placeholder => "Email" %>
       <%= f.input :referral_phone, :placeholder => "Phone" %>
     </div>
-
+    </div>
     <%= f.actions do %>
       <%= f.action :submit, :class => 'button-hero', label: "Submit", button_html: { disable_with: 'Wait...', :class => 'button-hero btn-lg btn-block p10-30 w100p-md' } %>
     <% end %>

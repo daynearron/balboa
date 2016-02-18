@@ -339,3 +339,26 @@ ul#insurance-logo-group {
 		display: none;
 	}
 }
+
+.founder {
+	margin-bottom: 25px;
+	background: white;
+	border-radius: 3px;
+	overflow: hidden;
+	height: 300px;
+	@extend .box-shadow;
+	@include clearfix;
+	@include fill-parent;
+	&-image {
+		overflow: hidden;
+		@include span-columns(3 of 9);
+	}
+	&-description {
+		font-size: 11px;
+		@include pad(25px 50px 25px 25px);
+		@include span-columns(6 of 9);
+		h2 {
+			font-size: 3em;
+		}
+	}
+}
