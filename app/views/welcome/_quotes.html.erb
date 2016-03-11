@@ -1,10 +1,5 @@
-<section class="skinny_wrapper welcome_cards_wrapper">  
+<!-- <section class="skinny_wrapper ">  
   <div class="wrapper hover-wrapper">
-    <section class="letter-spacing centered mb25">
-    <h2>
-      Find out ways to save:
-    </h2>
-  </section>
   <% @posts.each do |post| %>
   <div class="hover-tile-outer">
     <div class="hover-tile-container">
@@ -17,7 +12,28 @@
   </div>
   <% end %>
   </div>
-</section>
+</section> -->
+
+
+<!-- // End Posts -->
+
+<!-- <div class="grid-items-lines wrapper mb25">
+  <% @posts.each do |post| %>
+    <%= link_to post, :class=>"grid-item" do %>
+      <%= image_tag post.image.url(:large), :class=>"img-swap" %>
+      <h1><%= post.title %></h1>
+    <% end %>
+  <% end %>
+  <%= link_to posts_path, :class=>"grid-item" do %>
+    <h1>Stay Up to Date</h1>
+    <span class="button button-white-btn">See All Choices</span>
+    <i class="icon-right-open-mini button-icon button-icon-gray"></i>
+  <% end %>
+</div>
+ -->
+
+
+
 <section class="bullet_wrapper">
   <section class="letter-spacing centered skinny_wrapper">
     <h2 class= "header-box">

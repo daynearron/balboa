@@ -21,12 +21,12 @@ header.navigation {
     float: left;
     // padding-top: 5px;
     max-height: calc($navigation-height + 5px);
-    //padding-left: $navigation-padding;
-    padding-right: 2em;
+    padding-left: $navigation-padding;
+    // padding-right: 2em;
     @include span-columns(4);
 
     img {
-      max-height: calc($navigation-height + 5px);
+      max-height: $navigation-height;
       padding: 0.8em 0;
     }
   }
