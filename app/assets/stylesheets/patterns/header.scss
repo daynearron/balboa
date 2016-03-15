@@ -6,9 +6,8 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-  position: absolute;
-  @include linear-gradient(shade($brand-color, 60%), rgba(0,0,0,0));
-  background-color: transparent;
+  position: relative;
+  background-color: #fff;
   
   .navigation-wrapper {
     @include clearfix;
@@ -20,7 +19,7 @@ header.navigation {
   .logo {
     float: left;
     // padding-top: 5px;
-    max-height: calc($navigation-height + 5px);
+    max-height: 60px;
     padding-left: $navigation-padding;
     // padding-right: 2em;
     @include span-columns(4);

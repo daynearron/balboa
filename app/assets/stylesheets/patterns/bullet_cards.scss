@@ -60,6 +60,7 @@
     padding-top: $icon-bullet-size / 7;
     padding-bottom: 5px;
     margin-bottom: 1em;
+    color: $brand-color-lighter;
     //border-bottom: 2px solid $brand-color-lighter;
   }
 
@@ -79,10 +80,9 @@
   // p {
   //   padding: 25px 0 0px 25px;
   // }
-  // span {
-  //   display: block;
-  //   padding: 25px 0 25px 25px;
-  // }
+  span {
+    color: $yellow;
+  }
 
   img {
     max-width: 100%;
