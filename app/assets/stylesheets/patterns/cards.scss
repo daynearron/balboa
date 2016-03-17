@@ -1,115 +1,43 @@
-.welcome_cards_wrapper {
-  background: #fff;
-  .cards {
-    .card {
-      border-radius: $base-border-radius;
-      overflow: hidden;
-      background: #fff; 
-      @extend .box-shadow;
-      a {
-        background: $brand-color;
-        width: 100%;
-        display: block;
-        margin: 0;
-        padding: 15px;
-        color: white;
-        position: relative;
-        @extend .letter-spacing;
-        @include clearfix;
-        i {
-          float: right;
-        }
-      }
-    }
-  }
-}
-
-.sidebar-contact-card {
-  background-color: #fff;
-  margin-bottom: 10px;
-  border-radius: $base-border-radius;
-  @include fill-parent;
-  @include pad(25px);
-  @extend .roboto;
-  @extend .box-shadow;
-  h2,
-  .address,
-  span {
-    display: block;
-    @extend .roboto;
-  }
-}
-
 .cards {
-  @include outer-container;
-}
 
-.card {
+  @include pad(25px 50px);
 
-  @include span-columns(3);
-  @include omega(4n);
+  .card {
+    // text-align: center;
+    // background: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 
-
-  .card-image {
-    overflow: hidden;
-    height: 150px;
-    max-height: 150px;
-    background-color: $card-image-hover-color;
-    position: relative;
-    z-index: 1;
-
-    img {
-      @include transition (all 0.2s ease-in-out);
-      border-top-left-radius: $base-border-radius;
-      border-top-right-radius: $base-border-radius;
-      min-height: 100%;
-      min-width: 100%;
-      opacity: 0.8;
+    @include media($large-screen) {
+      @include span-columns(4);
+      @include omega(3n);
     }
-  }
-
-  .card-header {
-    @include transition (all 0.2s ease-in-out);
-    //background-color: $card-header-background;
-    //border-bottom: $card-border;
-    border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
-    line-height: 1.5em;
-    padding: ($base-spacing / 3) ($base-spacing / 2);
-    min-height: 65px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: 0em ($base-spacing / 2);
-
+    
+    span {
+      color: $color5;
+    }
     p {
-      margin: 0 0 ($base-spacing / 2);
+      color: $color1;
+      font-weight: 900;
     }
 
-    a {
-      @extend .button;
-      @extend .button-hero;
+    p,
+    span {
+      max-width: 90%;
+      margin: 0;
+      @include pad(10px 10px);
     }
   }
-
-  &:focus,
-  &:hover {
-    cursor: pointer;
+  
+  .card-image {
+    height: 150px;
+    background: whitesmoke;
+    overflow: hidden;
+    margin-bottom: 15px;
 
     img {
-      opacity: $card-image-hover-opacity;
-    }
-  }
-
-  &:active {
-    background-color: $card-background;
-
-    .card-header {
-      background-color: $card-background;
+      height: 100%;
+      min-width: 100%;
     }
   }
 }

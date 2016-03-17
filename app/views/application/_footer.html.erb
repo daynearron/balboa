@@ -1,4 +1,4 @@
-<footer class="footer" role="contentinfo">
+<!-- <footer class="footer" role="contentinfo">
   <div class="footer-links">
     <div class="footer-logo">
       <%= image_tag "logo_m.png", :alt => "Logo" %>
@@ -41,4 +41,51 @@
       <li><a href="tel:+19492973119"> <i class="icon-phone"></i>(949) 207-3110</a></li>
     </ul>
   </div>
+</footer>
+ -->
+
+<!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <%= image_tag "logo_m.png", :alt => "Logo" %>
+  </div>
+    <ul>
+        <li><%= link_to "About", about_index_path %></li>
+        <li><%= link_to "Contact", new_contact_path %></li>
+        <li>              
+          <%= link_to "http://www.commercehomemortgage.com", :target=>"_blank" do %>
+            Commerce Home Mortgage
+          <%end%>
+        </li>
+    </ul>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li>              
+          <%= link_to "http://www.commercehomemortgage.com", :target=>"_blank" do %>
+            Commerce Home Mortgage
+          <%end%>
+        </li>
+        <li>              
+          <%= link_to "http://www.commercehomemortgage.com", :target=>"_blank" do %>
+            CHM Wholesale
+          <%end%>
+        </li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+        </a></li>
+      </ul>
+    </div>
 </footer>

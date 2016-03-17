@@ -24,23 +24,18 @@
 @import "global";
 @import "custom";
 
-@import "patterns/header";
-@import "patterns/dynamic_height_header";
-@import "patterns/sub_header";
-@import "patterns/hero";
-@import "patterns/side_image";
-@import "patterns/buttons";
-@import "patterns/cards";
-@import "patterns/grid_bare";
-@import "patterns/table_list";
-@import "patterns/forms";
-@import "patterns/alerts";
-@import "patterns/hover_tile";
-@import "patterns/bullet_cards";
+@import "navigation";
 @import "patterns/footer";
+
+// Patterns
+
+@import "patterns/dynamic_height_container";
+@import "patterns/grid_items";
+@import "patterns/btn";
+@import "patterns/cards";
+@import "patterns/parallax";
+@import "patterns/hero";
 
 @import "typography/type";
 
 @import "icons/icons";
-
-@import "components/map";

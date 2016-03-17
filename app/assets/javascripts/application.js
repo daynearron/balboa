@@ -19,6 +19,7 @@
 //= require mask
 //= require multi-step
 //= require functions
+//= require parallax
 //= require angular/balboa
 //= require_tree ./angular/directives
 //= require_tree .

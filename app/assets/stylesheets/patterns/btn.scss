@@ -1,0 +1,13 @@
+.btn {
+	&--outline {
+		border: 3px solid $color2;
+		@include pad(10px 35px 10px 20px);
+	}
+}
+
+.button-icon {
+	margin-left: -35px;
+	&--yellow {
+		color: $color2;
+	}
+}

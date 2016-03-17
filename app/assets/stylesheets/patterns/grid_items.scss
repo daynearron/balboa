@@ -3,18 +3,20 @@
 }
 
 .grid-items-lines {
-  //padding: 25px;
-  border-radius: $base-border-radius;
-  overflow: hidden;
+
   @include clearfix;
   position: relative;
-  // @extend .box-shadow;
-    
+  
+  @include media($large-screen) {
+    margin-top: -6em;
+    @include pad(0px 50px);
+  }
+
   .grid-item {
     @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
     // border-bottom: $grid-item-border;
     // border-right: $grid-item-border;
-    background: $grid-item-background;
     cursor: pointer;
     float: left;
     height: $grid-item-height;
@@ -23,7 +25,7 @@
     padding: 2em;
     text-decoration: none;
     width: 100%;
-    @extend .bgswap;
+    position: relative;
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
@@ -31,13 +33,13 @@
 
     &:focus,
     &:hover {
-      background: shade($grid-item-background, 10%);
+      background: shade(#fff, 40%) !important;
     }
   }
 
   .grid-item img {
-      display: block;
-      // height: 2.5em;
+      display: none;
+      height: 2.5em;
       margin-bottom: 1.2em;
       opacity: 0.2;
     }
@@ -46,17 +48,19 @@
       color: $grid-item-color;
       font-size: 1.3em;
       margin-bottom: 0.4em;
-      font-weight: 400;
       margin-top: 2.5em;
+      
+      @include media($large-screen) {
+        margin-top: 2.5em;
+      }
     }
 
   .grid-item p {
       color: transparentize($grid-item-color, 0.4);
       line-height: 1.5em;
-      max-width: 80%;
-
+      
       @include media($medium-screen) {
-        max-width: 70%;
+        max-width: 90%;
       }
     }
 
@@ -66,7 +70,7 @@
     }
     p {
       @include media($medium-screen) {
-        max-width: 60%;
+        max-width: 90%;
       }  
     }
   }
@@ -74,19 +78,18 @@
   // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
   // .bottom-cover {
   //   background: $grid-items-background;
-  //   bottom: 25px;
+  //   bottom: 0px;
   //   height: 3px;
   //   position: absolute;
-  //   width: calc(100% - 50px);
+  //   width: 100%;
   // }
 
   // .right-cover {
   //   background: $grid-items-background;
   //   height: 100%;
   //   position: absolute;
-  //   right: 25px;
+  //   right: 0px;
   //   width: 4px;
-  //   top: 0;
   // }
 }
 

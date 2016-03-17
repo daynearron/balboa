@@ -1,14 +1,14 @@
 header.navigation {
 
-  // background-color: $navigation-background;
-  //border-bottom: 1px solid darken($navigation-background, 10);
-  font-family: $sans-serif-3;
+  background-color: $navigation-background;
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-  position: relative;
-  background-color: #fff;
   
+  @include media($large-screen) {
+    position: absolute;
+  }
+
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
@@ -18,22 +18,21 @@ header.navigation {
 
   .logo {
     float: left;
-    // padding-top: 5px;
-    max-height: 60px;
+    max-height: $navigation-height;
     padding-left: $navigation-padding;
-    // padding-right: 2em;
-    @include span-columns(4);
+    padding-right: 2em;
 
     img {
       max-height: $navigation-height;
       padding: 0.8em 0;
+      width: 225px;
     }
   }
 
   // Mobile view
 
   .navigation-menu-button {
-    color: $navigation-color;
+    color: $dark-gray;
     display: block;
     float: right;
     line-height: $navigation-height;
@@ -87,11 +86,7 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    font-size: 0.8em;
     background: $navigation-background;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -274,10 +269,10 @@ header.navigation {
       position: relative;
 
       input[type=search] {
-        @include box-sizing(border-box);
         background: $navigation-search-background;
-        border-radius: $base-border-radius * 2;
         border: $navigation-search-border;
+        border-radius: $base-border-radius * 2;
+        box-sizing: border-box;
         color: $navigation-color;
         font-size: 0.9em;
         font-style: italic;
@@ -315,7 +310,7 @@ header.navigation {
       width: 16em;
 
       input {
-        @include box-sizing(border-box);
+        box-sizing: border-box;
         display: block;
       }
     }

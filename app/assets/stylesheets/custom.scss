@@ -1,34 +1,16 @@
 #welcome-grid-item-0 {
-	background-color: $brand-color-lighter;
-	// background-image: url('bg/blob.svg');
-	@extend .bg-size;
-	@extend .white-text;
-	&:hover {
-		background-color: tint($brand-color-lighter, 60%);
-	}
+	background: $color1;
 }
-
 #welcome-grid-item-1 {
-	@extend .bgswap;
-	background:-color #000;
-	@extend .white-text;
+	background: #000;		
+}
+#welcome-grid-item-2 {
+	background: $color3;
+}
+#welcome-grid-item-3 {
+	background: #000;	
 }
 
 #welcome-grid-item-big {
-	@extend .white-text;
-	background-color: shade($brand-color, 30%);
-	// background-image: url('bg/waves_rc.svg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	h1 {
-		margin-top: 0;
-	}
-	&:hover {
-		background-color: shade($brand-color, 60%);
-	}
+	background: $color2;		
 }
-
-// .contacts {
-// 	background: $brand-color-lighter;
-// }

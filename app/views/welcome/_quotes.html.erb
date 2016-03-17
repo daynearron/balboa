@@ -1,71 +1,32 @@
-<!-- <section class="skinny_wrapper ">  
-  <div class="wrapper hover-wrapper">
-  <% @posts.each do |post| %>
-  <div class="hover-tile-outer">
-    <div class="hover-tile-container">
-      <%= image_tag post.image.url(:large), :class=>"img-swap" %>
-      <div class="hover-tile hover-tile-visible"></div>
-      <div class="hover-tile hover-tile-hidden">
-        <%= link_to post do %><h4><%= post.title %></h4><%end%>
-      </div>
+<div class="cards wrapper">
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+    <div class="card-copy">
+      <p>Now I'll be able to save over $500 per year on Auto alone!</p>
+      <span>Susan R.</span>
     </div>
   </div>
-  <% end %>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
+    </div>
+    <div class="card-copy">
+      <p>I'm saving $1200/yr on auto and homeowners insurance.</p>
+      <span>Kristie B.</span>
+    </div>
   </div>
-</section> -->
 
-
-<!-- // End Posts -->
-
-<!-- <div class="grid-items-lines wrapper mb25">
-  <% @posts.each do |post| %>
-    <%= link_to post, :class=>"grid-item" do %>
-      <%= image_tag post.image.url(:large), :class=>"img-swap" %>
-      <h1><%= post.title %></h1>
-    <% end %>
-  <% end %>
-  <%= link_to posts_path, :class=>"grid-item" do %>
-    <h1>Stay Up to Date</h1>
-    <span class="button button-white-btn">See All Choices</span>
-    <i class="icon-right-open-mini button-icon button-icon-gray"></i>
-  <% end %>
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
+    </div>
+    <div class="card-copy">
+      <p>Joe is always there when I need questions answered.</p>
+      <span>James B.</span>
+    </div>
+  </div>
 </div>
- -->
-
-
-
-<section class="bullet_wrapper">
-  <ul class="bullets">
-    <li class="bullet">
-      <div class="bullet-icon bullet-icon-1">
-        <%= image_tag("svg/watch.svg") %>
-      </div>
-      <div class="bullet-content">
-        <h2>Quote within hours.</h2>
-        <p>Now I'll be able to save over $500 per year on Auto alone!</p>
-        <span>Susan R.</span>
-      </div>
-    </li>  
-    <li class="bullet">
-      <div class="bullet-icon bullet-icon-2">
-        <%= image_tag("svg/speach_bubble.svg") %>
-      </div>
-      <div class="bullet-content">
-        <h2>Super responsive/fast!</h2>
-        <p>I'm saving $1200/yr on auto and homeowners insurance.</p>
-        <span>Kristie B.</span>
-    </li>
-    <li class="bullet">
-      <div class="bullet-icon bullet-icon-3">
-        <%= image_tag("svg/loud_speaker.svg") %>
-      </div>
-      <div class="bullet-content">
-        <h2>Quality Service.</h2>
-        <p>Joe is always there when I need questions answered.</p>
-          <span>James B.</span>
-      </div>
-    </li> 
-  </ul>
-</section>
-
 

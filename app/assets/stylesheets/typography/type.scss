@@ -1,172 +1,30 @@
-.title {
-  font-family: $sans-serif-3;
-  font-size: 2em;
-  font-weight: 100;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-  color: #fff;
+html {font-size: 1em;}
 
-  @include media($medium-screen) {
-    font-size: 2.6em;
-  }
+body {
+  // background-color: white;
+  // font-family: 'Helvetica', san-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
 }
 
-h1, h2, h3, h4, h5, h6, a {
-  font-family: $sans-serif-3;
-  color: tint($brand-color, 60%);
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
 }
 
-p {
-  font-family: $sans-serif-3;
-}
-a {
-  cursor: pointer;
-  color: $brand-color-lighter;
-  text-decoration: none;
-  transition: color $base-duration $base-timing;
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: shade($yellow, 5%);
-  }
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
 }
 
-.roboto {
-  font-family: $sans-serif-3;
-}
-article.type-system-serif section{
+h2 {font-size: 2.827em;}
 
-  @include clearfix;
-  font-family: $sans-serif-3;
-  text-align: left;
-  
-  h1, h2, h3, p {
-    margin: 0;
-  }
+h3 {font-size: 1.999em;}
 
-  hr {
-    border-bottom: 1px solid $light-gray;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    margin: $base-spacing 0;
-  }
+h4 {font-size: 1.414em;}
 
-  p {
-    font-family: $sans-serif-3;
-    color: $base-font-color;
-    line-height: $base-line-height;
-  }
-
-  a {
-    color: $action-color;
-    text-decoration: none;
-  }
-
-  .type {
-    border-bottom: 1px solid;
-    display: inline-block;
-    font-family: $sans-serif-3;
-    font-size: 0.7em;
-    font-weight: 700;
-    margin-bottom: 2em;
-    padding: 0.3em 0;
-    text-align: left;
-    text-transform: uppercase;
-  }
-
-  h1 {
-    font-family: $sans-serif-3;
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-
-    @include media($medium-screen) {
-      font-size: 2.6em;
-    }
-  }
-
-  h2 {
-    font-family: $sans-serif-3;
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.6em;
-    margin-bottom: 0.9em;
-
-    @include media($medium-screen) {
-      font-size: 1.2em;
-    }
-  }
-
-  code {
-    background: #F7F7F7;
-    border-radius: $base-border-radius * 1.5;
-    border: 1px solid #E0E0E0;
-    font-family: monaco;
-    font-size: 0.75em;
-    font-style: normal;
-    padding: 0.1em 0.4em;
-    white-space: nowrap;
-  }
-
-  h3 {
-    font-family: $sans-serif-3;
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.3em;
-    margin-bottom: .4em;
-  }
-
-  p.date {
-    color: transparentize($base-font-color, .6);
-    font-family: $sans-serif-3;
-    font-size: 0.9em;
-    font-style: italic;
-    margin-bottom: 0.3em;
-  }
-
-  p {
-    font-family: $sans-serif-3;
-    font-size: 1.08em;
-    font-weight: 200;
-    margin-bottom: 1.5em;
-    line-height: 2em;
-    letter-spacing: -0.003em;
-
-    span {
-      font-family: $sans-serif-3;
-      font-weight: 700;
-    }
-  }
-
-  a.read-more {
-    display: inline-block;
-    font-family: $sans-serif-3;
-    font-size: 0.8em;
-    font-weight: 700;
-    margin-left: 0.2em;
-    position: relative;
-    text-transform: uppercase;
-
-    span {
-      font-family: $sans-serif-3;
-      font-size: 1.5em;
-      font-style: normal;
-      position: absolute;
-      right: -12px;
-      top: -1px;
-    }
-  }
-  
-  hr {
-    width: 3em;
-  }
-
-  p.author {
-    font-family: $sans-serif-3;
-    font-style: italic;
-  }
-}
+small, .font_small {font-size: 0.707em;}
