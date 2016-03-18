@@ -101,12 +101,20 @@ header.navigation {
       line-height: $navigation-height;
       text-decoration: none;
       width: auto;
+      &:last-child {
+        a {
+          font-weight: 900;
+          color: black;
+        }
+      }
     }
 
     a {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
+      // text-transform: uppercase;
+      font-weight: 100;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
@@ -114,7 +122,7 @@ header.navigation {
 
       &:focus,
       &:hover {
-        color: $navigation-color-hover;
+        color: $color2;
       }
     }
   }

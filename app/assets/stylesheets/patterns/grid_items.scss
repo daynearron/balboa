@@ -39,9 +39,9 @@
 
   .grid-item img {
       display: none;
-      height: 2.5em;
-      margin-bottom: 1.2em;
-      opacity: 0.2;
+      // height: 2.5em;
+      // margin-bottom: 1.2em;
+      // opacity: 0.2;
     }
 
   .grid-item h1 {
@@ -49,6 +49,8 @@
       font-size: 1.3em;
       margin-bottom: 0.4em;
       margin-top: 2.5em;
+      position: relative;
+      z-index: 2;
       
       @include media($large-screen) {
         margin-top: 2.5em;
@@ -58,6 +60,8 @@
   .grid-item p {
       color: transparentize($grid-item-color, 0.4);
       line-height: 1.5em;
+      position: relative;
+      z-index: 2;
       
       @include media($medium-screen) {
         max-width: 90%;

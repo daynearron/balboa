@@ -6,6 +6,7 @@
 	top: 0;
 	left: 0;
 	opacity: 0.6;
+	z-index: 1;
 }
 
 .border-radius {
@@ -24,15 +25,19 @@
 .skinny_wrapper {
 	@extend .border-radius;
 	@extend	.gray-border;
-	@include span-columns(8);
 	@include pad(25px);
 	&--article {
-		padding: 50px 100px;
+		@include media ($large-screen) {
+			padding: 50px 100px;
+			@include span-columns(8);
+		}
 	}
 }
 
 .pull_up {
-	margin-top: -8em;
+	@include media ($large-screen) {
+		margin-top: -8em;
+	}
 	background: #fff;
 	position: relative;
 }
