@@ -1,14 +1,15 @@
 <%= render "hero" %>
-<article class="wrapper">
-	<section class="main post-view">
-		<div class="skinny_wrapper--article">
-			<%= markdown @insurance.description %>
-		</div>
-		<div id="admin_links">
-			<% if user_signed_in? %>
-				<%= link_to "Edit", edit_insurance_path(@insurance) %>
-				<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>
-			<% end %>
-		</div>
-	</section>
+<article class="wrapper type-system-traditional">
+	<div class="skinny_wrapper skinny_wrapper--article pull_up">
+	<h1><%= @insurance.title %></h1>
+  <h2> <%= @insurance.link%> </h2>
+	<%= markdown @insurance.description %>
+	<div id="admin_links">
+		<% if user_signed_in? %>
+			<%= link_to "Edit", edit_insurance_path(@insurance) %>
+			<%= link_to "Delete", insurance_path(@insurance), method: :delete, data: { confirm: "Are you sure?" } %>
+		<% end %>
+	</div>
+</div>
+	<%= render "sidebar" %>
 </article>

@@ -1,21 +1,16 @@
-<%= render "parallax" %>
-<article class="content_well">
-	<section class="main">
-		<ul class="insurance_cards">
-			<% @insurances.each do |insurance| %>
-				<li class="insurance_card">
-					<div class="cropped-image"><%= link_to insurance do%><%= image_tag insurance.image.url(:large) %><%end%></div>
-					<div class="skinny_wrapper">
-						<h2 class="insurance_card--title"><%= link_to insurance do%><%= insurance.title %><%end%></h2>
-						<p>
-						<%= link_to insurance do%><%= truncate(insurance.description, :length => 145) %><%end%></p>
-					<div>
-						<%= link_to "Read More", insurance, :class=>"letter-spacing button button-hero" %>
-						<i class="icon-right-open-mini button-icon"></i>
-					</div>
+<%= render "hero_index" %>
+<article class="wrapper">
+	<div class="content_list">
+		<% @insurances.each do |insurance| %>
+			<%= link_to insurance, :class => 'content_list_item border-radius' do%>
+				<!-- <%= image_tag insurance.image.url(:large) %> -->
+				<div class="image_wrapper">	
+					<%= image_tag('bg/elderly-couple.png') %>
 				</div>
-				</li>
+				<h2><%= insurance.title %></h2>
+				<p><%= truncate(insurance.description, :length => 145) %></p>
 			<% end %>
-		</ul>
-	</section>
+		<% end %>
+	</div>
+	<%= render "sidebar" %>
 </article>

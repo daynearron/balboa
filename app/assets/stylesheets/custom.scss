@@ -1,16 +1,51 @@
 #welcome-grid-item-0 {
 	background: $color1;
+  &:focus,
+  &:hover {
+    h1,
+    p {
+    	color: $color1 !important;
+	  }
+  }
 }
 #welcome-grid-item-1 {
-	background: #000;		
+	background: #000;
+  &:focus,
+  &:hover {
+    h1,
+    p {
+    	color: $color2 !important;
+	  }
+  }
 }
 #welcome-grid-item-2 {
 	background: $color3;
+  &:focus,
+  &:hover {
+    h1,
+    p {
+    	color: $color3 !important;
+	  }
+  }
 }
 #welcome-grid-item-3 {
-	background: #000;	
+	background: #000;
+  &:focus,
+  &:hover {
+    h1,
+    p {
+    	color: $color2 !important;
+	  }
+  }
 }
 
 #welcome-grid-item-big {
-	background: $color2;		
+	background: $color2;
+  &:focus,
+  &:hover {
+    h1,
+    p {
+    	color: $color2 !important;
+	  }
+  }
 }

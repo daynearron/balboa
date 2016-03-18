@@ -8,3 +8,35 @@
 	opacity: 0.6;
 }
 
+.border-radius {
+	border-radius: 3px;
+}
+
+.gray-border {
+	border: 1px solid tint($color5, 76%);
+}
+
+.wrapper {
+	@include outer-container;
+	padding-bottom: 50px;
+}
+
+.skinny_wrapper {
+	@extend .border-radius;
+	@extend	.gray-border;
+	@include span-columns(8);
+	@include pad(25px);
+	&--article {
+		padding: 50px 100px;
+	}
+}
+
+.pull_up {
+	margin-top: -8em;
+	background: #fff;
+	position: relative;
+}
+
+.pull {
+	margin-top: -1em;
+}

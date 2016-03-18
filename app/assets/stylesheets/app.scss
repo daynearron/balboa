@@ -1,13 +1,6 @@
 body {
 	background: #EFEFEF;
 }
-.wrapper {
-	@include outer-container;
-}
-
-.pull {
-	margin-top: -1em;
-}
 
 #insurance-logo-group {
 	text-align: center;

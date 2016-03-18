@@ -1,0 +1,94 @@
+.sidebar {
+
+	// border: 1px solid tint($color5, 78%);
+
+
+	@include media($large-screen) {
+		@include span-columns(4);
+		// @include shift(0.5);
+		// @include pad(15px);
+		margin-top: 15px;
+	}
+	&--quote {
+		background: #fff;
+		border-radius: 3px;
+		@include pad(15px);
+		text-align: center;
+		border-radius: 3px;
+		padding-bottom: 30px;
+		margin-bottom: 15px;
+		// border-bottom: 1px solid tint($color5, 78%);
+		hr {
+			margin: 0 auto;
+			width: 3em;
+			margin-bottom: 15px;
+		}
+		h2 {
+			font-weight: 900;
+			font-size: 26px;
+			margin: 15px 0px;
+		}
+		p {
+			margin-bottom: 30px;
+			font-weight: 100;	
+			padding: 0px 15px; 
+		}
+	}
+	.table_contents {
+		// border: 1px solid tint($color5, 60%);
+		// border-top: 1px solid tint($color5, 78%);
+		background: #fff;
+		border-radius: 3px;
+		@include pad(15px);
+		border-radius: 3px;
+		h3 {
+			font-size: 23px;
+			font-weight: 900;
+			padding: 15px;
+			margin: 0;
+		}
+		ul {
+			li {
+				line-height: 1.5;
+				// border-top: 1px solid tint($color5, 60%);
+				a {
+					@include pad(10px 15px);
+					display: block;
+					color: $color5;
+					@include transition (all 0.2s ease-in-out);
+				  @include media($large-screen) {
+				    &:focus,
+				    &:hover {
+				      background: shade(#EFEFEF, 20%);
+				      color: shade(#EFEFEF, 40%);
+				    }					
+				  }
+					p {
+						font-weight: 100;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	&--address {
+		background: #fff;
+		border-radius: 3px;
+		@include pad(15px 15px 30px 15px);
+		margin-top: 15px;
+		border-top: 1px solid tint($color5, 78%);
+		h3 {
+			font-size: 1.2em;
+			font-weight: 900;
+			margin: 0;
+			padding: 10px 0px;
+		}
+		p {
+			font-size: 0.8em;
+			font-weight: 100;
+		}
+		a {
+			margin-bottom: 30px;
+		}
+	}
+}

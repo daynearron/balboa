@@ -15,11 +15,11 @@
 //= require vendor/angular
 //= require angular/multistep_controller
 //= require jquery_ujs
-//= require turbolinks
 //= require mask
 //= require multi-step
 //= require functions
 //= require parallax
 //= require angular/balboa
+//= require turbolinks
 //= require_tree ./angular/directives
 //= require_tree .

@@ -1,8 +1,7 @@
 $(document).ready(function() {
-
-  // Navigation
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
+
 
   menuToggle.on('click', function(e) {
     e.preventDefault();
@@ -13,7 +12,7 @@ $(document).ready(function() {
     });
   });
 
-  // Typekit
+  Typekit
 
   var head = document.getElementsByTagName('head')[0];
   var script = document.createElement('script');
@@ -34,4 +33,9 @@ $(document).ready(function() {
   // Input Mask
   Inputmask().mask(document.querySelectorAll("input"));
 
+
+  // Parallax
+  if ($("#js-parallax-window").length) {
+    parallax();
+  }
 });

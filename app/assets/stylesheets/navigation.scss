@@ -5,9 +5,9 @@ header.navigation {
   width: 100%;
   z-index: 999;
   
-  @include media($large-screen) {
-    position: absolute;
-  }
+  // @include media($large-screen) {
+  //   position: absolute;
+  // }
 
   .navigation-wrapper {
     @include clearfix;

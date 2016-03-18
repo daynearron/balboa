@@ -1,7 +1,13 @@
 .btn {
+	@include pad(10px 35px 10px 20px);
 	&--outline {
 		border: 3px solid $color2;
-		@include pad(10px 35px 10px 20px);
+	}
+	&--yellow {
+		&--fill {
+			color: #fff !important;
+			background: $color2;
+		}
 	}
 }
 
