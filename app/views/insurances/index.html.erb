@@ -3,9 +3,9 @@
 	<div class="content_list">
 		<% @insurances.each do |insurance| %>
 			<%= link_to insurance, :class => 'content_list_item border-radius' do%>
-				<!-- <%= image_tag insurance.image.url(:large) %> -->
 				<div class="image_wrapper">	
-					<%= image_tag('bg/elderly-couple.png') %>
+					<%= image_tag insurance.image.url(:large) %>
+					<!-- <%= image_tag('bg/elderly-couple.png') %> -->
 				</div>
 				<h2><%= insurance.title %></h2>
 				<p><%= truncate(insurance.description, :length => 145) %></p>

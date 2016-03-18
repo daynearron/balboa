@@ -6,12 +6,12 @@
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><%= link_to "Insurance", insurances_path %></li>
+        <li class="nav-link"><%= link_to "Insurance", insurances_path, :class => current_class?(insurances_path) %></li>
         <!-- <li class="nav-link"><%= link_to "Need Help?", customer_service_index_path %></li> -->
-        <li class="nav-link"><%= link_to "Blog", posts_path %></li>
-        <li class="nav-link"><%= link_to "About", about_index_path %></li>
-        <li class="nav-link"><%= link_to "Contact", new_contact_path %></li>
-        <li class="nav-link"><%= link_to "Get a Quote", quotes_path, class: "yellow-text" %></li>
+        <li class="nav-link"><%= link_to "Blog", posts_path, :class => current_class?(posts_path) %></li>
+        <li class="nav-link"><%= link_to "About", about_index_path, :class => current_class?(about_index_path) %></li>
+        <li class="nav-link"><%= link_to "Contact", new_contact_path, :class => current_class?(new_contact_path) %></li>
+        <li class="nav-link"><%= link_to "Get a Quote", quotes_path, :class => current_class?(quotes_path) %></li>
         <% if user_signed_in? %>
           <li class="nav-link">
             <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>

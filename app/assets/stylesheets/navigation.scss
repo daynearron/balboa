@@ -4,6 +4,7 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  border-bottom: 1px solid tint($color5, 76%);
   
   // @include media($large-screen) {
   //   position: absolute;
@@ -106,6 +107,9 @@ header.navigation {
           font-weight: 900;
           color: black;
         }
+      }
+      .active {
+        color: $color2 !important;
       }
     }
 
@@ -324,3 +328,4 @@ header.navigation {
     }
   }
 }
+

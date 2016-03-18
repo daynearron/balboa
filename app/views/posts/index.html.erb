@@ -3,9 +3,9 @@
 	<div class="content_list">
 		<% @posts.each do |post| %>
 			<%= link_to post, :class => 'content_list_item border-radius' do%>
-				<!-- <%= image_tag post.image.url(:large) %> -->
 				<div class="image_wrapper">	
-					<%= image_tag('bg/elderly-couple.png') %>
+					<!-- #<%= image_tag('bg/elderly-couple.png') %> -->
+					<%= image_tag post.image.url(:large) %>
 				</div>
 				<h2><%= post.title %></h2>
 				<p><%= truncate(post.content, :length => 145) %></p>

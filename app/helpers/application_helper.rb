@@ -1,4 +1,10 @@
 module ApplicationHelper
+
+  def current_class?(test_path)
+    return 'active' if request.path == test_path
+    ''
+  end
+
 	def markdown(content)
 		renderer = Redcarpet::Render::HTML.new(hard_wrap: true, filter_html: true)
 		options = {
