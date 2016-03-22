@@ -8,10 +8,9 @@
 					<%= image_tag post.image.url(:large) %>
 				</div>
 				<h2><%= post.title %></h2>
-				<p><%= truncate(post.content, :length => 145) %></p>
+				<p><%= markdown truncate(post.content, :length => 145) %></p>
 			<% end %>
 		<% end %>
-		<%= will_paginate @posts, :page_links => false, :previous_label => 'Previous', :next_label => 'Next'  %>
 	</div>
 	<%= render "sidebar" %>
 </article>

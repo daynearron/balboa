@@ -1,28 +1,27 @@
-// Uncomment this for a sticky footer.
-//
-// .wrapper-for-content-outside-of-footer {
-//   min-height: 100%;
-//   height: auto !important;
-//   height: 100%;
-//   margin: 0 auto -4em;
-// }
 
-// html, body {
-//  height: 100%;
-// }
+.container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
 
-// .wrapper-for-content-outside-of-footer:after {
-//   content: "";
-//   display: block;
-// }
+html, body {
+ height: 100%;
+}
 
-// .footer-2, .wrapper-for-content-outside-of-footer:after {
-//   height: 17em;
+.container:after {
+  content: "";
+  display: block;
+}
 
-//   @include media($large-screen) {
-//     height: 4em;
-//   }
-// }
+.footer-2, .container:after {
+  height: 17em;
+
+  @include media($large-screen) {
+    height: 4em;
+  }
+}
 
 .footer-2 {
 

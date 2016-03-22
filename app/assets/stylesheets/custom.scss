@@ -4,6 +4,16 @@
   border-bottom: none;
 }
 
+.welcome .image-gradient-dynamic {
+
+  @include media($large-screen) {
+    max-height: 100%;
+    img {
+      margin-top: 0px !important;
+    }
+  }
+}
+
 #welcome-grid-item-0 {
 	background: $color1;
   &:focus,

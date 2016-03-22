@@ -1,15 +1,17 @@
 <%= render "hero" %>
 <article class="wrapper type-system-traditional">
-	<div class="skinny_wrapper skinny_wrapper--article pull_up">
-	<h1><%= @post.title %></h1>
-	<%= markdown @post.content %>
-	<%=render 'social' %>
-	<div id="admin_links">
-		<% if user_signed_in? %>
-			<%= link_to "Edit", edit_post_path(@post) %>
-			<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-		<% end %>
-	</div>
+	<div class="skinny_wrapper pull_up">
+		<div class="skinny_wrapper--article">
+			<h1><%= @post.title %></h1>
+			<%= markdown @post.content %>
+			<%=render 'social' %>
+			<div id="admin_links">
+				<% if user_signed_in? %>
+					<%= link_to "Edit", edit_post_path(@post) %>
+					<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+				<% end %>
+			</div>
+		</div>
 	<%= render 'pagination_links' %>
 </div>
 	<%= render "sidebar" %>

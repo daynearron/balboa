@@ -2,6 +2,7 @@ class ContactsController < ApplicationController
 
 	def new
 		@contact = Contact.new
+		@insurances = Insurance.all.order('random()').paginate(page: params[:page], per_page: 6)	
 	end
 
 	def create

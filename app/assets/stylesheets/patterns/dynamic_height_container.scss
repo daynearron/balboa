@@ -4,6 +4,13 @@
   position: relative;
   width: 100%;
 
+  @include media($large-screen) {
+    max-height: 500px;
+    overflow: hidden;
+    img {
+      margin-top: -15%;
+    }
+  }
   img {
    height: auto;
    left: 0; 

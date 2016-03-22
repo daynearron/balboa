@@ -329,3 +329,51 @@ header.navigation {
   }
 }
 
+
+// Pagination
+
+#pagination_links {
+  overflow: hidden;
+  height: 200px;
+  font-size: 2em;
+  font-weight: 100;
+  @include row(table);
+  @include fill-parent;
+  a.pagination {
+    position: relative;
+    height: 100%;
+    @include omega(2n);
+    .pagination_title,
+    img {
+      left: 0;
+      top: 0;
+      position: absolute;
+      min-height: 200px;
+    }
+    .pagination_title {
+      z-index: 6;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-7px);
+      span {
+        display: none;
+      }
+    }
+    img {
+      z-index: 5;
+      // margin-top: -25%;
+      opacity: 0.5;
+    }
+    &--prev {
+      background-color: $blue;
+      @include span-columns(4);
+    }
+    &--next {
+      @include span-columns(8);
+      @include reset-display;
+    }
+  }
+}

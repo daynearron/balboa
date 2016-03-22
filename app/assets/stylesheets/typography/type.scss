@@ -10,14 +10,6 @@ section {
     margin: 0;
   }
 
-  // hr {
-  //   border-bottom: 1px solid $light-gray;
-  //   border-left: none;
-  //   border-right: none;
-  //   border-top: none;
-  //   margin: $base-spacing 0;
-  // }
-
   p {
     color: $base-font-color;
     line-height: $base-line-height;
@@ -54,7 +46,7 @@ section {
   }
 
   h2 {
-    color: tint($color1, 50%);
+    color: shade($color1, 15%);
     font-family: $serif;
     font-size: 1.3em;
     font-weight: 400;
@@ -85,7 +77,7 @@ section {
   h3 {
     font-family: $serif;
     font-size: 1.4em;
-    font-style: italic;
+    // font-style: italic;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em;
