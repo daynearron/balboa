@@ -1,0 +1,23 @@
+<aside class="sidebar">
+	<div class="table_contents">
+		<h2>Quick Links:</h2>
+		<ul class="content_links">
+			<% @insurances.each do |insurance| %>
+				<li>
+					<%= link_to insurance, :class => 'content_links_item' do%>
+						<p><%= insurance.title %></p>
+					<% end %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="sidebar--address">
+		<h2>Contact Joe Stanovich</h2>
+    <p>
+      Balboa Pacific Insurance Services<br> 
+      450 Newport Center Drive Suite 480<br> 
+      Newport Beach, CA 92660<br> 
+  	</p>
+    <a href="tel:+19492973119" alt="Phone Number" class="btn btn--yellow--fill"> <i class="icon-phone"></i>(949) 207-3110</a>
+	</div>
+</aside>

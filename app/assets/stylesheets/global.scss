@@ -42,10 +42,11 @@
 
 .pull_up {
 	@include media ($large-screen) {
-		margin-top: -8em;
+		margin-top: -4em;
 	}
 	background: #fff;
 	position: relative;
+	z-index: 999;
 }
 
 .pull {

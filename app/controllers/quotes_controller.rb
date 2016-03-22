@@ -3,6 +3,7 @@ class QuotesController < ApplicationController
 
   def index
     @insurance_lead_form = InsuranceLead.new
+    @insurances = Insurance.all.order('random()')
   end
 
   def create

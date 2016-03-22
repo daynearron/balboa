@@ -1,9 +1,8 @@
 .content_list {
 	
 	@include clearfix;
-	
+	@extend .pull_up;
   @include media($large-screen) {
-		margin-top: -6em;
 		@include span-columns(8);
 
 		.content_list_item {

@@ -1,6 +1,6 @@
 .cards {
 
-  @include pad(25px 50px);
+  @include pad(0px 25px 50px);
 
   .card {
     // text-align: center;
@@ -30,13 +30,14 @@
   }
   
   .card-image {
-    height: 150px;
+    height: 200px;
     background: whitesmoke;
     overflow: hidden;
     margin-bottom: 15px;
+    border-radius: 3px;
 
     img {
-      height: 100%;
+      min-height: 100%;
       min-width: 100%;
     }
   }

@@ -28,6 +28,7 @@
 	background: #000;
   &:focus,
   &:hover {
+    background: tint(#000, 15%) !important;
     h1,
     p {
     	color: $color2 !important;
@@ -48,6 +49,7 @@
 	background: #000;
   &:focus,
   &:hover {
+    background: tint(#000, 15%) !important;
     h1,
     p {
     	color: $color2 !important;
@@ -65,3 +67,36 @@
 	  }
   }
 }
+
+
+// Hero Backgrounds
+
+.insurances {
+  .hero {
+    @include background(url("bg/insurance.jpg"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  }
+}
+
+.posts {
+  .hero {
+    @include background(url("bg/posts.jpg"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  }
+}
+
+.about {
+  .hero {
+    @include background(url("bg/about.jpg"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  }
+}
+
+.contacts {
+  .hero {
+    @include background(url("bg/elderly-couple.png"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  }
+}
+.quotes {
+  .hero {
+    @include background(url("bg/quote.jpg"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  }
+}
+
