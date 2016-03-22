@@ -1,7 +1,10 @@
 .content_list {
 	
 	@include clearfix;
-	@extend .pull_up;
+	margin-top: $pull-up-margin;
+	z-index: 999;
+	position:relative;
+	
   @include media($large-screen) {
 		@include span-columns(8);
 

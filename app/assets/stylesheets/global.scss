@@ -42,7 +42,7 @@
 
 .pull_up {
 	@include media ($large-screen) {
-		margin-top: -4em;
+		margin-top: $pull-up-margin;
 	}
 	background: #fff;
 	position: relative;

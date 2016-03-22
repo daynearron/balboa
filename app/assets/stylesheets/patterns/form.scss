@@ -1,0 +1,54 @@
+.form {
+	fieldset {
+		border: 0;
+	}
+	input,
+	textarea {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #E9E9E9;
+    border-radius: .35rem;
+    width: 100%;
+    outline: none;
+    margin: .5rem 0 2rem 0;
+	}
+	input {
+		height: 3rem;
+	}
+	input[type='checkbox']{
+		display: inline;
+		height: auto;
+		width: auto;
+		margin-right: 15px;
+	}
+	label {
+		display: none;
+	}
+	.show-label label {
+		display: inline !important;
+	}
+	textarea {
+		min-height: 300px;
+	}
+	.button {
+		background-color: $brand-color;
+	}
+	li {
+		list-style-type: none;
+	}
+
+}
+
+select {
+	margin-bottom: 25px;
+	border: 1px solid #111;
+	background: transparent;
+	width: 100%;
+  color: #b1b1b1;
+	font-size: 16px;
+	border: 1px solid #E9E9E9;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 10px 18px;
+} 

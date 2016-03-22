@@ -1,7 +1,9 @@
 .welcome header.navigation {
-  background-color: transparent;
-  position: absolute;
-  border-bottom: none;
+  @include media($large-screen) {
+    background-color: transparent;
+    position: absolute;
+    border-bottom: none;
+  }
 }
 
 .welcome .image-gradient-dynamic {
