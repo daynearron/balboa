@@ -1,17 +1,17 @@
-$(document).ready(function() {
-  // var menuToggle = $('#js-mobile-menu').unbind();
+var do_on_load = function() { 
+  var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
 
 
-  // menuToggle.on('click', function(e) {
-  //   e.preventDefault();
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
 
-  //   $('#js-navigation-menu').slideToggle(function(){
-  //     if($('#js-navigation-menu').is(':hidden')) {
-  //       $('#js-navigation-menu').removeAttr('style');
-  //     }
-  //   });
-  // });
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
 
   // Typekit
 
@@ -68,8 +68,7 @@ $(document).ready(function() {
         that.hide().prev('div.tab').show()
       }
   });
+}
 
-
-
-
-});
+$(document).ready(do_on_load)
+$(window).bind('page:change', do_on_load)
