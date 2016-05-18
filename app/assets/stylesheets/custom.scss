@@ -1,6 +1,6 @@
 .welcome header.navigation {
   @include media($large-screen) {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.7);
     position: absolute;
     border-bottom: none;
   }
@@ -13,6 +13,15 @@
     img {
       margin-top: 0px !important;
     }
+    .copy {
+       margin-top: -30px;
+    }
+  }
+}
+
+.welcome .grid-items-lines {
+  @include media($large-screen) {
+    margin-top: -8em;
   }
 }
 
