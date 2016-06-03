@@ -28,8 +28,11 @@ html, body {
   background: $footer-background;
   padding: $base-spacing;
   width: 100%;
-  display: inline-block;
+  display: block;
 
+  .footer-wrapper {
+    @include outer-container;
+  }
   .footer-logo {
     margin-right: 1em;
     margin-bottom: 1em;

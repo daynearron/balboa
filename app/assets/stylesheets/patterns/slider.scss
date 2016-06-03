@@ -1,0 +1,38 @@
+// //how many images we have
+// $slides: 4;
+
+// // how much we want each slide to show
+// $time_per_slide: 4;
+
+// // total time needed for full animation
+// $total_animation_time: $time_per_slide * $slides;
+
+// .slider{
+//   background-color: $off-white;
+//   overflow:hidden;
+//   height: 200px;
+//   width: 100%;
+//   padding: 30px;
+//   position:relative;
+// }
+// .slide{
+//   position:absolute;
+//   top: 0;
+//   animation:round #{$total_animation_time}s infinite;
+//   opacity:0;
+// }
+
+// @keyframes round{   
+//   25%{
+//     opacity:1;
+//   }
+//   40%{
+//     opacity:0;
+//   }
+// } 
+
+// @for $index from 1 to $slides + 1{
+//   .slide:nth-child(#{$index}){
+//     animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+//   }
+// }

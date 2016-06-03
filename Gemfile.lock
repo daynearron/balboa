@@ -5,6 +5,14 @@ GIT
     paperclip_database (2.3.1)
       paperclip (>= 2.3.0)
 
+GIT
+  remote: git://github.com/nunopolonia/unslider-rails.git
+  revision: a5167a276f51ed7a03ddc4b8f6c99a89dbbc5a20
+  specs:
+    unslider-rails (0.0.1)
+      jquery-rails
+      railties (>= 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -240,6 +248,7 @@ DEPENDENCIES
   spring
   turbolinks
   uglifier (>= 1.3.0)
+  unslider-rails!
   web-console (~> 2.0)
   will_paginate (~> 3.1)
 

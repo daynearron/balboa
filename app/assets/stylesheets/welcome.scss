@@ -1,0 +1,27 @@
+
+#about-box {
+	width: 100%;
+    padding: 60px 0 70px;
+
+	.about-box-wrapper {
+		@include span-columns(6);
+	}
+
+	h3 {
+		font-size: 22px;
+	    line-height: 30px;
+	    color: $brand-color;
+	}
+
+	p {
+		color: $slate;
+	    font-size: 18px;
+	    line-height: 25px;
+	    margin: 22px 0 0;
+	}
+}
+
+.slide-section {
+	background-color: $off-white;
+	padding-top: 25px;
+}

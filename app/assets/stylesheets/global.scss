@@ -21,9 +21,11 @@
 	border: 1px solid tint($color5, 76%);
 }
 
+.db {
+	display: block;
+}
 .wrapper {
 	@include outer-container;
-	padding-bottom: 50px;
 }
 
 .skinny_wrapper {
@@ -80,3 +82,6 @@ textarea{
 	border: 1px solid #ddd;
 	margin-bottom: 35px;
 }
+
+
+

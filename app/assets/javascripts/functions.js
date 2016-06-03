@@ -1,7 +1,8 @@
+
+
 var do_on_load = function() { 
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
-
 
   menuToggle.on('click', function(e) {
     e.preventDefault();
@@ -72,3 +73,4 @@ var do_on_load = function() {
 
 $(document).ready(do_on_load)
 $(window).bind('page:change', do_on_load)
+

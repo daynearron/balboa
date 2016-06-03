@@ -8,8 +8,8 @@
   position: relative;
   
   @include media($large-screen) {
-    margin-top: -6em;
-    @include pad(0px 50px);
+    // margin-top: -6em;
+    // @include pad(0px 50px);
   }
 
   .grid-item {
@@ -33,7 +33,7 @@
 
     &:focus,
     &:hover {
-      background: #fff !important;
+      background: $brand-color !important;
     }
   }
 

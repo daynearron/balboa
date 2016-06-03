@@ -20,8 +20,8 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-left: $navigation-padding;
-    padding-right: 2em;
+    // padding-left: $navigation-padding;
+    // padding-right: 2em;
 
     img {
       max-height: $navigation-height;
@@ -368,7 +368,7 @@ header.navigation {
       opacity: 0.5;
     }
     &--prev {
-      background-color: $blue;
+      // background-color: $blue;
       @include span-columns(4);
     }
     &--next {
