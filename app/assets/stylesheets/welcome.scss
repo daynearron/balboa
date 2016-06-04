@@ -2,6 +2,7 @@
 #about-box {
 	width: 100%;
     padding: 60px 0 70px;
+	background-color: #fff;
 
 	.about-box-wrapper {
 		@include span-columns(6);

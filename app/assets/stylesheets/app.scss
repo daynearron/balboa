@@ -25,3 +25,34 @@
 }
 
 
+.box-services {
+    background: url(images/bg-features.jpg);
+    background-color: $brand-color;
+    background-size: cover;
+    padding: 100px 0 90px;
+    color: #fff;
+
+    .wrapper:first-child{
+		margin-bottom: 80px;
+    }
+
+	.point {
+		@include span-columns(5);
+		@include omega(2n);
+
+		h4,
+		p {
+			max-width: 88%;
+			color: #fff;
+		}
+
+	}
+	.icon {
+		@include span-columns(1);
+		img {
+			max-width: 50px;
+		    max-height: 50px;
+		    vertical-align: middle;
+		}
+	}
+}
