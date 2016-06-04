@@ -82,7 +82,7 @@
 
 // // Hero Backgrounds
 
-// .insurances {
+.insurances {
   .hero {
     @include background(url("bg/insurance.jpg"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   }
