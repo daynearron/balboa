@@ -51,6 +51,7 @@
       margin-top: 2.5em;
       position: relative;
       z-index: 2;
+      font-weight: bold;
       
       @include media($large-screen) {
         margin-top: 2.5em;
