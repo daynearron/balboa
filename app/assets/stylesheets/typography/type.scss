@@ -134,6 +134,9 @@ section {
 
 //custom
 .welcome-text {
-  font-size: 3em;
+  @include media($large-screen) {
+    font-size: 3em;
+  }
+  font-size: 1.5em;
   font-weight: light;
 }

@@ -6,7 +6,10 @@
 	text-align: center;
 	@include clearfix;
 	@include pad(50px 25px);
-
+	
+	li:not(:last-child) {
+		margin-bottom: 25px;
+	}
 	
 	img {
 		max-width: 80%;
@@ -15,13 +18,14 @@
   @include media($large-screen) {
     // margin-top: 3em;
   	li {
+  			margin-bottom: 0px;
 			@include span-columns(2);
 			@include omega(5n);
 			&:first-child {
 				@include shift(1);
 			}
 		}
-  }
+    }
 }
 
 
@@ -29,30 +33,46 @@
     background: url(images/bg-features.jpg);
     background-color: $brand-color;
     background-size: cover;
-    padding: 100px 0 90px;
     color: #fff;
+	padding-top: 25px;
 
     .wrapper:first-child{
 		margin-bottom: 80px;
     }
 
-	.point {
-		@include span-columns(5);
-		@include omega(2n);
-
-		h4,
+    .point,
+    .icon {
+    	text-align: center;
+    	@include span-columns(12);
+    	@include pad(10px);
+    	h4,
 		p {
-			max-width: 88%;
 			color: #fff;
 		}
-
-	}
-	.icon {
-		@include span-columns(1);
 		img {
 			max-width: 50px;
 		    max-height: 50px;
 		    vertical-align: middle;
+		}
+    }
+	@include media($large-screen) {
+		padding: 100px 0 90px;
+		.point {
+			padding: 0;
+			@include span-columns(5);
+			@include omega(2n);
+	    	h4,
+			p {
+				max-width: 88%;
+				color: #fff;
+			}
+		}
+		.icon {
+			@include span-columns(1);
+		}
+		.point,
+		.icon {
+			text-align: left;
 		}
 	}
 }

@@ -16,4 +16,16 @@
 	&--yellow {
 		color: $color2;
 	}
+	&--white {
+		color: #fff;
+	}
+}
+
+.btn--brand-blue {
+	border: none;
+	color: #fff;
+	background: #608E95;
+	&::before {
+		color: #fff !important;
+	}
 }

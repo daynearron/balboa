@@ -1,11 +1,18 @@
 
 #about-box {
 	width: 100%;
-    padding: 60px 0 70px;
 	background-color: #fff;
+	@include pad(25px);
 
 	.about-box-wrapper {
-		@include span-columns(6);
+		@include media($large-screen) {
+			@include span-columns(6);
+		}
+		@include span-columns(12);
+	}
+
+	@include media($large-screen) {
+		padding: 60px 0 70px;
 	}
 
 	h3 {
@@ -25,4 +32,9 @@
 .slide-section {
 	background-color: $off-white;
 	padding-top: 25px;
+	display: none;
+
+	@include media($large-screen) {
+		display: block;
+	}
 }
