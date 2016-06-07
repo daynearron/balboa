@@ -1,4 +1,5 @@
 .btn {
+	cursor: pointer;
 	@include pad(10px 35px 10px 20px);
 	&--outline {
 		border: 3px solid $color2;
@@ -27,5 +28,9 @@
 	background: #608E95;
 	&::before {
 		color: #fff !important;
+	}
+	&:hover {
+		background: tint(#608E95, 22%);
+		color: shade(#608E95, 40%);
 	}
 }

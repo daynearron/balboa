@@ -2,6 +2,10 @@
 #about-box {
 	width: 100%;
 	background-color: #fff;
+	background-image: url('temp.png');
+	background-repeat: no-repeat;
+	background-position: 90% center;
+	background-size: 400px;
 	@include pad(25px);
 
 	.about-box-wrapper {

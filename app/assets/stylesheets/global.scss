@@ -30,7 +30,7 @@
 
 .skinny_wrapper {
 	@extend .border-radius;
-	@extend	.gray-border;
+	// @extend	.gray-border;
 	@include pad(25px);
 	@include media ($large-screen) {
 		@include span-columns(8);
@@ -44,7 +44,7 @@
 
 .pull_up {
 	@include media ($large-screen) {
-		margin-top: $pull-up-margin;
+		// margin-top: $pull-up-margin;
 	}
 	background: #fff;
 	position: relative;

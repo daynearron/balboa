@@ -102,7 +102,7 @@
 
 .contacts {
   .hero {
-    @include background(url("bg/elderly-couple.png"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+    @include background(url("bg/joe.jpg"), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   }
 }
 .quotes {
