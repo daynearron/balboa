@@ -15,9 +15,6 @@
 //= require vendor/angular
 //= require angular/multistep_controller
 //= require jquery_ujs
-//= require mask
-//= require multi-step
-//= require functions
 //= require angular/balboa
 //= require turbolinks
 //= require_tree ./angular/directives

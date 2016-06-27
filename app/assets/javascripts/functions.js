@@ -1,18 +1,4 @@
-
-
 var do_on_load = function() { 
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
-  });
 
   // Typekit
 
@@ -35,9 +21,20 @@ var do_on_load = function() {
   // Input Mask
   Inputmask().mask(document.querySelectorAll("input"));
 
+
+
+  // Slide Menu
+
+  $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+    e.preventDefault();
+  });
+
+
+
   // Next/Prev Form
 
-  // selects all the divs of class='sample',hides them, finds the first, and shows it
+  // selects all the divs of class='tab',hides them, finds the first, and shows it
   $('div.tab').hide().first().show();
 
   // binds a click event-handler to a elements whose class='display'
@@ -72,5 +69,5 @@ var do_on_load = function() {
 }
 
 $(document).ready(do_on_load)
-$(window).bind('page:change', do_on_load)
+$(document).on('page:load', do_on_load)
 
