@@ -6,9 +6,6 @@ header.navigation {
   z-index: 999;
   border-bottom: 1px solid tint($color5, 76%);
   
-  // @include media($large-screen) {
-  //   position: absolute;
-  // }
 
   .navigation-wrapper {
     @include clearfix;
@@ -20,13 +17,11 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    // padding-left: $navigation-padding;
-    // padding-right: 2em;
 
     img {
       max-height: $navigation-height;
       padding: 0.8em 0;
-      width: 225px;
+      width: 255px;
     }
   }
 }
@@ -35,16 +30,6 @@ header.navigation {
 // Slideout Nav
 
 .sliding-panel-content {
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $sliding-panel-border-color: $dark-gray;
-  $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
-  $sliding-panel-color: #fff;
-  $sliding-panel-border: 1px solid $sliding-panel-border-color;
-  $sliding-panel-background-hover: $action-color;
-  $sliding-panel-color-hover: #fff;
-  $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
-
   @include position(fixed, 0 auto 0 0);
   @include size(220px 100%);
   background: $sliding-panel-background;
@@ -64,7 +49,7 @@ header.navigation {
   }
 
   li a {
-    border-bottom: $sliding-panel-border;
+    //border-bottom: $sliding-panel-border;
     color: $sliding-panel-color;
     display: block;
     font-weight: bold;
@@ -101,18 +86,24 @@ header.navigation {
 }
 
 .sliding-panel-button {
+  // background: #fff;
   cursor: pointer;
-  display: block;
+  // display: block;
   outline: none;
-  padding: 10px 16px;
+  color: #000;
+  // padding: 10px 16px;
   right: 0;
   position: absolute;
   top: 10px;
-  border-radius: 50%;
 
-  img {
-    height: 1.3em;
+  &:hover,
+  &:active,
+  &:focus {
+    background: transparent;
   }
+  // img {
+  //   height: 1.3em;
+  // }
 }
 
 

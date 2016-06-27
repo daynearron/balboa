@@ -3,8 +3,13 @@
     <a href="/" class="logo">
       <%= image_tag "color_logo.svg" %>
     </a>
-    <button type="button" class="js-menu-trigger sliding-panel-button">
+<!--     <button type="button" class="js-menu-trigger sliding-panel-button">
       M
+    </button> -->
+    <button class="hamburger js-menu-trigger sliding-panel-button hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
   </div>
 </header>
@@ -12,9 +17,11 @@
 <nav class="js-menu sliding-panel-content">
       <ul>
       <% @insurances.each_with_index do |insurance, index| %>
-        <%= link_to insurance do %>
-        <li><%= insurance.title %></li>
-      <% end %>
+        <li>
+          <%= link_to insurance do %>
+            <%= insurance.title %>
+          <% end %>            
+        </li>
     <% end %>
     <li>
       <%= link_to "The Company", new_contact_path, :class => current_class?(new_contact_path) %>

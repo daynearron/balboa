@@ -26,10 +26,18 @@ var do_on_load = function() {
   // Slide Menu
 
   $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
-    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+    $('.sliding-panel-content,.sliding-panel-fade-screen,.hamburger').toggleClass('is-visible');
     e.preventDefault();
   });
 
+  // // Look for .hamburger
+  // var hamburger = document.querySelector(".hamburger");
+  // // On click
+  // hamburger.addEventListener("click", function() {
+  //   // Toggle class "is-active"
+  //   hamburger.classList.toggle("is-active");
+  //   // Do something else, like open/close menu
+  // });
 
 
   // Next/Prev Form
