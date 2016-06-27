@@ -1,5 +1,5 @@
 <div class="grid-items-lines">
-  <% @insurances.each_with_index do |insurance, index| %>
+  <% @insurance_grid.each_with_index do |insurance, index| %>
     <%= link_to insurance, :class=>"grid-item", :id =>"welcome-grid-item-#{index}" do %>  
       <% if index == 1 %>
         <%= image_tag insurance.image.url(:large), :class=>"img-swap" %>

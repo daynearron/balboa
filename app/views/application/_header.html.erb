@@ -3,9 +3,6 @@
     <a href="/" class="logo">
       <%= image_tag "color_logo.svg" %>
     </a>
-<!--     <button type="button" class="js-menu-trigger sliding-panel-button">
-      M
-    </button> -->
     <button class="hamburger js-menu-trigger sliding-panel-button hamburger--collapse" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -16,7 +13,7 @@
 
 <nav class="js-menu sliding-panel-content">
       <ul>
-      <% @insurances.each_with_index do |insurance, index| %>
+      <% @insurance_header.each_with_index do |insurance, index| %>
         <li>
           <%= link_to insurance do %>
             <%= insurance.title %>
@@ -29,12 +26,13 @@
     <li>
       <%= link_to "Get a Quote", quotes_path, :class => current_class?(quotes_path) %>
     </li>
+
     <% if user_signed_in? %>
       <li>
         <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
       </li>
-    <% end %>
   </ul>
+    <% end %>
 </nav>
 
 <div class="js-menu-screen sliding-panel-fade-screen"></div>
