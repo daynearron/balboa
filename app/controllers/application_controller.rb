@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_action :insurance_head
+  before_action :insurance_grid
 
   def index
   end
@@ -23,9 +24,14 @@ class ApplicationController < ActionController::Base
 
   private
 
-  	def insurance_head
+  def insurance_head
 		@insurance_header = Insurance.all
 	end
+
+  def insurance_grid
+    @insurance_grid = Insurance.all.order("created_at desc").paginate(page: params[:page], per_page: 4)
+  end
+
 end
 
 

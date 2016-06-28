@@ -1,5 +1,5 @@
 <aside class="sidebar">
-<!-- 	<div class="sidebar--quote">
+	<div class="sidebar--quote">
 		<h2>Get A Quote</h2>
 		<p>It's simple, just fill the form out, submit, and we will do all the hard work for you!</p>
 	  <%= link_to "Get Started", quotes_path, class: "btn btn--outline" %>
@@ -8,7 +8,7 @@
 	<div class="table_contents">
 		<h2>Quick Links:</h2>
 		<ul class="content_links">
-			<% @insurances.each do |insurance| %>
+			<% @insurance_grid.each do |insurance| %>
 				<li>
 					<%= link_to insurance, :class => 'content_links_item' do%>
 						<p><%= insurance.title %></p>
@@ -25,5 +25,5 @@
       Newport Beach, CA 92660<br> 
   	</p>
     <a href="tel:+19492973119" alt="Phone Number" class="btn btn--yellow--fill"> <i class="icon-phone"></i>(949) 207-3110</a>
-	</div> -->
+	</div>
 </aside>

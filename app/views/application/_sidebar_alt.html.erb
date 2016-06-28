@@ -2,7 +2,7 @@
 	<div class="table_contents">
 		<h2>Quick Links:</h2>
 		<ul class="content_links">
-			<% @insurances.each do |insurance| %>
+			<% @insurance_grid.each do |insurance| %>
 				<li>
 					<%= link_to insurance, :class => 'content_links_item' do%>
 						<p><%= insurance.title %></p>
