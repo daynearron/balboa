@@ -5,14 +5,25 @@
 	input,
 	textarea,
 	select {
-	    font-size: 10px;
+		color: tint($brand-color, 25%);
+	    font-size: 1.0em;
 	    border: 0;
-	    border-bottom: 1px solid #E9E9E9;
-	    border-radius: 0;
+	    border-bottom: 1px solid shade($brand-color, 25%);
+	    border-radius: 0 !important;
 	    width: 100%;
 	    outline: none;
 	    margin: .5rem 0 2rem 0;
 	    text-transform: uppercase;
+	    padding: 10px;
+	    background: transparent;
+	    // @include span-columns(5 of 10);
+	    &:hover {
+	    	background: tint($brand-color, 25%);
+	    }
+	    &:active,
+	    &:focus {
+	    	border-bottom: 1px solid tint($brand-color, 25%);
+	    }
 	}
 	input {
 		// height: 3rem;
@@ -30,10 +41,12 @@
 		display: inline !important;
 	}
 	textarea {
-		min-height: 300px;
+		min-height: 200px;
 	}
 	.button {
-		background-color: $brand-color;
+		border: 2px solid shade($brand-color, 25%);
+		color: shade($brand-color, 25%);
+		padding: 25px;
 	}
 	li {
 		list-style-type: none;
@@ -53,3 +66,48 @@
 // 	-moz-appearance: none;
 // 	appearance: none;
 // } 
+
+
+.inputs {
+	padding: 0;
+	ol li {
+		@include clearfix;
+		@include span-columns(4 of 8);
+		@include omega(2n);
+	}
+}
+.form-btn {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: block;
+	float: left;
+	width: 50%;
+	@include pad(25px);
+}
+
+.next-btn {
+	background: tint($brand-color, 20%);
+	&:hover {
+		color: tint($brand-color, 35%);
+		background: shade($brand-color, 35%);
+	}
+}
+
+.prev-btn{
+	background: shade($brand-color, 20%);
+	&:hover {
+		color: shade($brand-color, 35%);
+		background: tint($brand-color, 35%);
+	}
+}
+
+#new_insurance_lead {
+	@include pad(3em);
+}
+
+#insurance_lead_drivers_information_input,
+.fileUpload {
+	width: 100% !important;
+	@include clearfix;
+}

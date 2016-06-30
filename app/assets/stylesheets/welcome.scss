@@ -35,7 +35,7 @@
 
 .slide-section {
 	background-color: $off-white;
-	padding-top: 25px;
+    padding: 90px;
 	display: none;
 
 	@include media($large-screen) {

@@ -1,10 +1,37 @@
 <%= render 'hero_index' %>
 <article class="wrapper">
 	<div class="skinny_wrapper">
-	<h1>This is a Headline?</h1>
-	<h2>Subheader</h2>
-	<p>Lorem ipsum dolor sit amet, cras labore. Ipsum at. Pharetra eget in, neque et arcu sed. Qui semper ornare quos nulla vitae nisl, maecenas sit curabitur integer fusce orci, at suspendisse wisi magna venenatis, felis condimentum enim sed nisl in vel, dignissim ultrices vestibulum dolor magnis rutrum. Nullam sem vehicula.</p>
-	<%= render 'form' %>
-			</div>
-	<%= render 'sidebar' %>
+		<h1>Say Hello!</h1>
+		<h2>Give us a try and see the difference.</h2>
+		<p>Lorem ipsum dolor sit amet, cras labore. Ipsum at. Pharetra eget in, neque et arcu sed. Qui semper ornare quos nulla vitae nisl, maecenas sit curabitur integer fusce orci, at suspendisse wisi magna venenatis, felis condimentum enim sed nisl in vel, dignissim ultrices vestibulum dolor magnis rutrum. Nullam sem vehicula.</p>
+		<%= render 'form' %>
+	</div>
 </article>
+	<div class="map">
+			<div id="map-canvas" style="width:100%;height:350px;"></div>
+	</div>
+<script>
+function initMap() {
+  var myLatLng = {lat: 33.615158, lng: -117.871958};
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    zoom: 13,
+    center: myLatLng,
+    scrollwheel: false,
+    disableDefaultUI: true,
+    styles: 
+    [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Balboa Pacific',
+    icon: '<%= image_path 'marker.png' %>'
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEBGFb-xpe1LTXwaG3pxiN1PbfpTmOf_s&callback=initMap"
+async defer></script>
+
+

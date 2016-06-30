@@ -51,7 +51,7 @@ var do_on_load = function() {
       e.preventDefault();
 
       $('html,body').animate({
-        scrollTop: 0
+        scrollTop: 360
       }, 700);
 
       // assigns the currently visible div.tab element to a variable

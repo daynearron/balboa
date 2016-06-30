@@ -12,13 +12,13 @@
 </header>
 
 <nav class="js-menu sliding-panel-content">
-      <ul>
-      <% @insurance_header.each_with_index do |insurance, index| %>
-        <li>
-          <%= link_to insurance do %>
-            <%= insurance.title %>
-          <% end %>            
-        </li>
+  <ul>
+    <% @insurance_header.each_with_index do |insurance, index| %>
+      <li>
+        <%= link_to insurance do %>
+          <%= insurance.title %>
+        <% end %>            
+      </li>
     <% end %>
     <li>
       <%= link_to "The Company", new_contact_path, :class => current_class?(new_contact_path) %>

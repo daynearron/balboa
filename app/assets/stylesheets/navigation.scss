@@ -4,7 +4,8 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-  border-bottom: 1px solid tint($color5, 76%);
+  position: absolute;
+  // border-bottom: 1px solid tint($color5, 76%);
   
 
   .navigation-wrapper {

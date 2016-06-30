@@ -29,7 +29,7 @@
 }
 
 .skinny_wrapper {
-	@extend .border-radius;
+	// @extend .border-radius;
 	// @extend	.gray-border;
 	@include pad(25px);
 	@include media ($large-screen) {
@@ -38,6 +38,24 @@
 	&--article {
 		@include media ($large-screen) {
 			padding: 50px 100px;
+		}
+	}
+	&--center {
+		z-index: 999;
+		background-color: #fff;
+		position: relative;
+		padding: 0;
+		@include media ($large-screen) {
+			margin-top: -6em;
+			margin-bottom: 2em;
+			@include shift(1);
+			@include span-columns(10);
+		}
+		&--blue {
+			background-color: $brand-color;
+			* {
+				color: #fff;
+			}
 		}
 	}
 }

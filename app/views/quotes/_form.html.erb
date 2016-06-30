@@ -1,6 +1,7 @@
 <div id="tabs" class="form">
   <%= semantic_form_for(@insurance_lead_form, url: quotes_path) do |f| %>
   <div class="tab">
+    <h2>Let's start with information about you:</h2>
     <%= f.inputs :step_1 do %>
       <%= f.input :first_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :placeholder =>"First Name*"%>
       <%= f.input :last_name, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, :placeholder =>"Last Name*" %> 
@@ -15,6 +16,7 @@
     <% end %>
   </div>
   <div class="tab">
+    <h2 class="fileUpload">Now tell us about your Auto situation:</h2>
     <%= f.inputs :step_2 do %>
       <%= f.input :drivers_information, :input_html => { :rows=> 6, :class => "form-control w100p-md"}, :placeholder =>"Enter Drivers Information" %>
       <div class="fileUpload">
@@ -22,7 +24,8 @@
         <%= f.input :current_auto_insurance_policy %>
       <div>
     <% end %>
-
+    </div>
+    <div class="tab">
     <%= f.inputs :step_3 do %>
       <%= f.input :homeowners_quote_type, as: :select, collection: InsuranceLead::HOMEOWNERS_QUOTE_TYPES, include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Request Home/Condo/Renters Quote?" %>
       <%= f.input :own_dogs, as: :select, prompt: "Do You Own a Dog?", include_blank: false, :input_html => { :class => "form-control input-lg w50p w100p-md"}%>
@@ -31,10 +34,10 @@
       <%= f.input :dog_3_breed, :input_html => { :class => "short-input form-control input-lg w50p w100p-md"}, :placeholder =>"Dog Breed 3" %>
       <%= f.input :home_security_system, as: :select, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Does Your Home Have a Security System?" %>
       <%= f.input :major_home_updates, as: :select, include_blank: false, :input_html => { :class => "form-control input-lg w100p30 w100p-md"}, prompt: "Any Major Updates to Your Home?" %>
-      <div class="fileUpload"> 
-        <h2>Upload Current Home Insurance Policy</h2>
+<!--       <li class="fileUpload">  -->
+      <li class="fileUpload"><h2>Upload Current Home Insurance Policy</h2></li>
         <%= f.input :current_home_insurance_policy, :input_html => { :class => "w100p-md"} %>
-      </div>
+      <!-- </li> -->
     <% end %>
   </div>
   <div class="tab">    
@@ -69,6 +72,8 @@
     <% end %>
   </div>
   <% end %>
-  <a href="javascript:void(0)" id="display" class="display">next</a>
-  <a href="javascript:void(0)" id="display1" class="display">prev</a>
+  <div class="next-prev">
+    <a href="javascript:void(0)" id="display1" class="display form-btn prev-btn">prev</a>
+    <a href="javascript:void(0)" id="display" class="display form-btn next-btn">next</a>
+  </div>
 </div>  
