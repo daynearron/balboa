@@ -1,5 +1,27 @@
 var do_on_load = function() { 
+  // Fade on Scroll
 
+  var element = $(".js-fadeInElement");
+  $(element).addClass('js-fade-element-hide');
+
+  $(window).scroll(function() {
+    if( $(".js-fadeInElement").length > 0 ) {
+      var elementTopToPageTop = $(element).offset().top;
+      var windowTopToPageTop = $(window).scrollTop();
+      var windowInnerHeight = window.innerHeight;
+      var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
+      var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
+      var distanceFromBottomToAppear = 300;
+
+      if(elementTopToWindowBottom > distanceFromBottomToAppear) {
+        $(element).addClass('js-fade-element-show');
+      }
+      else if(elementTopToWindowBottom < 0) {
+        $(element).removeClass('js-fade-element-show');
+        $(element).addClass('js-fade-element-hide');
+      }
+    }
+  });
   // Typekit
 
   var head = document.getElementsByTagName('head')[0];

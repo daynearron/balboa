@@ -8,9 +8,10 @@ class InsuranceLeadMailer < ActionMailer::Base
     attachments["current_home_policy#{File.extname(insurance_lead.current_home_insurance_policy_file_name)}"] = Paperclip.io_adapters.for(insurance_lead.current_home_insurance_policy).read
 
     if Rails.env.production?
-      mail(to: "joe@balboapacific.com", bcc: "richard.j.young@gmail.com")
+      mail(to: "design@daynearron.com")
+      # joe@balboapacific.com
     else
-      mail(to: "richard.j.young@gmail.com")
+      mail(to: "design@daynearron.com")
     end
   end
 

@@ -8,21 +8,18 @@
 		color: tint($brand-color, 25%);
 	    font-size: 1.0em;
 	    border: 0;
-	    border-bottom: 1px solid shade($brand-color, 25%);
-	    border-radius: 0 !important;
+	    border: 1px solid tint($brand-color, 50%);
+	    border-radius: 2px;
 	    width: 100%;
 	    outline: none;
 	    margin: .5rem 0 2rem 0;
-	    text-transform: uppercase;
+	    // text-transform: uppercase;
 	    padding: 10px;
 	    background: transparent;
 	    // @include span-columns(5 of 10);
-	    &:hover {
-	    	background: tint($brand-color, 25%);
-	    }
 	    &:active,
 	    &:focus {
-	    	border-bottom: 1px solid tint($brand-color, 25%);
+	    	border: 1px solid tint($yellow, 25%);
 	    }
 	}
 	input {
@@ -34,14 +31,18 @@
 		width: auto;
 		margin-right: 15px;
 	}
+	abbr[title] {
+		text-decoration: none;
+	}
 	label {
-		display: none;
+		// display: none;
+		color: tint($brand-color, 50%);
 	}
 	.show-label label {
 		display: inline !important;
 	}
 	textarea {
-		min-height: 200px;
+		min-height: 120px;
 	}
 	.button {
 		border: 2px solid shade($brand-color, 25%);
@@ -107,7 +108,33 @@
 }
 
 #insurance_lead_drivers_information_input,
+#insurance_lead_work_positions_input,
+#insurance_lead_additional_details_input,
+
 .fileUpload {
 	width: 100% !important;
 	@include clearfix;
+}
+
+.tab h2 {
+	display: block;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+#interest {
+	width: 100%;
+	@include omega(4n);
+	ul {
+		width: 100%;
+		@include clearfix;
+		li {
+			float: left;
+			width: 25%;
+			margin: 0;
+			clear: none !important;
+			@include omega(4n);
+		}
+	}
 }

@@ -6,24 +6,9 @@
   }
 }
 
-// .welcome .image-gradient-dynamic {
-//   .overlay { opacity: 1 !important;}
-//   @include media($large-screen) {
-//     max-height: 100%;
-//     img {
-//       margin-top: 0px !important;
-//     }
-//     .copy {
-//        margin-top: -30px;
-//     }
-//   }
-// }
-
-// .welcome .grid-items-lines {
-//   @include media($large-screen) {
-//     margin-top: -8em;
-//   }
-// }
+.quotes {
+  background: tint($brand-color, 95%);
+}
 
 #welcome-grid-item-0 {
 	background: $color1;
@@ -111,3 +96,11 @@
   }
 }
 
+.js-fade-element-hide {
+  opacity: 0;
+}
+
+.js-fade-element-show {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
