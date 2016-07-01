@@ -3,6 +3,7 @@
   line-height: 0;
   position: relative;
   width: 100%;
+  background-color: shade($brand-color, 75%);
 
   @include media($large-screen) {
     max-height: 500px;
@@ -17,6 +18,7 @@
    position: relative;
    top: 0;
    width: 100%;
+   opacity: 0.5;
   }
 
   .copy {

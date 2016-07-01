@@ -1,11 +1,13 @@
 <%= render 'hero_index' %>
 <article class="wrapper">
 	<div class="skinny_wrapper">
-		<h1>Say Hello!</h1>
 		<h2>Give us a try and see the difference.</h2>
-		<p>Lorem ipsum dolor sit amet, cras labore. Ipsum at. Pharetra eget in, neque et arcu sed. Qui semper ornare quos nulla vitae nisl, maecenas sit curabitur integer fusce orci, at suspendisse wisi magna venenatis, felis condimentum enim sed nisl in vel, dignissim ultrices vestibulum dolor magnis rutrum. Nullam sem vehicula.</p>
-		<%= render 'form' %>
+		<p>Balboa Pacific Insurance Services is headquartered in Irvine, California and serves customers in California, Arizona, Colorado, and Florida. When it comes to some of the biggest investments such as your home, car, boat, jewelry, health, and most of all your life; we know that trust matters. Here at Balboa Pacific we have partnered up with some of the biggest insurance carriers. This gives us access to find the best products and price to meet your insurance needs.</p>
+    <p>Balboa Pacific offers the highest quality insurance products in the market (Liberty Mutual, Anthem, Foremost, Travelers, Safeco, MetLife etc.) at the lowest price points both internally to our employees and also externally to our customers, partners, friends and family.</p>
+    <p><strong>Fill this quick form out to get a free quote:</strong></p>
+		<div class="contact-us-form"> <%= render 'form' %> </div>
 	</div>
+  <%= render 'side_about' %>
 </article>
 	<div class="map">
 			<div id="map-canvas" style="width:100%;height:350px;"></div>
@@ -20,14 +22,13 @@ function initMap() {
     scrollwheel: false,
     disableDefaultUI: true,
     styles: 
-    [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    [{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"transit.line","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}]
   });
 
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'Balboa Pacific',
-    icon: '<%= image_path 'marker.png' %>'
+    title: 'Balboa Pacific'
   });
 }
 </script>

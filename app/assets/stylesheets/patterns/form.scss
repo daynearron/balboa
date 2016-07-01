@@ -138,3 +138,11 @@
 		}
 	}
 }
+
+.contact-us-form {
+	padding: 25px;
+	@extend .shadow;
+	.button {
+		margin: 0px;
+	}
+}
