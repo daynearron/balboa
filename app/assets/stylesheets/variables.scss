@@ -1,7 +1,8 @@
 $pull-up-margin: -4em;
 
+
+$action-color: $yellow !default;
 $base-border-radius: 3px !default;
-$action-color: #477DCA !default;
 $large-screen: em(860) !default;
 $hero-background-top: #7F99BE; 
 $hero-background-bottom: #20392B;
@@ -25,7 +26,6 @@ $horizontal-angle: 90deg;
 
 $base-border-color: gainsboro !default;
 $base-border-radius: 3px !default;
-$action-color: #477DCA !default;
 $dark-gray: #333 !default;
 $large-screen: em(860) !default;
 $navigation-padding: 1em;
@@ -45,7 +45,7 @@ $horizontal-bar-mode: $large-screen;
 
 //slide out
 
-$sliding-panel-border-color: #fafafa;
+$sliding-panel-border-color: rgba(255,255,255,0.9);
 $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
 $sliding-panel-color: $brand-color;
 $sliding-panel-border: 1px solid $sliding-panel-border-color;
@@ -70,10 +70,9 @@ $grid-item-height: 14em;
 
 
 $base-spacing: 1.5em !default;
-$action-color: #477DCA !default;
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
-$footer-background: #3d3c40;
+$footer-background: shade($brand-color, 20%);
 $footer-color: $brand-color-lighter;
 $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
@@ -87,7 +86,6 @@ $parallax-background-height: $parallax-window-height * 2;
 $base-border-radius: 3px !default;
 $base-line-height: 1.5em !default;
 $base-spacing: 1.5em !default;
-$action-color: #477DCA !default;
 $dark-gray: #333 !default;
 $light-gray: #DDD !default;
 $medium-screen: em(640) !default;

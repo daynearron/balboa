@@ -13,20 +13,25 @@
 
 <nav class="js-menu sliding-panel-content">
   <ul>
+    <li>
+      <h2>Menu</h2>
+    </li>
+    <li>
+      <%= link_to "Contact Us", new_contact_path, :class => current_class?(new_contact_path) %>
+    </li>
+    <li>
+      <%= link_to "Get a Quote", quotes_path, :class => current_class?(quotes_path) %>
+    </li>
+    <li>
+      <h2>Insurance Types:</h2>
+    </li>
     <% @insurance_header.each_with_index do |insurance, index| %>
-      <li>
+      <li class="small-nav">
         <%= link_to insurance do %>
           <%= insurance.title %>
         <% end %>            
       </li>
     <% end %>
-    <li>
-      <%= link_to "The Company", new_contact_path, :class => current_class?(new_contact_path) %>
-    </li>
-    <li>
-      <%= link_to "Get a Quote", quotes_path, :class => current_class?(quotes_path) %>
-    </li>
-
     <% if user_signed_in? %>
       <li>
         <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>

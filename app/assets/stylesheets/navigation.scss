@@ -42,11 +42,17 @@ header.navigation {
 
   ul {
     padding: 0;
+    padding-top: 25px;
     margin: 0;
   }
 
   li {
     list-style: none;
+  }
+  .small-nav {
+    padding: 0.5;
+    font-size: 14px;
+    font-weight: lighter;
   }
 
   li a {
@@ -62,13 +68,20 @@ header.navigation {
     }
 
     &:hover {
-      background-color: $sliding-panel-background-hover;
+      background-color: #4EAACC;
       color: $sliding-panel-color-hover;
     }
   }
 
   &.is-visible {
     transform: translateX(0);
+  }
+
+  li h2 {
+    padding: 0.5em 1em;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 25px;
   }
 }
 

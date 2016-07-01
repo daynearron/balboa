@@ -1,6 +1,6 @@
 <div class="grid-items-lines">
   <% @insurance_grid.each_with_index do |insurance, index| %>
-    <%= link_to insurance, :class=>"grid-item js-fadeInElement fade-in-element", :id =>"welcome-grid-item-#{index}" do %>  
+    <%= link_to insurance, :class=>"grid-item", :id =>"welcome-grid-item-#{index}" do %>  
       <% if index == 1 %>
         <%= image_tag insurance.image.url(:large), :class=>"img-swap" %>
         <h1><%= insurance.title %></h1>
@@ -15,9 +15,9 @@
       <% end %>
     <% end %>
   <% end %>  
-  <%= link_to quotes_path, :class=>"grid-item grid-item-big js-fadeInElement fade-in-element", :id => "welcome-grid-item-big" do %>
-    <h1>Find the Protection you need!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum. <i class="icon-right-open-mini"></i></p>    
+  <%= link_to quotes_path, :class=>"grid-item grid-item-big", :id => "welcome-grid-item-big" do %>
+    <h1>Give us a try and see the difference.</h1>
+    <p>Our objective is to make the process as simple as possible. <i class="icon-right-open-mini"></i></p>    
   <% end %>
 </div>
 

@@ -37,3 +37,12 @@
 .flash-success {
   @include flash($success-color);
 }
+
+.error input {
+  border: 2px solid red !important;
+  background-color: red;
+}
+
+.inline-errors {
+  display: none !important;
+}

@@ -11,7 +11,7 @@ var do_on_load = function() {
       var windowInnerHeight = window.innerHeight;
       var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
       var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
-      var distanceFromBottomToAppear = 300;
+      var distanceFromBottomToAppear = 75;
 
       if(elementTopToWindowBottom > distanceFromBottomToAppear) {
         $(element).addClass('js-fade-element-show');
