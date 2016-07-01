@@ -71,6 +71,7 @@
 
 .inputs {
 	padding: 0;
+	width: 100%;
 	ol li {
 		@include clearfix;
 		@include span-columns(4 of 8);
