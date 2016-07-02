@@ -1,21 +1,21 @@
 
-.container {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -4em;
-}
+// .container {
+//   min-height: 100%;
+//   height: auto !important;
+//   height: 100%;
+//   margin: 0 auto -4em;
+// }
 
 html, body {
  height: 100%;
 }
 
-.container:after {
-  content: "";
-  display: block;
-}
+// .container:after {
+//   content: "";
+//   display: block;
+// }
 
-.footer-2, .container:after {
+.footer-2 {
   height: 17em;
 
   @include media($large-screen) {
@@ -36,15 +36,20 @@ html, body {
   .footer-logo {
     margin-right: 1em;
     margin-bottom: 1em;
-
+    text-align: center;
+    padding: 20px;
     @include media($large-screen) {
       float: left;
+      padding: 0;
       margin-bottom: 0;
     }
   }
 
   .footer-logo img {
-    height: 1.6em;
+    height: 75px;    
+     @include media($large-screen) {
+      height: 1.6em;
+    }
   } 
 
   ul {
@@ -84,6 +89,9 @@ html, body {
   }
 
   .footer-secondary-links {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
     @include media($large-screen) {
       float: right;
     }

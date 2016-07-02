@@ -2,7 +2,6 @@
 #about-box {
 	width: 100%;
 	background-color: #fff;
-	background-image: url('bg/waves_faded.jpg');
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: cover;
@@ -17,6 +16,7 @@
 
 	@include media($large-screen) {
 		padding: 60px 0 70px;
+		background-image: url('bg/waves_faded.jpg');
 	}
 
 	h2 {

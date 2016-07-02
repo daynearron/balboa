@@ -1,7 +1,13 @@
 // body {
 // 	background: #EFEFEF;
 // }
+.logo-section {
+	display: none;
+	@include media($large-screen) {
+		display: block;
+	}
 
+}
 #insurance-logo-group {
 	text-align: center;
 	@include clearfix;
@@ -35,10 +41,11 @@
     background-size: cover;
     color: #fff;
 	padding-top: 25px;
-
-    .wrapper:first-child{
-		margin-bottom: 80px;
-    }
+	@include media($large-screen) {
+	    .wrapper:first-child{
+			margin-bottom: 80px;
+	    }
+	}
 
     .point,
     .icon {
@@ -54,6 +61,10 @@
 		    max-height: 50px;
 		    vertical-align: middle;
 		}
+    }
+
+    .point {
+    	padding: 15px 30px;
     }
 	@include media($large-screen) {
 		padding: 100px 0 90px;
