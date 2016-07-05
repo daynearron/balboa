@@ -13,6 +13,7 @@
 //= require jquery
 //= require vendor/jquery.inputmask.bundle.min
 //= require vendor/angular
+//= require vendor/unslider
 //= require angular/multistep_controller
 //= require jquery_ujs
 //= require angular/balboa

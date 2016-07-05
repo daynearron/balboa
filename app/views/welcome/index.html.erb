@@ -1,60 +1,31 @@
 <%= render "hero" %>
-<div id="about-box">
-	<div class="wrapper">
-		<div class="about-box-wrapper animated bounce fadeIn fadeInLeft">
+<div class="wrapper">
+	<section class="intro">
+		<aside>
 			<h2>
-				We’re a <strong>different </strong>kind of insurance brokerage.
+				Insurance you can trust. Savings you will feel.
 			</h2>
-			<p>Being able to safely protect your home or auto should be a priority in protecting your investment. Having the right CA insurance agents that can give you valuable advice on auto insurance and home insurance is important.</p><p> Knowing the many options available to you by using an independent agency like Balboa Pacific and their online platform to research and see home and auto insurance quotes from top carriers will give you a head start in making smart selections to meet your needs and your budget.</p>
-		</div>
-	</div>
+		</aside>
+		<article>
+			<p>
+				Balboa Pacific offers a broad range of personal and commercial insurance products and options.  We combine decades of experience and stay up to date on the current laws and regulations to deliver the best and most affordable insurance coverage for individuals, families, and businesses of any size.
+			</p>
+			<p>
+				We got you covered, whether you need protection for your company, your employees, your home and valuables, the people you love or all of the above. If you think you are paying too high, you probably are. Our customers save time and money and get peace of mind that they are well covered.
+			</p>
+			<p>
+				Think you might be paying too much? <%= link_to "Contact Us", new_contact_path, :class => current_class?(new_contact_path) %> to find out.
+			</p>
+		</article>
+	</section>
+	<section class="logo-section">
+		<h3 class="centered-headline--gray">We connect you to the best service for your needs– Nothing more, nothing less.</h3>
+		<ul id="insurance-logo-group">
+			<li class=""><a href=""><%= image_tag "insurance_logos/logo_01.png" %></a></li>
+			<li class=""><a href=""><%= image_tag "insurance_logos/logo_02.png" %></a></li>
+			<li class=""><a href=""><%= image_tag "insurance_logos/logo_03.png" %></a></li>
+			<li class=""><a href=""><%= image_tag "insurance_logos/logo_04.png" %></a></li>
+			<li class=""><a href=""><%= image_tag "insurance_logos/logo_05.png" %></a></li>
+		</ul>
+	</section>
 </div>
-<%= render "grid_objects" %>
-<div class="slide-section">
-	<div class="wrapper">
-		<div class="slider">
-		  <div class="slide slide1">
-		  	<h3>As a first time home buyer I never had to worry or think about home owners insurance. While in escrow Balboa Pacific was recommended to me and I couldn’t be happier with their service. They were extremely helpful throughout the process. They were able to bundle my auto and home all in one. I was pleasantly surprised with their affordability and knowledge. </h3>
-		  	<p>Robert Tuazon </p>
-		  </div>
-		  <div class="slide slide2">
-		  	<h3>I had been using AAA insurance for a few years and they were unwilling to renew my home owners insurance. I turned to Balboa Pacific and they broke down why AAA wasn’t renewing my policy and helped pinpoint the best policy for my situation. I was extremely impressed with the transparency and swiftness of their team. </h3>
-		  	<p>Chay Ung</p>
-		  </div>
-		  <div class="slide slide3">
-		  	<h3>Balboa Pacific has wonderful customer service. When I was in an auto accident they were very responsive and helpful. I had a lot of questions and they were there to answer all of them. I was really concerned about being at fault for the accident but they were able to get all of the facts straight and all parties involved were responsible for their own actions. </h3>
-		  	<p>Nathan Schmidt</p>
-		  </div>
-		  <div class="slide slide4">
-		  	<h3>Balboa Pacific has been a great company for my car insurance needs. When someone rear-ended me, they were prompt with responding and assisted to make sure I had everything I needed. They were very communicative and immediate with their answers to any number of questions I had.</h3>
-		  	<p>Viva Helberg</p>
-		  </div>
-		</div>
-	</div>
-</div>	
-<section class="wrapper logo-section">
-	<h3 class="centered-headline--gray">We connect you to the best service for your needs– Nothing more, nothing less.</h3>
-	<ul id="insurance-logo-group">
-		<li class="js-fadeInElement fade-in-element"><a href=""><%= image_tag "insurance_logos/logo_01.png" %></a></li>
-		<li class="js-fadeInElement fade-in-element"><a href=""><%= image_tag "insurance_logos/logo_02.png" %></a></li>
-		<li class="js-fadeInElement fade-in-element"><a href=""><%= image_tag "insurance_logos/logo_03.png" %></a></li>
-		<li class="js-fadeInElement fade-in-element"><a href=""><%= image_tag "insurance_logos/logo_04.png" %></a></li>
-		<li class="js-fadeInElement fade-in-element"><a href=""><%= image_tag "insurance_logos/logo_05.png" %></a></li>
-	</ul>
-</section>
-
-<div class="box-services">
-	<div class="wrapper">
-		<div class="icon"><%= image_tag "svg/piggy.png" %></div>
-		<div class="point"><h4>Cost</h4> <p>We save people money. Research shows that broker pricing is generally better than going direct. It’s simple, if we can’t save you money, there is no reason for you to change.</p></div>
-		<div class="icon"><%= image_tag "svg/ease.png" %></div>
-		<div class="point"><h4>Ease</h4> <p> We make the entire process super easy. You give us your basic info, we find the best policies with the best carriers that match your needs. We do all of the legwork!</p></div>
-	</div>
-	<div class="wrapper">
-		<div class="icon"><%= image_tag "svg/speed.png" %></div>
-		<div class="point"><h4>Speed</h4> <p>Time is money.  Save yourself hours and hours of time calling on multiple insurance carriers about multiple types of insurance. We do the insurance thing and do it well with the best carriers.</p></div>
-		<div class="icon"><%= image_tag "svg/pencil.png" %></div>
-		<div class="point"><h4>Peace of Mind</h4> <p> We make sure that every I is dotted and t is crossed. You will be expertly covered for any unforeseeable circumstances.</p></div>
-	</div>
-</div>
-<!-- <%= render "quotes" %> -->

@@ -1,47 +1,33 @@
+// Grayed Logos
 
-// #about-box {
-// 	width: 100%;
-// 	background-color: #fff;
-// 	background-repeat: no-repeat;
-// 	background-position: right top;
-// 	background-size: cover;
-// 	@include pad(25px);
+.logo-section {
+	display: none;
+	@include media($large-screen) {
+		display: block;
+	}
 
-// 	.about-box-wrapper {
-// 		@include media($large-screen) {
-// 			@include span-columns(6);
-// 		}
-// 		@include span-columns(12);
-// 	}
+}
+#insurance-logo-group {
+	text-align: center;
+	@include clearfix;
+	@include pad(50px 25px 25px);
+	
+	li:not(:last-child) {
+		margin-bottom: 25px;
+	}
+	
+	img {
+		max-width: 80%;
+	}
 
-// 	@include media($large-screen) {
-// 		padding: 60px 0 70px;
-// 		background-image: url('bg/waves_faded.jpg');
-// 	}
-
-// 	h2 {
-// 		font-size: 2.5em;
-// 	    color: $brand-color;
-// 	}
-
-// 	p {
-// 		color: $slate;
-// 	    font-size: 18px;
-// 	    line-height: 25px;
-// 	    margin: 22px 0 0;
-// 	}
-// }
-
-// .slide-section {
-// 	background-color: $off-white;
-// 	background-image: url('bg/misc.svg');
-//     padding: 90px;
-// 	display: none;
-//     background-size: cover;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-
-// 	@include media($large-screen) {
-// 		display: block;
-// 	}
-// }
+  @include media($large-screen) {
+  	li {
+  			margin-bottom: 0px;
+			@include span-columns(2);
+			@include omega(5n);
+			&:first-child {
+				@include shift(1);
+			}
+		}
+    }
+}

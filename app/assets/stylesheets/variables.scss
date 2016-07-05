@@ -72,7 +72,7 @@ $grid-item-height: 14em;
 $base-spacing: 1.5em !default;
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
-$footer-background: shade($brand-color, 20%);
+$footer-background: #D8D8D8;
 $footer-color: $brand-color-lighter;
 $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);

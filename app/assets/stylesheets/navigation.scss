@@ -22,7 +22,6 @@ header.navigation {
   background-color: $navigation-background;
   border-bottom: 1px solid tint($navigation-background, 25);
   min-height: $navigation-height;
-  position: absolute;
   width: 100%;
   z-index: 999;
 
@@ -37,8 +36,8 @@ header.navigation {
     max-height: $navigation-height;
     padding-left: $navigation-padding;
     padding-right: 2em;
-    padding-top: 8px;
-    width: 345px;
+    width: 200px;
+    padding-top: 16px;
 
     img {
       max-height: $navigation-height;

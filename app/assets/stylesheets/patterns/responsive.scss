@@ -1,0 +1,33 @@
+@include media($large-screen) {
+
+	header.navigation {
+		position: absolute;
+	    .logo {
+		    padding-top: 8px;
+		    width: 345px;
+		}
+	}
+
+	.welcome {
+		.intro {
+			@include pad(3em 0em);
+			@include omega(2n);
+			aside {
+				@include span-columns(4);
+			}
+			article {
+				@include span-columns(8);
+			}
+		}
+	}
+
+	.image-gradient-dynamic {
+		.copy {
+			h2 {
+				margin-top: 130px;
+				font-size: 60px;
+			}
+		}
+	}
+
+}

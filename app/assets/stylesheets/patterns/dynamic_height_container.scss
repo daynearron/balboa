@@ -1,58 +1,72 @@
 .image-gradient-dynamic {
-  
+  $image-gradient-color-top: rgba(0,0,0,0.5);
+  $transparency-top: 0.9;
+  $image-gradient-color-bottom: rgba(0,0,0,0.8);
+  $transparency-bottom: 0.6;
+  $vertical-angle: 0deg;
+  $image-gradient-color-left: rgba(0,0,0,0.5);
+  $transparency-left: 0.8;
+  $image-gradient-color-right: rgba(0,0,0,0.4);
+  $transparency-right: 0.8;
+  $horizontal-angle: 90deg;
+
   line-height: 0;
   position: relative;
   width: 100%;
-  background-color: shade($brand-color, 75%);
 
-  @include media($large-screen) {
-    max-height: 500px;
-    overflow: hidden;
-    // img {
-    //   margin-top: -15%;
-    // }
-  }
   img {
-   height: auto;
-   left: 0; 
-   position: relative;
-   top: 0;
-   width: 100%;
-   opacity: 0.5;
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
   }
 
   .copy {
     width: 100%;
-    @include transform(translate(-50%, -50%));
     left: 50%;
     margin: auto;
     position: absolute;
     text-align: center;
     top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 999;
 
     h2 {
       color: white;
+      margin: 0;
+    }
+    p {
+      color: white;
       line-height: 1.5em;
-      // padding: 1em 2em;
+      padding: 0em 2em 1em 2em;
       position: relative;
-      font-weight: 100;
-      margin: 0 0 35px 0;
     }
   }
 
   .overlay {
-    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
-      transparentize($image-gradient-color-bottom, $transparency-bottom));
+    @include position(absolute, 0);
+    background-color: transparentize(
+      $image-gradient-color-top,
+      $transparency-top
+    );
+    background-image: linear-gradient($vertical-angle,
+      transparentize($image-gradient-color-top, $transparency-top),
+      transparentize($image-gradient-color-bottom, $transparency-bottom)
+    );
     display: block;
-    opacity: 0.2;
-    @include position(absolute, 0px 0px 0px 0px);
 
-    &:after {
-      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
-        transparentize($image-gradient-color-right, $transparency-right));
-      @include position(absolute, 0px 0px 0px 0px);
-      content: '';
+    &::after {
+      @include position(absolute, 0);
+      background-color: transparentize(
+        $image-gradient-color-left,
+        $transparency-right
+      );
+      background-image: linear-gradient($horizontal-angle,
+        transparentize($image-gradient-color-left, $transparency-left),
+        transparentize($image-gradient-color-right, $transparency-right)
+      );
+      content: "";
       display: block;
     }
   }
