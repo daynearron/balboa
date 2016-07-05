@@ -1,47 +1,47 @@
 
-#about-box {
-	width: 100%;
-	background-color: #fff;
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: cover;
-	@include pad(25px);
+// #about-box {
+// 	width: 100%;
+// 	background-color: #fff;
+// 	background-repeat: no-repeat;
+// 	background-position: right top;
+// 	background-size: cover;
+// 	@include pad(25px);
 
-	.about-box-wrapper {
-		@include media($large-screen) {
-			@include span-columns(6);
-		}
-		@include span-columns(12);
-	}
+// 	.about-box-wrapper {
+// 		@include media($large-screen) {
+// 			@include span-columns(6);
+// 		}
+// 		@include span-columns(12);
+// 	}
 
-	@include media($large-screen) {
-		padding: 60px 0 70px;
-		background-image: url('bg/waves_faded.jpg');
-	}
+// 	@include media($large-screen) {
+// 		padding: 60px 0 70px;
+// 		background-image: url('bg/waves_faded.jpg');
+// 	}
 
-	h2 {
-		font-size: 2.5em;
-	    color: $brand-color;
-	}
+// 	h2 {
+// 		font-size: 2.5em;
+// 	    color: $brand-color;
+// 	}
 
-	p {
-		color: $slate;
-	    font-size: 18px;
-	    line-height: 25px;
-	    margin: 22px 0 0;
-	}
-}
+// 	p {
+// 		color: $slate;
+// 	    font-size: 18px;
+// 	    line-height: 25px;
+// 	    margin: 22px 0 0;
+// 	}
+// }
 
-.slide-section {
-	background-color: $off-white;
-	background-image: url('bg/misc.svg');
-    padding: 90px;
-	display: none;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+// .slide-section {
+// 	background-color: $off-white;
+// 	background-image: url('bg/misc.svg');
+//     padding: 90px;
+// 	display: none;
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
 
-	@include media($large-screen) {
-		display: block;
-	}
-}
+// 	@include media($large-screen) {
+// 		display: block;
+// 	}
+// }

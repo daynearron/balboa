@@ -1,100 +1,35 @@
-var do_on_load = function() { 
-  // Fade on Scroll
+$(window).resize(function() {
+  var more = document.getElementById("js-navigation-more");
+  if ($(more).length > 0) {
+    var windowWidth = $(window).width();
+    var moreLeftSideToPageLeftSide = $(more).offset().left;
+    var moreLeftSideToPageRightSide = windowWidth - moreLeftSideToPageLeftSide;
 
-  var element = $(".js-fadeInElement");
-  $(element).addClass('js-fade-element-hide');
-
-  $(window).scroll(function() {
-    if( $(".js-fadeInElement").length > 0 ) {
-      var elementTopToPageTop = $(element).offset().top;
-      var windowTopToPageTop = $(window).scrollTop();
-      var windowInnerHeight = window.innerHeight;
-      var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
-      var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
-      var distanceFromBottomToAppear = 75;
-
-      if(elementTopToWindowBottom > distanceFromBottomToAppear) {
-        $(element).addClass('js-fade-element-show');
-      }
-      else if(elementTopToWindowBottom < 0) {
-        $(element).removeClass('js-fade-element-show');
-        $(element).addClass('js-fade-element-hide');
-      }
+    if (moreLeftSideToPageRightSide < 330) {
+      $("#js-navigation-more .submenu .submenu").removeClass("fly-out-right");
+      $("#js-navigation-more .submenu .submenu").addClass("fly-out-left");
     }
-  });
-  // Typekit
 
-  var head = document.getElementsByTagName('head')[0];
-  var script = document.createElement('script');
-  script.type = 'text/javascript';    
-  script.src = '//use.typekit.net/lsh0ymz.js';
-  var callback = function() {
-    try {
-      Typekit.load();     
-    } catch(e) { 
-      // report error     
+    if (moreLeftSideToPageRightSide > 330) {
+      $("#js-navigation-more .submenu .submenu").removeClass("fly-out-left");
+      $("#js-navigation-more .submenu .submenu").addClass("fly-out-right");
     }
   }
-  script.onreadystatechange = callback;
-  script.onload = callback;
-  head.appendChild(script);
-
-
-  // Input Mask
-  Inputmask().mask(document.querySelectorAll("input"));
+});
 
 
 
-  // Slide Menu
+var do_on_load = function() { 
+  var menuToggle = $("#js-mobile-menu").unbind();
+  $("#js-navigation-menu").removeClass("show");
 
-  $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
-    $('.sliding-panel-content,.sliding-panel-fade-screen,.hamburger').toggleClass('is-visible');
+  menuToggle.on("click", function(e) {
     e.preventDefault();
-  });
-
-  // // Look for .hamburger
-  // var hamburger = document.querySelector(".hamburger");
-  // // On click
-  // hamburger.addEventListener("click", function() {
-  //   // Toggle class "is-active"
-  //   hamburger.classList.toggle("is-active");
-  //   // Do something else, like open/close menu
-  // });
-
-
-  // Next/Prev Form
-
-  // selects all the divs of class='tab',hides them, finds the first, and shows it
-  $('div.tab').hide().first().show();
-
-  // binds a click event-handler to a elements whose class='display'
-  $('a.display').on('click', function(e) {
-      // prevents the default action of the link
-      e.preventDefault();
-
-      $('html,body').animate({
-        scrollTop: 360
-      }, 700);
-
-      // assigns the currently visible div.tab element to a variable
-      var that = $('div.tab:visible'),
-          // assigns the text of the clicked-link to a variable for comparison purposes
-          t = $(this).text();
-
-      // checks if it was the 'next' link, and ensures there's a div to show after the currently-shown one
-      if (t == 'next' && that.next('div.tab').length > 0) {
-          // hides all the div.tab elements
-          $('div.tab').hide();
-
-          // shows the 'next'
-          that.next('div.tab').show()
+    $("#js-navigation-menu").slideToggle(function(){
+      if($("#js-navigation-menu").is(":hidden")) {
+        $("#js-navigation-menu").removeAttr("style");
       }
-      // exactly the same as above, but checking that it's the 'prev' link
-      // and that there's a div 'before' the currently-shown element.
-      else if (t == 'prev' && that.prev('div.tab').length > 0) {
-        $('div.tab').hide();
-        that.hide().prev('div.tab').show()
-      }
+    });
   });
 }
 
