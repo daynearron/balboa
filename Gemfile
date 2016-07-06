@@ -13,7 +13,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pygments.rb', '~> 0.6.0'
@@ -28,8 +27,7 @@ gem 'formtastic'
 gem 'foreman'
 gem 'puma'
 gem "paperclip_database", git: "git://github.com/garrett0168/paperclip_database.git"
-gem 'slick_rails'
-gem 'jquery-turbolinks'
+
 
 group :development, :test do
   gem 'byebug'

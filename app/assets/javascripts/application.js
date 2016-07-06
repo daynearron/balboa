@@ -11,16 +11,14 @@
 // about supported directives.
 //
 //= require jquery
-//= require vendor/owl.carousel
-
-//= require vendor/jquery.inputmask.bundle.min
-//= require vendor/angular
-
-
-//= require angular/multistep_controller
 //= require jquery_ujs
+
+//= require vendor/owl.carousel
+//= require vendor/jquery.inputmask.bundle.min
+
+//= require vendor/angular
 //= require angular/balboa
+
 //= require_tree ./angular/directives
 //= require_tree .
 
-//= require turbolinks

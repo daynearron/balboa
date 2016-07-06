@@ -34,11 +34,35 @@ var do_on_load = function() {
       }
     });
   });
+
+  // Typekit
+
+
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';    
+  script.src = '//use.typekit.net/lsh0ymz.js';
+  var callback = function() {
+    try {
+      Typekit.load();     
+    } catch(e) { 
+      // report error     
+    }
+  }
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+
+
+  // Input Mask
+  Inputmask().mask(document.querySelectorAll("input"));
+
 }
 
 
 $(document).ready(do_on_load)
 $(document).on('page:load', do_on_load)
+
 
 
 
