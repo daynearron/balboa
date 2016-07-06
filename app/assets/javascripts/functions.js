@@ -20,6 +20,9 @@ $(window).resize(function() {
 
 
 var do_on_load = function() { 
+  
+  //Navigation
+  
   var menuToggle = $("#js-mobile-menu").unbind();
   $("#js-navigation-menu").removeClass("show");
 
@@ -33,6 +36,9 @@ var do_on_load = function() {
   });
 }
 
+
 $(document).ready(do_on_load)
 $(document).on('page:load', do_on_load)
+
+
 

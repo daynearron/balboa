@@ -1,63 +1,8 @@
-
-
-.quotes {
-  background: tint($brand-color, 95%);
+.phone-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
-#welcome-grid-item-0 {
-	background: $color1;
-  &:focus,
-  &:hover {
-    h1,
-    p {
-    	color: $color1 !important;
-	  }
-  }
-}
-#welcome-grid-item-1 {
-	background: #000;
-  &:focus,
-  &:hover {
-    background: tint(#000, 15%) !important;
-    h1,
-    p {
-    	color: $color2 !important;
-	  }
-  }
-}
-#welcome-grid-item-2 {
-	background: $color3;
-  &:focus,
-  &:hover {
-    h1,
-    p {
-    	color: $color3 !important;
-	  }
-  }
-}
-#welcome-grid-item-3 {
-	background: #000;
-  &:focus,
-  &:hover {
-    background: tint(#000, 15%) !important;
-    h1,
-    p {
-    	color: $color2 !important;
-	  }
-  }
-}
-
-#welcome-grid-item-big {
-	background: $color2;
-  &:focus,
-  &:hover {
-    h1,
-    p {
-    	color: $color2 !important;
-	  }
-  }
-}
-
 
 // // Hero Backgrounds
 

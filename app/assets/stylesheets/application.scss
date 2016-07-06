@@ -27,8 +27,11 @@
 @import "navigation";
 @import "patterns/footer";
 @import "welcome";
-@import "slider";
 
+
+@import "owl/owl.carousel";
+@import "owl/owl.theme";
+@import "owl/owl.transitions";
 
 // Patterns
 

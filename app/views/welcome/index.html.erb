@@ -18,8 +18,62 @@
 			</p>
 		</article>
 	</section>
+	<section class="insurance-type-slide">
+		<article class="insurance-type-slide--wrapper">	
+			<div class="owl-carousel image-gradient-dynamic" id="insurance-slider">
+				<% @insurance_grid.each_with_index do |insurance, index| %>
+				    <div class="insurance-type-slide--content">
+				    	<%= link_to insurance, :class=>"", :id =>"#{index}" do %> 
+				    		<div class="copy"><h2><%= insurance.title %></h2></div>
+							<%= image_tag insurance.image.url(:large), :class=>"img-swap" %>
+				        <% end %>
+			        </div>
+			    <% end %>
+			</div>
+		</article>
+		<aside>
+			<h2>
+				A wide range of coverage  in one  place.
+			</h2>
+		</aside>
+	</section>
+	<section class="customer-quotes">
+		<aside>
+			<h2>
+				Latest Reviews
+			</h2>
+		</aside>
+		<article>
+			<div class="owl-carousel image-gradient-dynamic" id="quote-slider">
+				<div>
+				<p>
+					As a first time home buyer I never had to worry or think about home owners insurance. While in escrow Balboa Pacific was recommended to me and I couldn’t be happier with their service. They were extremely helpful throughout the process. They were able to bundle my auto and home all in one. I was pleasantly surprised with their affordability and knowledge.
+					<small class="quote-author">Robert Tuazon</small>
+				</p>
+				</div>
+				<div>
+				<p>
+					I had been using AAA insurance for a few years and they were unwilling to renew my home owners insurance. I turned to Balboa Pacific and they broke down why AAA wasn’t renewing my policy and helped pinpoint the best policy for my situation. I was extremely impressed with the transparency and swiftness of their team.
+					<small class="quote-author">Chay Ung</small>
+				</p>
+				</div>
+				<div>
+				<p>
+					Balboa Pacific has wonderful customer service. When I was in an auto accident they were very responsive and helpful. I had a lot of questions and they were there to answer all of them. I was really concerned about being at fault for the accident but they were able to get all of the facts straight and all parties involved were responsible for their own actions.
+					<small class="quote-author">Nathan Schmidt</small>
+				</p>
+				</div>
+				<div>
+				<p>
+					Balboa Pacific has been a great company for my car insurance needs. When someone rear-ended me, they were prompt with responding and assisted to make sure I had everything I needed. They were very communicative and immediate with their answers to any number of questions I had.
+					<small class="quote-author">Viva Helberg</small>
+				</p>
+				</div>
+			</div>
+		</article>
+	</section>
 	<section class="logo-section">
-		<h3 class="centered-headline--gray">We connect you to the best service for your needs– Nothing more, nothing less.</h3>
+<!-- 		<h3 class="centered-headline--gray">We connect you to the best service for your needs– Nothing more, nothing less.</h3> -->
 		<ul id="insurance-logo-group">
 			<li class=""><a href=""><%= image_tag "insurance_logos/logo_01.png" %></a></li>
 			<li class=""><a href=""><%= image_tag "insurance_logos/logo_02.png" %></a></li>
@@ -29,3 +83,9 @@
 		</ul>
 	</section>
 </div>
+<%= javascript_tag do %>
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    autoPlay : 5000,
+  });
+<% end %>

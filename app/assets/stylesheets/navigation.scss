@@ -23,7 +23,7 @@ header.navigation {
   border-bottom: 1px solid tint($navigation-background, 25);
   min-height: $navigation-height;
   width: 100%;
-  z-index: 999;
+  z-index: 99999;
 
   .navigation-wrapper {
     @include clearfix;
@@ -211,7 +211,7 @@ header.navigation {
     @include media($horizontal-bar-mode) {
       left: -$navigation-submenu-padding;
       position: absolute;
-      top: 1.5em;
+      top: 2.6em;
     }
 
     .submenu.fly-out-right {
@@ -243,25 +243,26 @@ header.navigation {
         line-height: $navigation-height / 1.3;
 
         &:first-child > a {
-          border-top-left-radius: $base-border-radius;
-          border-top-right-radius: $base-border-radius;
+          // border-top-left-radius: $base-border-radius;
+          // border-top-right-radius: $base-border-radius;
         }
 
         &:last-child > a {
-          border-bottom-left-radius: $base-border-radius;
-          border-bottom-right-radius: $base-border-radius;
+          // border-bottom-left-radius: $base-border-radius;
+          // border-bottom-right-radius: $base-border-radius;
           padding-bottom: 0.7em;
         }
       }
 
       a {
-        background-color: darken($navigation-background, 3%);
+        background-color: #C1D4D7;
+        color: #696969;
         display: inline-block;
         text-align: right;
         width: 100%;
 
         @include media($horizontal-bar-mode) {
-          background-color: $navigation-background;
+          background-color: #C1D4D7;
           padding-left: $navigation-submenu-padding;
           text-align: left;
           width: $navigation-submenu-width;

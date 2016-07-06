@@ -28,8 +28,8 @@ gem 'formtastic'
 gem 'foreman'
 gem 'puma'
 gem "paperclip_database", git: "git://github.com/garrett0168/paperclip_database.git"
-
-
+gem 'slick_rails'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'byebug'

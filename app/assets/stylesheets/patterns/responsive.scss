@@ -8,25 +8,64 @@
 		}
 	}
 
-	.welcome {
-		.intro {
-			@include pad(3em 0em);
-			@include omega(2n);
-			aside {
-				@include span-columns(4);
-			}
-			article {
-				@include span-columns(8);
-			}
-		}
-	}
-
 	.image-gradient-dynamic {
 		.copy {
 			h2 {
 				margin-top: 130px;
 				font-size: 60px;
 			}
+		}
+	}
+	.two-column{
+		@include omega(2n);
+		padding: 6em 0 0 0;
+		aside {
+			@include span-columns(4);
+		}
+		article {
+			@include span-columns(8);
+		}
+	}
+
+	.welcome {
+		.intro,
+		.insurance-type-slide,
+		.customer-quotes{
+			@extend .two-column;
+		}
+		.insurance-type-slide {
+			article.insurance-type-slide--wrapper {
+			.insurance-type-slide--content {
+					width: 100%;
+					position: relative;
+					display: block;
+					a {
+						background-color: $brand-color;
+						position: relative;
+						display: block;
+						width: 100%;
+						height: 400px;
+						h2 {
+							color: #fff;
+							font-size: 30px;
+							padding: 10px 15px;
+							display: inline;
+							border: 1px solid #fff;
+							z-index: 999;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+  	#insurance-logo-group li {
+		margin-bottom: 0px;
+		@include span-columns(2);
+		@include omega(5n);
+		&:first-child {
+			@include shift(1);
 		}
 	}
 
